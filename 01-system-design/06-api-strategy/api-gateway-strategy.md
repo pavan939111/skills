@@ -1,5 +1,8 @@
 # API Gateway Strategy
 
+> [!NOTE]
+> [That file covers the pattern's structural mechanics; this file decides whether/what API gateway strategy to use.](../19-design-patterns/api-gateway-strategy.md)
+
 ### 1. The Question Decided
 "Should the system deploy a dedicated API Gateway (e.g. Kong, Envoy, AWS API Gateway) in front of services, and what features are consolidated at this edge?"
 
@@ -20,5 +23,5 @@
 - Total request latency increases because the gateway network hops and filter pipelines consume too much time budget.
 
 ### 5. Where to Go Next
-- For configuring Docker containers and network routing setups for gateways, see [DevOps Readiness](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/20-devops-readiness/index.md).
+- For configuring Docker containers and network routing setups for gateways, see [DevOps Readiness](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/01-devops-readiness/index.md).
 - For implementing ingress middleware logic in backend services, see [API Development](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/restful-api.md).

@@ -8,7 +8,7 @@
 |---|-------|------|--------|
 | 01 | Docker | `docker-implementation.md` | ⏳ pending |
 | 02 | Kubernetes | `kubernetes-implementation.md` | ⏳ pending |
-| 03 | CI/CD | `ci-cd-configuration.md` | ⏳ pending |
+| 03 | CI/CD | `../ci-cd-configuration.md` | ⏳ pending |
 | 04 | Deployment | `deployment-implementation.md` | ⏳ pending |
 | 05 | Infrastructure | `infrastructure-implementation.md` | ⏳ pending |
 | 06 | Deployment Checklist | `deployment-implementation.md` | ⏳ pending |

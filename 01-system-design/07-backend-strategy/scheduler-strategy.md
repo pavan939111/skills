@@ -21,5 +21,5 @@
 - A critical daily backup script fails to run because the single VM hosting the cron daemon went offline.
 
 ### 5. Where to Go Next
-- For implementing task scheduling hooks in backend frameworks, see [Schedulers Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/14-background-processing/schedulers-implementation.md).
-- For operational best practices on cron structures and lock management, see [Scheduling & Cron Systems](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/operations-and-governance/02-scheduling-cron-systems-guideline.md).
+- For implementing task scheduling hooks in backend frameworks, see [Schedulers Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/11-background-processing/schedulers-implementation.md).
+- For operational best practices on cron structures and lock management, see [Scheduling & Cron Systems](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/03-operations-and-governance/02-scheduling-cron-systems-guideline.md).

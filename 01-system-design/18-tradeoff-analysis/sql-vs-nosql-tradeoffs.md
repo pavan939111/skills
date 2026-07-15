@@ -1,5 +1,8 @@
 # SQL vs. NoSQL Trade-off Analysis
 
+> [!NOTE]
+> [That file decides the database storage strategy; this file contains technical tradeoffs analysis.](../08-database-strategy/sql-vs-nosql-strategy.md)
+
 ## 1. What Question This Answers
 "How do we choose between a Relational Database (SQL) and a Non-Relational Database (NoSQL) for a specific data domain, and what are the detailed trade-offs?"
 

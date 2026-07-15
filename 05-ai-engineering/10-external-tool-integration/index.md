@@ -16,4 +16,4 @@ Standard 12-section template (see `../README.md`).
 | 08 | Permissions | `permissions-implementation.md` | done |
 | 09 | Tool Checklist | `tool-checklist.md` | done |
 
-> `authentication-implementation.md` and `permissions-implementation.md` here are about how an *agent* authenticates to and is scoped against external tools — distinct from `../../backend-development/08-authentication/` (how a backend service authenticates its own users).
+> `authentication-implementation.md` and `permissions-implementation.md` here are about how an *agent* authenticates to and is scoped against external tools — distinct from `../../backend-development/01-authentication/` (how a backend service authenticates its own users).

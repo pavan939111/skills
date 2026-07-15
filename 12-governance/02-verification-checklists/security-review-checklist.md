@@ -12,7 +12,7 @@ The Security Review Checklist is an audit tool used to check that endpoints enfo
 
 ## 3. Cross-References
 - [Security reference](..17-security-implementation/)
-- [Authentication reference](../08-authentication/)
+- [Authentication reference](../01-authentication/)
 
 ## 4. Sign-off Criteria
 - Approved when security verification tests pass and database user permissions use least-privilege configurations.

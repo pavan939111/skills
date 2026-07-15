@@ -20,5 +20,5 @@
 - Automated rollbacks are blocked because the pipeline logic lacks access control permissions on cloud APIs.
 
 ### 5. Where to Go Next
-- For service-specific Docker registries, health logs, and deployment manifests checklists, see [Backend DevOps Readiness Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/20-devops-readiness/index.md).
+- For service-specific Docker registries, health logs, and deployment manifests checklists, see [Backend DevOps Readiness Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/01-devops-readiness/index.md).
 - For configuring automated continuous integration checks, see [CI/CD Implementation Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md).

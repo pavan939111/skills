@@ -22,5 +22,5 @@
 - AI features become unprofitable because the cost per query token exceeds the transaction revenue.
 
 ### 5. Where to Go Next
-- For configuring token alert thresholds, caching parameters, and model pricing audits, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/operations-and-governance/01-cost-optimization-finops-guideline.md).
+- For configuring token alert thresholds, caching parameters, and model pricing audits, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md).
 - For calculating AI model token pricing feasibility, see [AI Feasibility Product Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/ai-feasibility-analysis.md).

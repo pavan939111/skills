@@ -1,5 +1,8 @@
 # API Gateway Design Pattern Strategy
 
+> [!NOTE]
+> [That file decides whether/what API gateway strategy to use; this file covers the pattern's structural mechanics.](../06-api-strategy/api-gateway-strategy.md)
+
 ### 1. The Question Decided
 "Should the network architecture utilize an API Gateway as a single ingress point, and what routing/validation responsibilities live at this boundary?"
 

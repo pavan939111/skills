@@ -1,5 +1,8 @@
 # Defensive Programming in Backend Development
 
+> [!NOTE]
+> [That file covers general defensive programming checks; this file covers backend-specific application.](../../02-engineering-principles/02-core-engineering-principles/13-defensive-programming.md)
+
 ## 1. Backend Application Context
 Defensive Programming is the practice of writing code that behaves predictably under unexpected conditions, verifying inputs, handling exceptions, and validating system bounds:
 - **Assertive Input Validations:** Validate all incoming HTTP headers, body fields, and query parameters before processing payloads.
@@ -33,4 +36,4 @@ def get_user_orders_defensive(user_id: str):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Defensive Programming](../../production_principles/core-engineering-principles/13-defensive-programming-principles.md)
+- [Defensive Programming](../../production_principles/02-core-engineering-principles/13-defensive-programming-principles.md)

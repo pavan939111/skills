@@ -22,4 +22,4 @@
 
 ### 5. Where to Go Next
 - For database-level client connection audits and access control, see [Data Layer Authentication](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/authentication-strategy-implementation.md).
-- For implementing JWT token parsing and validation middleware in backend code, see [Backend Authentication Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/08-authentication/index.md).
+- For implementing JWT token parsing and validation middleware in backend code, see [Backend Authentication Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/01-authentication/index.md).

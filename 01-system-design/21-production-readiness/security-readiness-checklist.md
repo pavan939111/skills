@@ -1,5 +1,8 @@
 # Security Review Readiness Guide
 
+> [!NOTE]
+> [That file covers strategic security threat modeling and options; this file provides the checklist for production readiness security review.](../13-security-strategy/security-review-strategy.md)
+
 ## 1. What Question This Answers
 "Does the system architecture comply with threat model boundaries, data encryption standards, and user privacy regulations before release?"
 

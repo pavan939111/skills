@@ -15,6 +15,9 @@ In backend services, SOLID principles guide the structure of API routers, servic
 ## 3. Code-Shape Example
 `python
 # Interface (Port) defining contract (DIP)
+
+> [!NOTE]
+> [That file covers general solid principles; this file covers the backend-specific application of solid principles.](../../02-engineering-principles/02-core-engineering-principles/01-solid-principles.md)
 class UserRepository:
     def get_by_id(self, user_id: str) -> dict:
         raise NotImplementedError
@@ -35,4 +38,4 @@ class UserService:
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [SOLID Principles](../../production_principles/core-engineering-principles/01-solid-principles.md)
+- [SOLID Principles](../../production_principles/02-core-engineering-principles/01-solid-principles.md)

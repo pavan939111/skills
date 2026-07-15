@@ -1,5 +1,8 @@
 # DRY (Don't Repeat Yourself) in Backend Development
 
+> [!NOTE]
+> [That file covers the general DRY principle; this file covers backend-specific application.](../../02-engineering-principles/02-core-engineering-principles/02-dry.md)
+
 ## 1. Backend Application Context
 In backend code, the DRY principle is applied to eliminate duplication in validation schemas, database access methods, configuration loading, and error handling:
 - **Global Error Handlers:** Map errors to HTTP responses in a single centralized middleware rather than using try-catch blocks in every controller.
@@ -33,4 +36,4 @@ app.get('/users', (req, res) => {
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [DRY Principle](../../production_principles/core-engineering-principles/02-dry-principles.md)
+- [DRY Principle](../../production_principles/02-core-engineering-principles/02-dry-principles.md)

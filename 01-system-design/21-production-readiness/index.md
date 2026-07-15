@@ -10,7 +10,7 @@ Detailed execution-level checklists live in `../../database-design/12-production
 |---|-------|------|--------|
 | 01 | Architecture Review | `architecture-review-strategy.md` | done |
 | 02 | Scalability Review | `scalability-review-strategy.md` | done |
-| 03 | Security Review | `security-review-strategy.md` | done |
+| 03 | Security Review | `security-readiness-checklist.md` | done |
 | 04 | Database Review | `database-review-strategy.md` | done |
 | 05 | Backend Review | `backend-review-strategy.md` | done |
 | 06 | Deployment Review | `deployment-review-strategy.md` | done |

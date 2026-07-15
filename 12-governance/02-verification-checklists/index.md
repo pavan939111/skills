@@ -15,3 +15,6 @@ Recurring checklists used *throughout* development — e.g. run on every PR or e
 | 07 | Production-Ready | `production-ready-checklist.md` | ⏳ pending |
 
 > Note: `api-review-checklist.md` and `security-review-checklist.md` also appear in `..21-readiness-audit/`. Here they're a short per-PR checklist ("did this specific endpoint follow the rules"); there they're a whole-service final audit ("does the entire service pass"). Different scope, same name — not a duplicate.
+
+> [!NOTE]
+> These check lists represent recurring, per-change reviews (PR checklists, code diff audits) executed continuously during development cycles — distinct from the one-time, phase-gate architecture checks mapped in `../01-readiness-audit/`.

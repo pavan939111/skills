@@ -1,5 +1,8 @@
 # Reflection Pattern
 
+> [!NOTE]
+> [That file covers general autonomous agent loop architecture; this file covers the reflection pattern code.](../07-autonomous-agent-engineering/reflection-implementation.md)
+
 ## 1. Definition & Core Concepts
 The Reflection Pattern is an agentic design pattern where a model evaluates its own generated output (or another model's output) against a set of constraints or criteria, identifies mistakes, and regenerates the content to correct those errors.
 

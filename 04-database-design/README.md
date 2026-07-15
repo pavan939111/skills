@@ -34,7 +34,6 @@ Every topic lives in a named folder — one topic = one `.md` file, each followi
 ├── 04-database-best-practices/        10 topics — naming, transactions, consistency, anti-patterns
 ├── 05-query-and-performance/           9 topics — indexing strategy, query optimization
 ├── 06-scalability/                     9 topics — replication, sharding, CAP theorem
-├── 07-data-access/               8 topics — Repository, Unit of Work, Pools, Migrations
 ├── 07-security/                       11 topics — access control, encryption, auditing, compliance
 ├── 08-reliability-and-backup/          8 topics — backups, DR, failover, HA, RTO/RPO
 ├── 09-data-governance/                 7 topics — retention, quality, lineage, lifecycle

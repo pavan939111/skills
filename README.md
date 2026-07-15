@@ -24,21 +24,21 @@ Implementation
 
 | Folder | Answers | Topics | Status |
 |---|---|---|---|
-| [`00-product-analysis/`](./00-product-analysis/index.md) | What are we building? | 9 | 9/9 |
-| [`00-ai-foundations/`](./00-ai-foundations/index.md) | How do modern AI models fundamentally work? | 9 | 9/9 |
-| [`01-system-design/`](./01-system-design/README.md) | How should it be architected? | 170 | 170/170 |
-| [`02-engineering-principles/`](./02-engineering-principles/index.md) | How do we write clean, maintainable, and standard code? | 37 | 37/37 |
-| [`03-backend-development/`](./03-backend-development/README.md) | How should application APIs and services be implemented? | 91 | 91/91 |
-| [`04-database-design/`](./04-database-design/README.md) | How should data be modeled, stored, and scaled? | 125 | 125/125 |
-| [`05-ai-engineering/`](./05-ai-engineering/README.md) | How should AI features/products be built, evaluated, and operated? | 200 | 200/200 |
-| [`06-frontend-development/`](./06-frontend-development/README.md) | How do we build modern web interfaces and rendering flows? | 0 | 0/0 |
-| [`07-platform-engineering/`](./07-platform-engineering/index.md) | How do we containerize, provision infrastructure, and deploy? | 8 | 8/8 |
-| [`08-security-engineering/`](./08-security-engineering/index.md) | How do we secure systems, handle authentication, and authorization? | 23 | 23/23 |
-| [`09-testing-quality/`](./09-testing-quality/index.md) | How do we write tests and run quality controls? | 8 | 8/8 |
-| [`10-production-operations/`](./10-production-operations/index.md) | How do we handle telemetry, observability, and logging? | 15 | 15/15 |
-| [`11-developer-experience/`](.11-developer-experience/index.md) | How do we bootstrap local workspaces and mocks? | 2 | 2/2 |
-| [`12-governance/`](./12-governance/index.md) | How do we audit compliance and engineering rules? | 21 | 21/21 |
-| [`13-architecture-decision-records/`](.13-architecture-decision-records/README.md) | Why did we make specific architectural decisions? | 0 | 0/0 |
+| [`00-product-analysis/`](.//00-product-analysis/index.md) | What are we building? | 9 | 9/9 |
+| [`00-ai-foundations/`](.//00-ai-foundations/index.md) | How do modern AI models fundamentally work? | 9 | 9/9 |
+| [`01-system-design/`](.//01-system-design/README.md) | How should it be architected? | 170 | 170/170 |
+| [`02-engineering-principles/`](.//02-engineering-principles/index.md) | How do we write clean, maintainable, and standard code? | 37 | 37/37 |
+| [`03-backend-development/`](.//03-backend-development/README.md) | How should application APIs and services be implemented? | 110 | 110/110 |
+| [`04-database-design/`](.//04-database-design/README.md) | How should data be modeled, stored, and scaled? | 116 | 116/116 |
+| [`05-ai-engineering/`](.//05-ai-engineering/README.md) | How should AI features/products be built, evaluated, and operated? | 200 | 200/200 |
+| [`06-frontend-development/`](.//06-frontend-development/README.md) | How do we build modern web interfaces and rendering flows? | 0 | 0/0 |
+| [`07-platform-engineering/`](.//07-platform-engineering/index.md) | How do we containerize, provision infrastructure, and deploy? | 8 | 8/8 |
+| [`08-security-engineering/`](.//08-security-engineering/index.md) | How do we secure systems, handle authentication, and authorization? | 23 | 23/23 |
+| [`09-testing-quality/`](.//09-testing-quality/index.md) | How do we write tests and run quality controls? | 8 | 8/8 |
+| [`10-production-operations/`](.//10-production-operations/index.md) | How do we handle telemetry, observability, and logging? | 15 | 15/15 |
+| [`11-developer-experience/`](.//11-developer-experience/index.md) | How do we bootstrap local workspaces and mocks? | 2 | 2/2 |
+| [`12-governance/`](.//12-governance/index.md) | How do we audit compliance and engineering rules? | 21 | 21/21 |
+| [`13-architecture-decision-records/`](.//13-architecture-decision-records/README.md) | Why did we make specific architectural decisions? | 0 | 0/0 |
 
 Note: The engineering layers represent independent, decoupled disciplines. Core practices like clean code reside in `02-engineering-principles/`, platform configurations in `07-platform-engineering/`, security rules in `08-security-engineering/`, testing setups in `09-testing-quality/`, and logging operations in `10-production-operations/`. `00-ai-foundations/` and `05-ai-engineering/` act as workload-specific layers for products requiring AI features.
 

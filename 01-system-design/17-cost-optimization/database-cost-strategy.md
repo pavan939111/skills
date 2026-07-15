@@ -20,5 +20,5 @@
 - Database scaling actions fail because resizing VM nodes requires database downtime during peak hours.
 
 ### 5. Where to Go Next
-- For database query tuning, query index sizing, and storage footprint reductions, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/operations-and-governance/01-cost-optimization-finops-guideline.md).
+- For database query tuning, query index sizing, and storage footprint reductions, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md).
 - For database vertical scaling limits, see [Vertical Database Scaling](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/vertical-scaling-strategy-implementation.md).

@@ -6,7 +6,7 @@ Head-to-head comparisons of the classic engineering forks — the most reusable 
 
 | # | Topic | File | Status |
 |---|-------|------|--------|
-| 01 | SQL vs NoSQL | `sql-vs-nosql-strategy.md` | done |
+| 01 | SQL vs NoSQL | `sql-vs-nosql-tradeoffs.md` | done |
 | 02 | Monolith vs Microservices | `monolith-vs-microservices-strategy.md` | done |
 | 03 | Sync vs Async | `sync-vs-async-strategy.md` | done |
 | 04 | REST vs GraphQL | `rest-vs-graphql-strategy.md` | done |

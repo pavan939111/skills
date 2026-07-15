@@ -63,7 +63,7 @@ A Decision Brief file must never contain setup instructions, code, or a "best pr
 | `14-scalability-strategy/` | Horizontal vs vertical, stateless requirement | `../production_principles/performance-and-scale/02-scalability.md` |
 | `15-reliability-strategy/` | Which resilience patterns this product needs | `../production_principles/performance-and-scale/03-resilience-patterns.md` |
 | `16-deployment-strategy/` | Deployment model (blue-green, canary, rolling) | `../production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md`, `03-devops-configuration.md` |
-| `17-cost-optimization/` | Cost ceiling and where cost risk lives | `../production_principles/operations-and-governance/01-cost-optimization-finops-guideline.md` |
+| `17-cost-optimization/` | Cost ceiling and where cost risk lives | `../production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md` |
 | `19-design-patterns/` | Which architecture pattern fits this scenario | `../database-design/13-design-patterns/` (data-layer angle), `../backend-development/` pattern folder (code-layer angle, once built) |
 | `21-readiness-audit/` | Architecture-level go/no-go | `../database-design/12-production-checklists/` (data-layer detail) |
 
@@ -154,7 +154,7 @@ Backend Implementation → Database Implementation → Deployment
 | [`18-tradeoff-analysis/`](./18-tradeoff-analysis/index.md) | SQL vs NoSQL, Monolith vs Microservices, Sync vs Async, REST vs GraphQL, Kafka vs RabbitMQ, Redis vs Memcached, Polling vs WebSocket, gRPC vs REST | A | 9/9 |
 | [`19-design-patterns/`](./19-design-patterns/index.md) | CQRS, Event Sourcing, Saga, Outbox, BFF, Strangler Fig, API Gateway, Sidecar, Aggregator, Choreography vs Orchestration | B | 10/10 |
 | [`20-system-design-templates/`](./20-system-design-templates/index.md) | E-Commerce, Social Media, Chat, Payment, Video Streaming, Ride-Sharing, Food Delivery, AI SaaS, CRM, Healthcare | A | 10/10 |
-| [`21-readiness-audit/`](.21-readiness-audit/index.md) | Architecture/Scalability/Security/Database/Backend/Deployment/Monitoring Review, Production Checklist | A | 8/8 |
+| [`21-readiness-audit/`](./01-readiness-audit/index.md) | Architecture/Scalability/Security/Database/Backend/Deployment/Monitoring Review, Production Checklist | A | 8/8 |
  
  ---
  

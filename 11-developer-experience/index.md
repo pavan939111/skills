@@ -1,10 +1,10 @@
-# 11 â€” Developer Experience (DevEx)
+# 11 — Developer Experience
 
-Developer setup guidelines, workspace initializations, and template configurations.
+Developer workspace bootstrap setups and project templates.
 
 ## Topics
 
 | # | Topic | File | Status |
 |---|-------|------|--------|
-| 01 | Folder Initialization | older-initialization.md | done |
-| 02 | Project Template | project-template-bootstrap.md | done |
+| 01 | Folder Initialization | `01-folder-initialization/folder-initialization-bootstrap.md` | done |
+| 02 | Project Template | `02-project-template/project-template-bootstrap.md` | done |

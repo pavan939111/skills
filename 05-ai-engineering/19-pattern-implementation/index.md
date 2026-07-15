@@ -9,7 +9,7 @@ One of the most valuable folders — reusable architectural solutions for common
 | 01 | RAG | `rag-implementation.md` | done |
 | 02 | Agentic RAG | `agentic-rag-implementation.md` | done |
 | 03 | Planner-Executor | `planner-executor-implementation.md` | done |
-| 04 | Reflection | `reflection-implementation.md` | done |
+| 04 | Reflection | `reflection-pattern-implementation.md` | done |
 | 05 | ReAct | `react-implementation.md` | done |
 | 06 | Code Agent | `code-agent-implementation.md` | done |
 | 07 | Research Agent | `research-agent-implementation.md` | done |

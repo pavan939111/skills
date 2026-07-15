@@ -1,6 +1,6 @@
 # 17 — LLMOps
 
-Standard 12-section template (see `../README.md`). Distinct from `../../backend-development/20-devops-readiness/` — this covers versioning/deploying/rolling back *models and prompts*, not application code.
+Standard 12-section template (see `../README.md`). Distinct from `../../backend-development/01-devops-readiness/` — this covers versioning/deploying/rolling back *models and prompts*, not application code.
 
 ## Topics
 

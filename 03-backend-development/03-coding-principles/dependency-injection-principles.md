@@ -31,4 +31,4 @@ checkout_service = CheckoutService(payment_gateway)
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [SOLID Principles](../../production_principles/core-engineering-principles/01-solid-principles.md) (Dependency Inversion)
+- [SOLID Principles](../../production_principles/02-core-engineering-principles/01-solid-principles.md) (Dependency Inversion)
