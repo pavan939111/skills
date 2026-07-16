@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "knowledge-base": {
+      "command": "node",
+      "args": [
+        "c:/Users/mahip/OneDrive/Desktop/skills/tools/mcp-server/dist/src/index.js"
+      ]
+    }
+  }
+}
