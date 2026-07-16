@@ -32,7 +32,7 @@ Implementation
 | [`03-backend-development/`](./03-backend-development/README.md) | How should application APIs and services be implemented? | 114 | 114/114 |
 | [`04-database-design/`](./04-database-design/README.md) | How should data be modeled, stored, and scaled? | 119 | 119/119 |
 | [`05-ai-engineering/`](./05-ai-engineering/README.md) | How should AI features/products be built, evaluated, and operated? | 205 | 205/205 |
-| [`06-frontend-development/`](./06-frontend-development/README.md) | How do we build modern web interfaces and rendering flows? | 0 | 0/0 |
+| `06-frontend-development/` | How do we build modern web interfaces and rendering flows? | 0 | 0/0 |
 | [`07-platform-engineering/`](./07-platform-engineering/index.md) | How do we containerize, provision infrastructure, and deploy? | 8 | 8/8 |
 | [`08-security-engineering/`](./08-security-engineering/index.md) | How do we secure systems, handle authentication, and authorization? | 23 | 23/23 |
 | [`09-testing-quality/`](./09-testing-quality/index.md) | How do we write tests and run quality controls? | 8 | 8/8 |
