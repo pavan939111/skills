@@ -25,6 +25,18 @@ function loadEmbeddingsBinary(): Float32Array {
   return cachedFloatArray;
 }
 
+interface InterimResult {
+  path: string;
+  domain: string;
+  title: string;
+  snippet: string;
+  score: number;
+  bm25Rank?: number;
+  semanticRank?: number;
+  promoted?: boolean;
+  promotedReason?: string;
+}
+
 export async function hybridSearch(
   chunks: Chunk[],
   query: string,
@@ -191,7 +203,10 @@ export async function hybridSearch(
     ...semanticRankMap.keys()
   ]);
   
-  const fileGroups: Record<string, { bestChunk: Chunk; maxScore: number }> = {};
+  const fileGroups: Record<
+    string,
+    { bestChunk: Chunk; maxScore: number; bm25Rank?: number; semanticRank?: number }
+  > = {};
   
   // RRF Constant k = 60
   const RRF_K = 60;
@@ -209,7 +224,9 @@ export async function hybridSearch(
     if (!fileGroups[pathKey] || rrfScore > fileGroups[pathKey].maxScore) {
       fileGroups[pathKey] = {
         bestChunk: chunk,
-        maxScore: rrfScore
+        maxScore: rrfScore,
+        bm25Rank,
+        semanticRank
       };
     }
   }
@@ -217,7 +234,7 @@ export async function hybridSearch(
   // ----------------------------------------------------
   // PART 4: Grouping results back to file level
   // ----------------------------------------------------
-  const searchResults: SearchResult[] = Object.keys(fileGroups).map(pathKey => {
+  const searchResults: InterimResult[] = Object.keys(fileGroups).map(pathKey => {
     const group = fileGroups[pathKey];
     const chunk = group.bestChunk;
     
@@ -236,7 +253,9 @@ export async function hybridSearch(
       domain: chunk.domain,
       title: chunk.fileTitle,
       snippet,
-      score: Number(group.maxScore.toFixed(6))
+      score: Number(group.maxScore.toFixed(6)),
+      bm25Rank: group.bm25Rank,
+      semanticRank: group.semanticRank
     };
   });
   
@@ -256,7 +275,7 @@ export async function hybridSearch(
   // ----------------------------------------------------
   // Verified confidence threshold = 0.37
   const CONFIDENCE_THRESHOLD = 0.37;
-  const candidatesMap = new Map<string, SearchResult>();
+  const candidatesMap = new Map<string, InterimResult>();
   
   // Check top 10 semantic chunks to find high-confidence candidates not present in RRF top list
   for (let k = 0; k < Math.min(10, topSemanticChunks.length); k++) {
@@ -287,6 +306,7 @@ export async function hybridSearch(
           title: item.chunk.fileTitle,
           snippet,
           score: Number(compatibleRRFScore.toFixed(6)), // Store compatible RRF score
+          semanticRank,
           promoted: true,
           promotedReason: "high-confidence semantic match"
         });
@@ -305,17 +325,29 @@ export async function hybridSearch(
     if (finalResults.length < cleanLimit) {
       finalResults.push(candidate);
     } else {
-      // Find the lowest-scoring unpromoted result
+      // Find the lowest-scoring unpromoted result that is not protected (not top-5 BM25 match)
       let lowestUnpromotedIdx = -1;
       for (let j = finalResults.length - 1; j >= 0; j--) {
-        if (!finalResults[j].promoted) {
-          lowestUnpromotedIdx = j;
-          break;
+        const res = finalResults[j];
+        
+        // Skip if already promoted
+        if (res.promoted) {
+          continue;
         }
+        
+        // Skip if it is a protected slot (top-5 BM25 match)
+        if (res.bm25Rank !== undefined && res.bm25Rank <= 5) {
+          continue;
+        }
+        
+        lowestUnpromotedIdx = j;
+        break;
       }
+      
       if (lowestUnpromotedIdx !== -1) {
         finalResults[lowestUnpromotedIdx] = candidate;
       } else {
+        // No unprotected slot available to evict
         break;
       }
     }
@@ -324,5 +356,14 @@ export async function hybridSearch(
   // Sort the final results descending by score
   finalResults.sort((a, b) => b.score - a.score);
   
-  return finalResults;
+  // Strip helper fields and return public SearchResult interface shape
+  return finalResults.map(res => ({
+    path: res.path,
+    domain: res.domain,
+    title: res.title,
+    snippet: res.snippet,
+    score: res.score,
+    promoted: res.promoted,
+    promotedReason: res.promotedReason
+  }));
 }
