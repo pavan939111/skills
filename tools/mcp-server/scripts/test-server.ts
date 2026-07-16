@@ -95,7 +95,7 @@ async function runTest() {
     
     console.log(`  - Hybrid Result (${hybridDuration.toFixed(2)}ms):`);
     if (hybridResults.length > 0) {
-      for (let i = 0; i < Math.min(3, hybridResults.length); i++) {
+      for (let i = 0; i < Math.min(5, hybridResults.length); i++) {
         const res = hybridResults[i];
         console.log(`    Rank ${i+1}: "${res.title}"`);
         console.log(`      Path:  ${res.path}`);
