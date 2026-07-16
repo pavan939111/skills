@@ -15,7 +15,7 @@ function run() {
   const docs = buildIndex(repoRoot);
   const duration = Date.now() - startTime;
   
-  console.log(`Crawl completed! Found ${docs.length} topics.`);
+  console.log(`Crawl completed! Found ${docs.length} chunks.`);
   
   fs.writeFileSync(indexOutputFile, JSON.stringify(docs, null, 2), 'utf-8');
   console.log(`Successfully wrote index file to: ${indexOutputFile} (${duration}ms)`);

@@ -1,3 +1,13 @@
+export interface Chunk {
+  path: string;         // relative to repo root (e.g. "03-backend-development/04-architecture-wiring/clean-architecture-implementation.md")
+  domain: string;       // top-level folder name (e.g. "03-backend-development")
+  subfolder: string;    // immediate parent folder name (e.g. "04-architecture-wiring")
+  sectionTitle: string; // current section ## or ### title, or "Introduction" if before any header
+  fileTitle: string;    // first "#" heading
+  fullText: string;     // complete, untruncated text of that section, stripped of markdown
+  tags: string[];       // inherited parent file tags
+}
+
 export interface TopicDoc {
   path: string;       // relative to repo root (e.g. "03-backend-development/04-architecture-wiring/clean-architecture-implementation.md")
   domain: string;     // top-level folder name (e.g. "03-backend-development")

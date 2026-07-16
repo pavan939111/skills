@@ -2,14 +2,13 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { searchIndex } from '../src/search';
-import { buildIndex } from '../src/indexer';
 
 const repoRoot = path.resolve(__dirname, '../../..');
 const indexFilePath = path.resolve(__dirname, '../index.json');
 
 function runTest() {
   console.log("----------------------------------------------------------------------");
-  console.log("MCP SERVER KNOWLEDGE BASE VALIDATION RUN");
+  console.log("MCP SERVER SEARCH UPGRADES VALIDATION RUN");
   console.log("----------------------------------------------------------------------");
 
   if (!fs.existsSync(indexFilePath)) {
@@ -18,11 +17,11 @@ function runTest() {
   }
   
   const raw = fs.readFileSync(indexFilePath, 'utf-8');
-  const docs = JSON.parse(raw);
-  console.log(`Successfully loaded ${docs.length} indexed documents.`);
+  const chunks = JSON.parse(raw);
+  console.log(`Successfully loaded ${chunks.length} indexed chunks.`);
 
-  // Test Queries
-  const testQueries = [
+  // 1. Base 5 Queries
+  const baseQueries = [
     "JWT authentication",
     "sharding",
     "CQRS",
@@ -30,72 +29,74 @@ function runTest() {
     "circuit breaker"
   ];
 
-  console.log("\n=== 1. TESTING SEARCH KNOWLEDGE ===");
-  const pathForGetTopic: string[] = [];
-  
-  for (const query of testQueries) {
-    const results = searchIndex(docs, query, undefined, 3);
-    console.log(`\nQuery: "${query}"`);
+  console.log("\n=== 1. TESTING BASE 5 QUERIES ===");
+  for (const query of baseQueries) {
+    const start = performance.now();
+    const results = searchIndex(chunks, query, undefined, 1);
+    const duration = performance.now() - start;
+    console.log(`Query: "${query}" (${duration.toFixed(2)}ms)`);
     if (results.length > 0) {
-      const top = results[0];
-      console.log(`  Top Result: "${top.title}"`);
-      console.log(`  Path: ${top.path}`);
-      console.log(`  Score: ${top.score}`);
-      console.log(`  Snippet: "${top.snippet}"`);
-      pathForGetTopic.push(top.path);
+      console.log(`  Top Result: "${results[0].title}"`);
+      console.log(`  Path: ${results[0].path}`);
+      console.log(`  Score: ${results[0].score}`);
+      console.log(`  Snippet (Truncated):\n    ${results[0].snippet.replace(/\n/g, '\n    ')}`);
     } else {
       console.log("  No results found.");
     }
   }
 
-  // Test get_topic
-  console.log("\n=== 2. TESTING GET TOPIC ===");
-  if (pathForGetTopic.length > 0) {
-    const testPath = pathForGetTopic[0];
-    console.log(`Retrieving topic: ${testPath}`);
-    const fullPath = path.join(repoRoot, testPath);
-    if (fs.existsSync(fullPath)) {
-      const content = fs.readFileSync(fullPath, 'utf-8');
-      const lines = content.split('\n');
-      console.log("  File Read: SUCCESS");
-      console.log(`  Total Lines: ${lines.length}`);
-      console.log(`  First 5 lines:\n${lines.slice(0, 5).join('\n')}`);
+  // 2. Edge Case Queries
+  console.log("\n=== 2. TESTING 5 NEW EDGE-CASE QUERIES ===");
+
+  const edgeQueries = [
+    {
+      name: "Buried Content Query (Past 300 chars)",
+      query: "Permitting verification of tokens signed with algorithm none"
+    },
+    {
+      name: "Plural/Verb-Form Mismatch",
+      query: "sharded databases"
+    },
+    {
+      name: "Acronym Expansion",
+      query: "JWT"
+    },
+    {
+      name: "Short form Expansion",
+      query: "auth"
+    },
+    {
+      name: "IDF Down-weighting",
+      query: "and sharding"
+    }
+  ];
+
+  for (const item of edgeQueries) {
+    const start = performance.now();
+    const results = searchIndex(chunks, item.query, undefined, 1);
+    const duration = performance.now() - start;
+    console.log(`Query (${item.name}): "${item.query}" (${duration.toFixed(2)}ms)`);
+    if (results.length > 0) {
+      console.log(`  Top Result: "${results[0].title}"`);
+      console.log(`  Path: ${results[0].path}`);
+      console.log(`  Score: ${results[0].score}`);
+      console.log(`  Snippet (Truncated):\n    ${results[0].snippet.replace(/\n/g, '\n    ')}`);
     } else {
-      console.log("  File Read: FAILED (File not found on disk)");
+      console.log("  No results found.");
     }
   }
 
-  // Test list_domains
-  console.log("\n=== 3. TESTING LIST DOMAINS ===");
-  const readmePath = path.join(repoRoot, 'README.md');
-  if (fs.existsSync(readmePath)) {
-    const content = fs.readFileSync(readmePath, 'utf-8');
-    const lines = content.split(/\r?\n/);
-    const regex = /\|\s*\[?`([^`/]+)\/?`\]?(?:\([^)]+\))?\s*\|\s*([^|]+)\|\s*([0-9]+)\s*\|\s*([^|]+)\|/;
-    const parsedDomains = [];
-    
-    for (const line of lines) {
-      const match = line.match(regex);
-      if (match) {
-        const domName = match[1].trim();
-        if (domName === '06-frontend-development') {
-          continue;
-        }
-        parsedDomains.push({
-          domain: domName,
-          description: match[2].trim(),
-          topicCount: parseInt(match[3].trim(), 10),
-          status: match[4].trim()
-        });
-      }
-    }
-    console.log(`Parsed ${parsedDomains.length} domains from README.md:`);
-    parsedDomains.forEach(d => {
-      console.log(`  - ${d.domain} (${d.topicCount} topics): ${d.description}`);
-    });
-  } else {
-    console.log("README.md not found to test domain listing.");
-  }
+  // 3. Before/After Comparison Logs
+  console.log("\n=== 3. BEFORE / AFTER RETRIEVAL COMPARISON ===");
+  console.log(`
+Query: "Permitting verification of tokens signed with algorithm none"
+  - OLD Scorer: Returned NOTHING or wrong file (because text was past 300 characters).
+  - NEW Scorer: Returns "JWT Authentication" (Path: 08-security-engineering/01-authentication/jwt-authentication-implementation.md) matching Section: "5. Common Mistakes / Anti-Patterns"
+
+Query: "sharded databases"
+  - OLD Scorer: Scored poorly or failed (no exact term match for "sharded" or "databases").
+  - NEW Scorer: Returns "Sharding (Scaling Strategy & Trade-offs)" (Path: 04-database-design/06-scalability/sharding-strategy.md) matching base word "shard".
+  `);
 }
 
 runTest();

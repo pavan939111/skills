@@ -1,8 +1,8 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { TopicDoc } from './types';
+import { Chunk } from './types';
 
-// Helper to strip markdown syntax
+// Helper to strip markdown formatting elements completely
 export function stripMarkdown(md: string): string {
   let text = md;
   // Remove frontmatter if present
@@ -22,21 +22,21 @@ export function stripMarkdown(md: string): string {
     .replace(/\[([^\]]+)\]\([^)]+\)/g, '$1')
     // Remove inline code backticks: `code` -> code
     .replace(/`([^`]+)`/g, '$1')
-    // Remove bold and italic markers: **bold**, *italic*, __bold__, _italic_
+    // Remove bold and italic markers
     .replace(/\*\*([^*]+)\*\*/g, '$1')
     .replace(/\*([^*]+)\*/g, '$1')
     .replace(/__([^_]+)__/g, '$1')
     .replace(/_([^_]+)_/g, '$1')
     // Remove header markers
     .replace(/^#+\s+/gm, '')
-    // Collapse whitespace and newlines
+    // Collapse multiple spaces and newlines into single spaces
     .replace(/\s+/g, ' ')
     .trim();
     
-  return text.substring(0, 300);
+  return text;
 }
 
-// Simple YAML frontmatter tag parser
+// Parse YAML tags from frontmatter block
 function parseFrontmatterTags(content: string): string[] {
   const tags: string[] = [];
   if (!content.startsWith('---')) {
@@ -50,18 +50,15 @@ function parseFrontmatterTags(content: string): string[] {
   
   const frontmatter = content.substring(3, endIdx);
   const lines = frontmatter.split(/\r?\n/);
-  
   let inTagsList = false;
   
   for (const line of lines) {
     const trimmed = line.trim();
     if (!trimmed) continue;
     
-    // Check if we hit the tags: key
     if (trimmed.startsWith('tags:')) {
       const inlineValue = trimmed.substring(5).trim();
       if (inlineValue) {
-        // Handle tags: [tag1, tag2] or tags: tag1, tag2
         const cleanVal = inlineValue.replace(/[\[\]]/g, '');
         const parts = cleanVal.split(',').map(p => p.trim()).filter(Boolean);
         tags.push(...parts);
@@ -71,13 +68,11 @@ function parseFrontmatterTags(content: string): string[] {
       continue;
     }
     
-    // If we are parsing a multi-line tags list (indented bullets starting with -)
     if (inTagsList) {
       if (trimmed.startsWith('-')) {
         const tag = trimmed.substring(1).trim().replace(/['"]/g, '');
         if (tag) tags.push(tag);
       } else if (trimmed.includes(':')) {
-        // Hit another YAML key, stop list parsing
         inTagsList = false;
       }
     }
@@ -86,13 +81,10 @@ function parseFrontmatterTags(content: string): string[] {
   return tags;
 }
 
-export function buildIndex(repoRoot: string): TopicDoc[] {
-  const docs: TopicDoc[] = [];
-  
-  // Excluded top-level domains
+export function buildIndex(repoRoot: string): Chunk[] {
+  const chunks: Chunk[] = [];
   const excludedDomains = new Set(['tools', 'node_modules', '06-frontend-development']);
   
-  // Read top-level directories
   const items = fs.readdirSync(repoRoot);
   
   for (const item of items) {
@@ -103,7 +95,6 @@ export function buildIndex(repoRoot: string): TopicDoc[] {
       continue;
     }
     
-    // Only index folders starting with digits matching the 00-13 pattern (excluding frontend)
     const isDomainDir = /^(?:0[0-9]|1[0-3])-[a-zA-Z0-9-]/.test(item);
     if (!isDomainDir || excludedDomains.has(item)) {
       continue;
@@ -124,38 +115,25 @@ export function buildIndex(repoRoot: string): TopicDoc[] {
       if (stat.isDirectory()) {
         crawlDir(baseRoot, entryRelPath, domain);
       } else if (stat.isFile() && entry.endsWith('.md')) {
-        // Index this markdown file
         try {
           const content = fs.readFileSync(entryFullPath, 'utf-8');
           const lines = content.split(/\r?\n/);
           
-          // 1. Parse Title
-          let title = '';
+          // 1. Resolve File Title
+          let fileTitle = '';
           for (const line of lines) {
             const trimmed = line.trim();
             if (trimmed.startsWith('# ')) {
-              title = trimmed.substring(2).trim();
+              fileTitle = trimmed.substring(2).trim();
               break;
             }
           }
-          if (!title) {
-            title = path.basename(entry, '.md').replace(/-/g, ' ');
+          if (!fileTitle) {
+            fileTitle = path.basename(entry, '.md').replace(/-/g, ' ');
           }
           
-          // 2. Parse Headers
-          const headers: string[] = [];
-          for (const line of lines) {
-            const trimmed = line.trim();
-            if (trimmed.startsWith('## ') || trimmed.startsWith('### ')) {
-              const cleanHeader = trimmed.replace(/^#+\s+/, '').trim();
-              headers.push(cleanHeader);
-            }
-          }
-          
-          // 3. Derive Tags
+          // 2. Derive File tags
           const tagsSet = new Set<string>();
-          
-          // Derive tags from filepath segments (exclude number prefixes)
           const segments = entryRelPath.split('/');
           for (const segment of segments) {
             const wordSegment = segment.replace(/^[0-9]+-/, '').replace(/\.md$/, '');
@@ -163,35 +141,68 @@ export function buildIndex(repoRoot: string): TopicDoc[] {
             words.forEach(w => tagsSet.add(w));
           }
           
-          // Parse YAML tags if any
           const yamlTags = parseFrontmatterTags(content);
           yamlTags.forEach(t => tagsSet.add(t.toLowerCase()));
+          const inheritedTags = Array.from(tagsSet);
           
-          // 4. Parse Snippet
-          // Extract body text after the title
-          let bodyStartIndex = 0;
-          for (let i = 0; i < lines.length; i++) {
-            if (lines[i].trim().startsWith('# ')) {
-              bodyStartIndex = i + 1;
-              break;
-            }
-          }
-          const bodyMd = lines.slice(bodyStartIndex).join('\n');
-          const snippet = stripMarkdown(bodyMd);
-          
-          // Determine subfolder
           const parts = entryRelPath.split('/');
           const subfolder = parts.length > 2 ? parts[parts.length - 2] : domain;
           
-          docs.push({
-            path: entryRelPath,
-            domain,
-            subfolder,
-            title,
-            headers,
-            tags: Array.from(tagsSet),
-            snippet
-          });
+          // 3. Chunking by ## and ### headers
+          let currentSectionTitle = 'Introduction';
+          let currentSectionLines: string[] = [];
+          
+          const saveCurrentChunk = () => {
+            const textRaw = currentSectionLines.join('\n').trim();
+            const fullText = stripMarkdown(textRaw);
+            
+            // Only index if the chunk has meaningful content
+            if (fullText.length > 5 || currentSectionTitle !== 'Introduction') {
+              chunks.push({
+                path: entryRelPath,
+                domain,
+                subfolder,
+                sectionTitle: currentSectionTitle,
+                fileTitle,
+                fullText,
+                tags: inheritedTags
+              });
+            }
+          };
+          
+          // Process file lines (excluding frontmatter from line counts to be clean)
+          let startLine = 0;
+          if (content.startsWith('---')) {
+            const endIdx = content.indexOf('---', 3);
+            if (endIdx !== -1) {
+              const frontmatterLinesCount = content.substring(0, endIdx + 3).split(/\r?\n/).length;
+              startLine = frontmatterLinesCount;
+            }
+          }
+          
+          for (let i = startLine; i < lines.length; i++) {
+            const line = lines[i];
+            const trimmed = line.trim();
+            
+            if (trimmed.startsWith('## ') || trimmed.startsWith('### ')) {
+              // Save previous section chunk
+              saveCurrentChunk();
+              
+              // Start new section chunk
+              currentSectionTitle = trimmed.replace(/^#+\s+/, '').trim();
+              currentSectionLines = [];
+            } else {
+              // Skip the top level title '# ' line as it is recorded in fileTitle
+              if (trimmed.startsWith('# ')) {
+                continue;
+              }
+              currentSectionLines.push(line);
+            }
+          }
+          
+          // Save the final remaining chunk
+          saveCurrentChunk();
+          
         } catch (err) {
           console.error(`Error reading ${entryRelPath}:`, err);
         }
@@ -199,5 +210,5 @@ export function buildIndex(repoRoot: string): TopicDoc[] {
     }
   }
   
-  return docs;
+  return chunks;
 }

@@ -7,7 +7,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 import { searchIndex } from './search';
-import { TopicDoc } from './types';
+import { Chunk } from './types';
 
 const server = new Server(
   {
@@ -26,7 +26,7 @@ const repoRoot = path.resolve(__dirname, '../../..');
 const indexFilePath = path.resolve(__dirname, '../index.json');
 
 // Helper to load index
-function loadIndex(): TopicDoc[] {
+function loadIndex(): Chunk[] {
   if (!fs.existsSync(indexFilePath)) {
     return [];
   }
