@@ -20,8 +20,11 @@ function loadEmbeddingsBinary(): Float32Array {
   }
   
   const buffer = fs.readFileSync(embeddingsBinPath);
-  const totalFloats = buffer.length / 4;
-  cachedFloatArray = new Float32Array(buffer.buffer, buffer.byteOffset, totalFloats);
+  const arrayBuffer = buffer.buffer.slice(
+    buffer.byteOffset,
+    buffer.byteOffset + buffer.length
+  );
+  cachedFloatArray = new Float32Array(arrayBuffer);
   return cachedFloatArray;
 }
 

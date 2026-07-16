@@ -365,7 +365,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
           
           // Resolve target relative to docDir
           const resolved = path.join(docDir, target);
-          const relativeToRepo = path.relative('', resolved).replace(/\\/g, '/');
+          const relativeToRepo = path.normalize(resolved).replace(/\\/g, '/');
           
           related.push({
             path: relativeToRepo,

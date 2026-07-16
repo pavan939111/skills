@@ -9,7 +9,11 @@ const embeddingsBinPath = path.resolve(__dirname, '../embeddings.bin');
 async function test() {
   const chunks: Chunk[] = JSON.parse(fs.readFileSync(indexFilePath, 'utf-8'));
   const buffer = fs.readFileSync(embeddingsBinPath);
-  const floatArray = new Float32Array(buffer.buffer, buffer.byteOffset, buffer.length / 4);
+  const arrayBuffer = buffer.buffer.slice(
+    buffer.byteOffset,
+    buffer.byteOffset + buffer.length
+  );
+  const floatArray = new Float32Array(arrayBuffer);
   const dim = 384;
 
   const queries = [

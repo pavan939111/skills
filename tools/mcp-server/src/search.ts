@@ -99,12 +99,14 @@ export function searchIndex(
         let termScore = idf[stemmedTerm] * (tfNumerator / tfDenominator);
         
         let multiplier = 1.0;
-        if (isInFileTitle) {
-          multiplier = 3.0;
-        } else if (isInSectionTitle) {
-          multiplier = 2.0;
-        } else if (isInTags) {
-          multiplier = 2.0;
+        if (idf[stemmedTerm] >= 2.0) {
+          if (isInFileTitle) {
+            multiplier = 3.0;
+          } else if (isInSectionTitle) {
+            multiplier = 2.0;
+          } else if (isInTags) {
+            multiplier = 2.0;
+          }
         }
         
         totalChunkScore += termScore * multiplier;

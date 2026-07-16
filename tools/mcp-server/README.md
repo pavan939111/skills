@@ -1,132 +1,219 @@
 # Engineering Knowledge Base MCP Server
 
-A Model Context Protocol (MCP) server that exposes the repo's engineering knowledge base to any compatible AI-powered IDE or tool (e.g., Antigravity, Cursor, Windsurf, Claude Desktop, Claude Code, etc.) over a secure `stdio` transport. 
+A local Model Context Protocol (MCP) server that gives any MCP-compatible AI tool — Claude Desktop, Claude Code, Cursor, Windsurf, Antigravity, VS Code extensions, etc. — direct, searchable access to this repository's engineering knowledge base (system design, backend, database, AI engineering, and every other domain folder). No copy-pasting files into chat, no manually pointing the agent at paths — the agent just asks a question in plain language and gets back the right file.
 
-It provides advanced **hybrid search** (combining BM25 keyword relevance and semantic vector embeddings via Reciprocal Rank Fusion) and structural navigation of the repository's markdown topic files without requiring clients to know absolute paths.
-
----
-
-## Technical Stack
-
-- **Server Core:** Node.js + TypeScript using `@modelcontextprotocol/sdk`
-- **Search Engine:** Local BM25 Scorer + Synonym Expansions + Custom suffix stemmer
-- **Semantic Model:** `Xenova/all-MiniLM-L6-v2` (384-dimension embeddings, running 100% locally offline on CPU via `@xenova/transformers`)
-- **Incremental Cache:** SHA-256 hash-based persistent cache map (`embedding-cache.json`) to allow sub-2-second incremental re-embeddings.
-- **Dependency Isolation:** 0 external network API dependencies at query runtime. The embedding model is cached locally after a one-time build setup download.
+Everything runs 100% locally. No API keys, no accounts, no data leaves your machine.
 
 ---
 
-## Setup and Build
+## What this actually does
 
-Follow these steps in your shell to build and initialize the server:
+Once connected, your AI tool can call five tools against the knowledge base instead of guessing file paths or scanning the whole repo:
 
-1. **Install Dependencies**:
+| Tool | What it's for |
+|---|---|
+| `search_knowledge` | The main one. Ask a question or describe a topic in plain language, get back the most relevant files — even if the file doesn't share exact keywords with your question. |
+| `get_topic` | Once search points at a file, read its full content. |
+| `list_domains` | See the top-level knowledge domains available (system design, database design, AI engineering, etc.). |
+| `get_domain_overview` | See everything inside one domain before drilling in. |
+| `get_related` | Follow the cross-reference links a file points to (e.g. a Decision Brief pointing to its implementation deep-dive). |
+
+You never need to know a file's path in advance — that's the whole point.
+
+---
+
+## Prerequisites
+
+- **Node.js 18 or newer** (check with `node -v`)
+- **npm** (ships with Node.js)
+- An internet connection **once**, for the initial setup — after that, everything runs fully offline.
+
+---
+
+## Quickstart
+
+From the repository root:
+
+```bash
+cd tools/mcp-server
+npm install
+npm run build-index
+npm run build-embeddings
+npm run build
+```
+
+That's it — the server is ready. Skip to [Connect it to your AI tool](#connect-it-to-your-ai-tool) below.
+
+(The `build-embeddings` step downloads a small local AI model — `all-MiniLM-L6-v2`, ~90MB — the very first time it runs, then caches it on your machine. Every run after that is fully offline. This is the only network access this tool ever needs.)
+
+---
+
+## Setup, step by step
+
+1. **Install dependencies**
    ```bash
    cd tools/mcp-server
    npm install
    ```
 
-2. **Generate the Search Index**:
-   Parses all repository content files, constructs section-level chunks, and calculates content hashes.
+2. **Build the search index** — walks every markdown file in the knowledge base, splits each into section-level chunks, and prepares them for search.
    ```bash
    npm run build-index
    ```
 
-3. **Precompute Semantic Embeddings**:
-   Calculates 384-dimensional vector embeddings for all chunks. 
-   *(Note: The very first run will download the local MiniLM ONNX model from Hugging Face and save it to your local system cache; subsequent rebuilds will read directly from the persistent `embedding-cache.json` map instantly.)*
+3. **Precompute semantic embeddings** — generates AI-searchable vectors for every chunk, so the server can match your question by *meaning*, not just keywords.
    ```bash
    npm run build-embeddings
    ```
+   First run downloads the local embedding model (one-time, ~90MB). After that, every rebuild only re-embeds content that actually changed — usually finishes in a second or two.
 
-4. **Compile TypeScript**:
+4. **Compile the server**
    ```bash
    npm run build
    ```
 
+You now have a working server at `tools/mcp-server/dist/src/index.js`. It doesn't need to stay running in a terminal — your AI tool starts and stops it automatically each time you use it, via the config below.
+
 ---
 
-## IDE Configuration Guides
+## Connect it to your AI tool
 
-Register this MCP server inside your preferred AI-powered IDE using the configurations below:
+Every tool below needs the same two things: the command `node`, and the absolute path to `dist/src/index.js`. Replace `<ABSOLUTE_PATH_TO_REPO>` with the full path to where you cloned this repository on your machine.
 
-### 1. Antigravity IDE (Gemini Coding Assistant)
-Register the server in your user settings configuration at `%USERPROFILE%\.gemini\config\mcp.json` (or inside the workspace customization root `.agents/mcp.json`):
-
-```json
-{
-  "mcpServers": {
-    "knowledge-base": {
-      "command": "node",
-      "args": [
-        "<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"
-      ]
-    }
-  }
-}
-```
-
-### 2. Cursor
-1. Open Cursor and navigate to **Settings** > **Features** > **MCP**.
-2. Click **+ Add New MCP Server**.
-3. Configure the server:
-   - **Name:** `Knowledge Base`
-   - **Type:** `command` (or `stdio`)
-   - **Command:** `node "<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"`
-4. Click **Save**.
-
-### 3. Windsurf (Codeium Cascade)
-Add the server definition to your global Windsurf MCP configuration file located at `%USERPROFILE%\.codeium\windsurf\mcp_config.json` (Windows) or `~/.codeium/windsurf/mcp_config.json` (macOS/Linux):
+### Claude Desktop
+Edit `claude_desktop_config.json`:
+- Windows: `%APPDATA%\Claude\claude_desktop_config.json`
+- macOS: `~/Library/Application Support/Claude/claude_desktop_config.json`
 
 ```json
 {
   "mcpServers": {
     "knowledge-base": {
       "command": "node",
-      "args": [
-        "<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"
-      ]
+      "args": ["<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"]
     }
   }
 }
 ```
+Restart Claude Desktop after saving.
 
-### 4. VS Code (via Codex or other MCP Extensions)
-If using the Codex extension or generic MCP clients in VS Code, add the server to your settings profile:
-
-- **Command/Executable:** `node`
-- **Arguments:** `["<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"]`
-
-### 5. Claude Desktop
-Add the configuration block to your `claude_desktop_config.json` file located at `%APPDATA%\Claude\claude_desktop_config.json` (Windows) or `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS):
-
-```json
-{
-  "mcpServers": {
-    "knowledge-base": {
-      "command": "node",
-      "args": [
-        "<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"
-      ]
-    }
-  }
-}
-```
-
-### 6. Claude Code (Terminal CLI)
-Add the server directly using the Claude CLI:
+### Claude Code (terminal)
 ```bash
 claude mcp add knowledge-base node "<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"
 ```
 
+### Cursor
+Settings → Features → MCP → **+ Add New MCP Server**:
+- **Name:** `Knowledge Base`
+- **Type:** `command` (or `stdio`)
+- **Command:** `node "<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"`
+
+### Windsurf
+Edit `mcp_config.json`:
+- Windows: `%USERPROFILE%\.codeium\windsurf\mcp_config.json`
+- macOS/Linux: `~/.codeium/windsurf/mcp_config.json`
+
+```json
+{
+  "mcpServers": {
+    "knowledge-base": {
+      "command": "node",
+      "args": ["<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"]
+    }
+  }
+}
+```
+
+### Antigravity (Gemini)
+Edit `%USERPROFILE%\.gemini\config\mcp.json` (or the workspace-level `.agents/mcp.json`):
+
+```json
+{
+  "mcpServers": {
+    "knowledge-base": {
+      "command": "node",
+      "args": ["<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"]
+    }
+  }
+}
+```
+
+### VS Code (Codex or other MCP extensions)
+- **Command/Executable:** `node`
+- **Arguments:** `["<ABSOLUTE_PATH_TO_REPO>/tools/mcp-server/dist/src/index.js"]`
+
+After connecting, ask your AI tool something like *"what MCP tools do you have?"* to confirm it sees `search_knowledge`, `get_topic`, `list_domains`, `get_domain_overview`, and `get_related`.
+
 ---
 
-## Registered Tools
+## How to actually use it
 
-Once active, the server registers the following tools with the client:
+You don't call these tools yourself — you just talk to your AI assistant normally, and it decides when to use them. For example:
 
-*   `search_knowledge` (`query`, `domain`, `limit`): Searches the database using hybrid RRF scoring. Matches concepts even when no literal keywords overlap.
-*   `get_topic` (`path`): Returns the full raw markdown content of a file.
-*   `list_domains` (): Lists the active engineering layers/domains (excluding `06-frontend-development`).
-*   `get_domain_overview` (`domain`): Returns a domain's main index and subfolder map.
-*   `get_related` (`path`): Lists linked references in a file to follow cross-reference trails.
+> **You:** "How should I handle authentication with JWTs in the backend?"
+> **What happens:** the agent calls `search_knowledge("JWT authentication")`, gets back `08-security-engineering/01-authentication/jwt-authentication-implementation.md` as the top result, then calls `get_topic` on it to read the full guide before answering you.
+
+> **You:** "How do I stop one slow service from taking down everything else?"
+> **What happens:** even though this doesn't mention "circuit breaker" at all, semantic search still surfaces `circuit-breaker-strategy.md` because it understands the *concept*, not just the words.
+
+> **You:** "What's in the database design section?"
+> **What happens:** the agent calls `list_domains` or `get_domain_overview("04-database-design")` to see the full topic map before answering.
+
+If you want to prompt this more directly, just say things like *"search the knowledge base for X"* or *"check the engineering knowledge base before answering."*
+
+---
+
+## Keeping it up to date
+
+Whenever you edit, add, or remove a file in the knowledge base, refresh the index:
+
+```bash
+cd tools/mcp-server
+npm run build-index
+npm run build-embeddings
+```
+
+You don't need to rebuild the whole thing from scratch — the embedding step only recomputes vectors for content that actually changed (tracked by content hash), so a small edit typically finishes in a second or two, not minutes. No need to re-run `npm run build` unless you changed the server's own TypeScript code (`src/*.ts`), not the knowledge base content itself.
+
+---
+
+## How search works, in brief
+
+Every query blends two signals, so it finds the right file whether you use exact terminology or just describe the problem:
+
+- **Keyword matching (BM25):** finds files that share your exact words — best for acronyms, framework names, and precise terms ("CQRS", "JWT", "sharding").
+- **Semantic matching (local AI embeddings):** finds files that match your *meaning*, even with zero shared words — best for describing a problem in your own terms.
+- **Combined ranking (Reciprocal Rank Fusion):** merges both signals, with a safeguard that never lets a semantic guess bump out a result your exact words already nailed.
+
+Everything — the search index, the embedding model, the ranking — runs on your machine. Nothing is sent anywhere.
+
+---
+
+## Troubleshooting
+
+**"embeddings.bin not found" error when searching** — you skipped the build steps. Run `npm run build-index` then `npm run build-embeddings` before `npm run build`.
+
+**Search results look stale after editing a file** — you edited content but didn't rebuild the index. Run the two commands in [Keeping it up to date](#keeping-it-up-to-date).
+
+**First search feels slow, then fast after that** — normal. The first query of a session loads the local embedding model into memory; every query after that is fast.
+
+**Your AI tool doesn't see the server at all** — double-check the absolute path in your config actually points to `dist/src/index.js` (not `src/index.ts`), and that you ran `npm run build` at least once so `dist/` exists. Restart your AI tool after changing its MCP config.
+
+---
+
+## Technical reference
+
+- **Server:** Node.js + TypeScript, `@modelcontextprotocol/sdk`, stdio transport
+- **Keyword search:** custom BM25 implementation with stemming and a domain-specific synonym table (JWT ↔ JSON Web Token, auth ↔ authentication, etc.)
+- **Semantic search:** `Xenova/all-MiniLM-L6-v2`, 384-dimension embeddings, mean-pooled and L2-normalized, running fully offline via `@xenova/transformers`
+- **Chunking:** section-level (one chunk per `##`/`###` heading), not whole-file — sharper ranking precision and tighter embeddings than indexing entire files at once
+- **Incremental updates:** SHA-256 content-hash cache (`embedding-cache.json`) — only changed sections get re-embedded on rebuild
+- **Zero runtime network calls** — the only network access this tool ever makes is the one-time model download on first setup
+
+### Registered tools
+
+- `search_knowledge(query, domain?, limit?)` — hybrid search across the whole knowledge base, or scoped to one domain
+- `get_topic(path)` — full content of a specific file
+- `list_domains()` — every top-level domain with its description and topic count
+- `get_domain_overview(domain)` — a domain's full subfolder/topic map
+- `get_related(path)` — cross-reference links a file points to

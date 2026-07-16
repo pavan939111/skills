@@ -2,6 +2,8 @@
 
 A production-grade engineering knowledge base for AI coding agents (Claude, Cursor, Codex, Antigravity, Gemini CLI, etc.) to read before and during building any application — so decisions flow from real requirements and sound architecture, not arbitrary technology preference.
 
+> **Connecting an AI tool?** Skip straight to the [MCP Server setup guide](./tools/mcp-server/README.md#quickstart) to give your assistant searchable access to this whole knowledge base.
+
 ## Workflow
 
 Each stage answers a different question and drives the ones after it. Earlier stages constrain later ones — a database or framework choice should be a *consequence* of system design, not an independent preference.
@@ -67,6 +69,13 @@ Note: The engineering layers represent independent, decoupled disciplines. Core 
 This repository includes a built-in **Model Context Protocol (MCP) Server** under [`tools/mcp-server/`](./tools/mcp-server/README.md) that exposes this entire engineering knowledge base (all 14 active domains) to any compatible AI-powered IDE or tool (e.g., Antigravity, Cursor, Windsurf, Claude Desktop, Claude Code, etc.) over `stdio` transport.
 
 By connecting this MCP server to your editor, your AI assistant can dynamically discover, search, read, and cross-reference all 7,558 topic chunks using semantic and keyword-based hybrid search.
+
+Jump straight to a section of the full guide:
+- [Quickstart](./tools/mcp-server/README.md#quickstart)
+- [Connect it to your AI tool](./tools/mcp-server/README.md#connect-it-to-your-ai-tool) — Claude Desktop, Claude Code, Cursor, Windsurf, Antigravity, VS Code
+- [How to actually use it](./tools/mcp-server/README.md#how-to-actually-use-it)
+- [Keeping it up to date](./tools/mcp-server/README.md#keeping-it-up-to-date)
+- [Troubleshooting](./tools/mcp-server/README.md#troubleshooting)
 
 ### Quick Setup
 
