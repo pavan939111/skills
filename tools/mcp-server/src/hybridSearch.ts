@@ -6,7 +6,10 @@ import { stem } from './stemmer';
 import { expandQueryTerms } from './synonyms';
 
 const scriptDir = __dirname;
-const embeddingsBinPath = path.resolve(scriptDir, '../embeddings.bin');
+let embeddingsBinPath = path.resolve(scriptDir, '../embeddings.bin');
+if (!fs.existsSync(embeddingsBinPath) && fs.existsSync(path.resolve(scriptDir, '../../embeddings.bin'))) {
+  embeddingsBinPath = path.resolve(scriptDir, '../../embeddings.bin');
+}
 
 // Helper to load raw binary Float32Array embeddings from file
 let cachedFloatArray: Float32Array | null = null;

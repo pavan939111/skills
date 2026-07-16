@@ -22,9 +22,16 @@ const server = new Server(
   }
 );
 
-// Resolve repository root relative to the running file
-const repoRoot = path.resolve(__dirname, '../../..');
-const indexFilePath = path.resolve(__dirname, '../index.json');
+// Resolve repository root relative to the running file (checking for extra dist/ directory)
+let repoRoot = path.resolve(__dirname, '../../..');
+if (!fs.existsSync(path.join(repoRoot, 'README.md')) && fs.existsSync(path.resolve(repoRoot, '..', 'README.md'))) {
+  repoRoot = path.resolve(repoRoot, '..');
+}
+
+let indexFilePath = path.resolve(__dirname, '../index.json');
+if (!fs.existsSync(indexFilePath) && fs.existsSync(path.resolve(__dirname, '../../index.json'))) {
+  indexFilePath = path.resolve(__dirname, '../../index.json');
+}
 
 // Helper to load index
 function loadIndex(): Chunk[] {
