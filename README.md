@@ -59,3 +59,31 @@ Note: The engineering layers represent independent, decoupled disciplines. Core 
 3. Apply `03-backend-development/` and `04-database-design/` to implement that strategy.
 4. If the product has AI features, also draw on `00-ai-foundations/` (as background) and `05-ai-engineering/` (for the AI-specific build) alongside steps 2–3, not instead of them — an AI product still needs a backend and a database.
 5. Apply `02-engineering-principles/` and other operational layers (`07-`, `08-`, `09-`, `10-`, `11-`, `12-`) continuously.
+
+---
+
+## Model Context Protocol (MCP) Server
+
+This repository includes a built-in **Model Context Protocol (MCP) Server** under [`tools/mcp-server/`](./tools/mcp-server/README.md) that exposes this entire engineering knowledge base (all 14 active domains) to any compatible AI-powered IDE or tool (e.g., Antigravity, Cursor, Windsurf, Claude Desktop, Claude Code, etc.) over `stdio` transport.
+
+By connecting this MCP server to your editor, your AI assistant can dynamically discover, search, read, and cross-reference all 7,558 topic chunks using semantic and keyword-based hybrid search.
+
+### Quick Setup
+
+1. **Install dependencies**:
+   ```bash
+   cd tools/mcp-server
+   npm install
+   ```
+2. **Build search index & precompute semantic embeddings**:
+   ```bash
+   npm run build-index
+   npm run build-embeddings
+   ```
+3. **Compile TypeScript**:
+   ```bash
+   npm run build
+   ```
+
+For detailed configuration guides for registering the server in Antigravity, Cursor, Windsurf, or Claude Desktop, see the [`tools/mcp-server/README.md` Setup Instructions](./tools/mcp-server/README.md).
+
