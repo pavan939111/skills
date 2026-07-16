@@ -82,8 +82,9 @@ async function run() {
       vectorArray = cache[hash];
       reusedCount++;
     } else {
-      // Recompute embedding
-      const cleanText = truncateToContextWindow(chunk.fullText);
+      // Recompute embedding using file title and section title context
+      const fullTextInput = `${chunk.fileTitle} - ${chunk.sectionTitle}: ${chunk.fullText}`;
+      const cleanText = truncateToContextWindow(fullTextInput);
       try {
         const vectorFloat = await embedText(cleanText);
         vectorArray = Array.from(vectorFloat);

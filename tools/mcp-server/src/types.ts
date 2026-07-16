@@ -31,4 +31,6 @@ export interface SearchResult {
   title: string;
   snippet: string;
   score: number;
+  promoted?: boolean;
+  promotedReason?: string;
 }

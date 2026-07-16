@@ -109,12 +109,14 @@ export async function hybridSearch(
         let termScore = idf[stemmedTerm] * (tfNumerator / tfDenominator);
         
         let multiplier = 1.0;
-        if (isInFileTitle) {
-          multiplier = 3.0;
-        } else if (isInSectionTitle) {
-          multiplier = 2.0;
-        } else if (isInTags) {
-          multiplier = 2.0;
+        if (idf[stemmedTerm] >= 2.0) {
+          if (isInFileTitle) {
+            multiplier = 3.0;
+          } else if (isInSectionTitle) {
+            multiplier = 2.0;
+          } else if (isInTags) {
+            multiplier = 2.0;
+          }
         }
         
         totalChunkScore += termScore * multiplier;
@@ -246,5 +248,81 @@ export async function hybridSearch(
     return a.title.localeCompare(b.title);
   });
   
-  return searchResults.slice(0, cleanLimit);
+  // Slice to cleanLimit
+  const finalResults = searchResults.slice(0, cleanLimit);
+  
+  // ----------------------------------------------------
+  // PART 5: High-Confidence Semantic Match Promotion
+  // ----------------------------------------------------
+  // Verified confidence threshold = 0.37
+  const CONFIDENCE_THRESHOLD = 0.37;
+  const candidatesMap = new Map<string, SearchResult>();
+  
+  // Check top 10 semantic chunks to find high-confidence candidates not present in RRF top list
+  for (let k = 0; k < Math.min(10, topSemanticChunks.length); k++) {
+    const item = topSemanticChunks[k];
+    if (item.score > CONFIDENCE_THRESHOLD) {
+      const parentPath = item.chunk.path;
+      const isAlreadyInRRF = finalResults.some(r => r.path === parentPath);
+      
+      if (!isAlreadyInRRF && !candidatesMap.has(parentPath)) {
+        const cleanSectionTitle = item.chunk.sectionTitle === 'Introduction' 
+          ? 'Introduction' 
+          : `Section: ${item.chunk.sectionTitle}`;
+          
+        const truncatedText = item.chunk.fullText.length > 500 
+          ? item.chunk.fullText.substring(0, 500) + '...' 
+          : item.chunk.fullText;
+          
+        const snippet = `[Matched ${cleanSectionTitle}]\n${truncatedText}`;
+        
+        // Calculate a mathematically compatible RRF score based on semantic rank alone:
+        // rrfScore = 1 / (60 + semanticRank)
+        const semanticRank = k + 1;
+        const compatibleRRFScore = 1.0 / (RRF_K + semanticRank);
+        
+        candidatesMap.set(parentPath, {
+          path: item.chunk.path,
+          domain: item.chunk.domain,
+          title: item.chunk.fileTitle,
+          snippet,
+          score: Number(compatibleRRFScore.toFixed(6)), // Store compatible RRF score
+          promoted: true,
+          promotedReason: "high-confidence semantic match"
+        });
+      }
+    }
+  }
+  
+  const candidates = Array.from(candidatesMap.values());
+  // Sort candidates descending by RRF-compatible score
+  candidates.sort((a, b) => b.score - a.score);
+  
+  // Promote at most 3 candidates to avoid completely replacing the entire RRF list
+  const maxPromotions = Math.min(3, candidates.length);
+  for (let i = 0; i < maxPromotions; i++) {
+    const candidate = candidates[i];
+    if (finalResults.length < cleanLimit) {
+      finalResults.push(candidate);
+    } else {
+      // Find the lowest-scoring unpromoted result
+      let lowestUnpromotedIdx = -1;
+      for (let j = finalResults.length - 1; j >= 0; j--) {
+        if (!finalResults[j].promoted) {
+          lowestUnpromotedIdx = j;
+          break;
+        }
+      }
+      if (lowestUnpromotedIdx !== -1) {
+        finalResults[lowestUnpromotedIdx] = candidate;
+      } else {
+        break;
+      }
+    }
+  }
+  
+  // Sort the final results descending by score
+  finalResults.sort((a, b) => b.score - a.score);
+  
+  return finalResults;
 }

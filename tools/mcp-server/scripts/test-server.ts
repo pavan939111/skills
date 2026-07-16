@@ -39,14 +39,17 @@ async function runTest() {
     if (results.length > 0) {
       console.log(`  Top Result: "${results[0].title}"`);
       console.log(`  Path: ${results[0].path}`);
-      console.log(`  RRF Score: ${results[0].score}`);
+      console.log(`  Score: ${results[0].score}`);
+      if (results[0].promoted) {
+        console.log(`  Promoted: ${results[0].promoted} (Reason: ${results[0].promotedReason})`);
+      }
     } else {
       console.log("  No results found.");
     }
   }
 
   // 2. Semantic Queries comparing BM25 vs Hybrid
-  console.log("\n=== 2. TESTING 3 CRITICAL SEMANTIC CONSTRUCTS (BM25 vs HYBRID) ===");
+  console.log("\n=== 2. TESTING 4 CRITICAL SEMANTIC CONSTRUCTS (BM25 vs HYBRID) ===");
 
   const semanticQueries = [
     {
@@ -60,6 +63,10 @@ async function runTest() {
     {
       label: "Tenant Isolation / Data Leakage",
       query: "making sure a user only sees their own company's data in a shared database"
+    },
+    {
+      label: "Negative Test Case (Nonsense)",
+      query: "how do I bake a sourdough loaf"
     }
   ];
 
@@ -74,7 +81,7 @@ async function runTest() {
     
     // Run Hybrid
     const hybridStart = performance.now();
-    const hybridResults = await hybridSearch(chunks, item.query, undefined, 1);
+    const hybridResults = await hybridSearch(chunks, item.query, undefined, 5);
     const hybridDuration = performance.now() - hybridStart;
     
     console.log(`  - BM25-only Result (${bm25Duration.toFixed(2)}ms):`);
@@ -88,10 +95,15 @@ async function runTest() {
     
     console.log(`  - Hybrid Result (${hybridDuration.toFixed(2)}ms):`);
     if (hybridResults.length > 0) {
-      console.log(`    Title: "${hybridResults[0].title}"`);
-      console.log(`    Path:  ${hybridResults[0].path}`);
-      console.log(`    Score: ${hybridResults[0].score}`);
-      console.log(`    Snippet (Truncated):\n      ${hybridResults[0].snippet.replace(/\n/g, '\n      ')}`);
+      for (let i = 0; i < Math.min(3, hybridResults.length); i++) {
+        const res = hybridResults[i];
+        console.log(`    Rank ${i+1}: "${res.title}"`);
+        console.log(`      Path:  ${res.path}`);
+        console.log(`      Score: ${res.score}`);
+        if (res.promoted) {
+          console.log(`      Promoted: ${res.promoted} (Reason: ${res.promotedReason})`);
+        }
+      }
     } else {
       console.log("    Title: [NO RESULTS FOUND]");
     }
