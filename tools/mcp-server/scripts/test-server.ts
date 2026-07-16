@@ -2,13 +2,14 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { searchIndex } from '../src/search';
+import { hybridSearch } from '../src/hybridSearch';
 
 const repoRoot = path.resolve(__dirname, '../../..');
 const indexFilePath = path.resolve(__dirname, '../index.json');
 
-function runTest() {
+async function runTest() {
   console.log("----------------------------------------------------------------------");
-  console.log("MCP SERVER SEARCH UPGRADES VALIDATION RUN");
+  console.log("MCP SERVER HYBRID SEARCH VALIDATION RUN");
   console.log("----------------------------------------------------------------------");
 
   if (!fs.existsSync(indexFilePath)) {
@@ -32,71 +33,69 @@ function runTest() {
   console.log("\n=== 1. TESTING BASE 5 QUERIES ===");
   for (const query of baseQueries) {
     const start = performance.now();
-    const results = searchIndex(chunks, query, undefined, 1);
+    const results = await hybridSearch(chunks, query, undefined, 1);
     const duration = performance.now() - start;
     console.log(`Query: "${query}" (${duration.toFixed(2)}ms)`);
     if (results.length > 0) {
       console.log(`  Top Result: "${results[0].title}"`);
       console.log(`  Path: ${results[0].path}`);
-      console.log(`  Score: ${results[0].score}`);
-      console.log(`  Snippet (Truncated):\n    ${results[0].snippet.replace(/\n/g, '\n    ')}`);
+      console.log(`  RRF Score: ${results[0].score}`);
     } else {
       console.log("  No results found.");
     }
   }
 
-  // 2. Edge Case Queries
-  console.log("\n=== 2. TESTING 5 NEW EDGE-CASE QUERIES ===");
+  // 2. Semantic Queries comparing BM25 vs Hybrid
+  console.log("\n=== 2. TESTING 3 CRITICAL SEMANTIC CONSTRUCTS (BM25 vs HYBRID) ===");
 
-  const edgeQueries = [
+  const semanticQueries = [
     {
-      name: "Buried Content Query (Past 300 chars)",
-      query: "Permitting verification of tokens signed with algorithm none"
+      label: "Cascading Failures / Isolation",
+      query: "how do I stop one slow downstream service from taking down the whole system"
     },
     {
-      name: "Plural/Verb-Form Mismatch",
-      query: "sharded databases"
+      label: "Distributed Inconsistencies / Transactions",
+      query: "keeping two databases from getting out of sync when one write triggers another system"
     },
     {
-      name: "Acronym Expansion",
-      query: "JWT"
-    },
-    {
-      name: "Short form Expansion",
-      query: "auth"
-    },
-    {
-      name: "IDF Down-weighting",
-      query: "and sharding"
+      label: "Tenant Isolation / Data Leakage",
+      query: "making sure a user only sees their own company's data in a shared database"
     }
   ];
 
-  for (const item of edgeQueries) {
-    const start = performance.now();
-    const results = searchIndex(chunks, item.query, undefined, 1);
-    const duration = performance.now() - start;
-    console.log(`Query (${item.name}): "${item.query}" (${duration.toFixed(2)}ms)`);
-    if (results.length > 0) {
-      console.log(`  Top Result: "${results[0].title}"`);
-      console.log(`  Path: ${results[0].path}`);
-      console.log(`  Score: ${results[0].score}`);
-      console.log(`  Snippet (Truncated):\n    ${results[0].snippet.replace(/\n/g, '\n    ')}`);
+  for (const item of semanticQueries) {
+    console.log(`\nScenario: ${item.label}`);
+    console.log(`Query: "${item.query}"`);
+    
+    // Run BM25-only
+    const bm25Start = performance.now();
+    const bm25Results = searchIndex(chunks, item.query, undefined, 1);
+    const bm25Duration = performance.now() - bm25Start;
+    
+    // Run Hybrid
+    const hybridStart = performance.now();
+    const hybridResults = await hybridSearch(chunks, item.query, undefined, 1);
+    const hybridDuration = performance.now() - hybridStart;
+    
+    console.log(`  - BM25-only Result (${bm25Duration.toFixed(2)}ms):`);
+    if (bm25Results.length > 0) {
+      console.log(`    Title: "${bm25Results[0].title}"`);
+      console.log(`    Path:  ${bm25Results[0].path}`);
+      console.log(`    Score: ${bm25Results[0].score}`);
     } else {
-      console.log("  No results found.");
+      console.log("    Title: [NO RESULTS FOUND]");
+    }
+    
+    console.log(`  - Hybrid Result (${hybridDuration.toFixed(2)}ms):`);
+    if (hybridResults.length > 0) {
+      console.log(`    Title: "${hybridResults[0].title}"`);
+      console.log(`    Path:  ${hybridResults[0].path}`);
+      console.log(`    Score: ${hybridResults[0].score}`);
+      console.log(`    Snippet (Truncated):\n      ${hybridResults[0].snippet.replace(/\n/g, '\n      ')}`);
+    } else {
+      console.log("    Title: [NO RESULTS FOUND]");
     }
   }
-
-  // 3. Before/After Comparison Logs
-  console.log("\n=== 3. BEFORE / AFTER RETRIEVAL COMPARISON ===");
-  console.log(`
-Query: "Permitting verification of tokens signed with algorithm none"
-  - OLD Scorer: Returned NOTHING or wrong file (because text was past 300 characters).
-  - NEW Scorer: Returns "JWT Authentication" (Path: 08-security-engineering/01-authentication/jwt-authentication-implementation.md) matching Section: "5. Common Mistakes / Anti-Patterns"
-
-Query: "sharded databases"
-  - OLD Scorer: Scored poorly or failed (no exact term match for "sharded" or "databases").
-  - NEW Scorer: Returns "Sharding (Scaling Strategy & Trade-offs)" (Path: 04-database-design/06-scalability/sharding-strategy.md) matching base word "shard".
-  `);
 }
 
 runTest();

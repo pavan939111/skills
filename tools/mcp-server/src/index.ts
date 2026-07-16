@@ -7,6 +7,7 @@ import {
 import * as fs from 'fs';
 import * as path from 'path';
 import { searchIndex } from './search';
+import { hybridSearch } from './hybridSearch';
 import { Chunk } from './types';
 
 const server = new Server(
@@ -131,7 +132,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         const limit = args?.limit ? Number(args.limit) : 5;
         
         const docs = loadIndex();
-        const results = searchIndex(docs, query, domain, limit);
+        const results = await hybridSearch(docs, query, domain, limit);
         
         return {
           content: [

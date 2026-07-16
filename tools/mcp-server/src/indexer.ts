@@ -1,5 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
+import * as crypto from 'crypto';
 import { Chunk } from './types';
 import { stem } from './stemmer';
 
@@ -165,6 +166,10 @@ export function buildIndex(repoRoot: string): Chunk[] {
             
             // Only index if the chunk has meaningful content
             if (fullText.length > 5 || currentSectionTitle !== 'Introduction') {
+              // Compute SHA-256 content hash
+              const rawHashInput = fileTitle + currentSectionTitle + fullText;
+              const contentHash = crypto.createHash('sha256').update(rawHashInput).digest('hex');
+              
               chunks.push({
                 path: entryRelPath,
                 domain,
@@ -173,6 +178,7 @@ export function buildIndex(repoRoot: string): Chunk[] {
                 fileTitle,
                 fullText,
                 tags: inheritedTags,
+                contentHash,
                 // Precompute stems at index generation time
                 fileTitleStems: tokenizeAndStem(fileTitle),
                 sectionTitleStems: tokenizeAndStem(currentSectionTitle),

@@ -7,10 +7,12 @@
   "scripts": {
     "build": "tsc",
     "build-index": "ts-node scripts/build-index.ts",
+    "build-embeddings": "ts-node scripts/build-embeddings.ts",
     "start": "node dist/index.js"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^0.6.0"
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "@xenova/transformers": "^2.17.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
