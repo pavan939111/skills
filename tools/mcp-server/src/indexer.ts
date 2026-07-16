@@ -1,6 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { Chunk } from './types';
+import { stem } from './stemmer';
 
 // Helper to strip markdown formatting elements completely
 export function stripMarkdown(md: string): string {
@@ -34,6 +35,12 @@ export function stripMarkdown(md: string): string {
     .trim();
     
   return text;
+}
+
+// Helper to tokenize and stem text
+function tokenizeAndStem(text: string): string[] {
+  const tokens = text.toLowerCase().split(/[^a-z0-9-+]+/i).filter(Boolean);
+  return tokens.map(t => stem(t));
 }
 
 // Parse YAML tags from frontmatter block
@@ -165,7 +172,12 @@ export function buildIndex(repoRoot: string): Chunk[] {
                 sectionTitle: currentSectionTitle,
                 fileTitle,
                 fullText,
-                tags: inheritedTags
+                tags: inheritedTags,
+                // Precompute stems at index generation time
+                fileTitleStems: tokenizeAndStem(fileTitle),
+                sectionTitleStems: tokenizeAndStem(currentSectionTitle),
+                fullTextStems: tokenizeAndStem(fullText),
+                tagStems: inheritedTags.map(t => stem(t))
               });
             }
           };

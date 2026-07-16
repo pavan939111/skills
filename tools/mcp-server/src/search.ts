@@ -2,9 +2,8 @@ import { Chunk, SearchResult } from './types';
 import { stem } from './stemmer';
 import { expandQueryTerms } from './synonyms';
 
-// Helper to tokenize and stem text
-function tokenizeAndStem(text: string): string[] {
-  // Split on non-alphanumeric characters, keeping simple dashes/pluses if part of tags
+// Tokenize and stem query helper
+function tokenizeAndStemQuery(text: string): string[] {
   const tokens = text.toLowerCase().split(/[^a-z0-9-+]+/i).filter(Boolean);
   return tokens.map(t => stem(t));
 }
@@ -29,22 +28,20 @@ export function searchIndex(
   // Stem query terms
   const queryStems = expandedTerms.map(t => stem(t));
   
-  // 2. Pre-calculate Doc Lengths and averages
+  // 2. Pre-calculate lengths from precomputed stemmed arrays
   const N = chunks.length;
   if (N === 0) return [];
   
-  // We represent each document (chunk) by its tokenized body
-  const docTokensList = chunks.map(chunk => tokenizeAndStem(chunk.fullText));
-  const docLengths = docTokensList.map(tokens => tokens.length);
+  const docLengths = chunks.map(chunk => chunk.fullTextStems.length);
   const totalLength = docLengths.reduce((sum, len) => sum + len, 0);
   const avgdl = totalLength / N || 1.0;
   
-  // Compute Document Frequency (DF) across the chunks for each query stem
+  // Compute Document Frequency (DF) across the chunks using precomputed stems
   const df: Record<string, number> = {};
   queryStems.forEach(stemmedTerm => {
     let count = 0;
-    for (const tokens of docTokensList) {
-      if (tokens.includes(stemmedTerm)) {
+    for (const chunk of chunks) {
+      if (chunk.fullTextStems.includes(stemmedTerm)) {
         count++;
       }
     }
@@ -55,7 +52,6 @@ export function searchIndex(
   const idf: Record<string, number> = {};
   queryStems.forEach(stemmedTerm => {
     const docFreq = df[stemmedTerm] || 0;
-    // Standard BM25 IDF formulation with smoothing
     idf[stemmedTerm] = Math.log((N - docFreq + 0.5) / (docFreq + 0.5) + 1.0);
   });
   
@@ -63,7 +59,7 @@ export function searchIndex(
   const k1 = 1.5;
   const b = 0.75;
   
-  // 3. Score each chunk
+  // 3. Score each chunk using precomputed stems
   const chunkScores: { chunk: Chunk; score: number }[] = [];
   
   for (let i = 0; i < N; i++) {
@@ -79,35 +75,29 @@ export function searchIndex(
     }
     
     let totalChunkScore = 0;
-    const bodyTokens = docTokensList[i];
+    const bodyTokens = chunk.fullTextStems;
     const dl = docLengths[i];
     
-    // Check match for each query stem
     for (const stemmedTerm of queryStems) {
-      // Calculate Term Frequency (tf) in chunk body
       let tf = bodyTokens.filter(t => t === stemmedTerm).length;
       
-      // Check title / section / tag matches (stemmed)
-      const fileTitleStems = tokenizeAndStem(chunk.fileTitle);
-      const sectionTitleStems = tokenizeAndStem(chunk.sectionTitle);
-      const tagStems = chunk.tags.map(t => stem(t));
+      const fileTitleStems = chunk.fileTitleStems;
+      const sectionTitleStems = chunk.sectionTitleStems;
+      const tagStems = chunk.tagStems;
       
       const isInFileTitle = fileTitleStems.includes(stemmedTerm);
       const isInSectionTitle = sectionTitleStems.includes(stemmedTerm);
       const isInTags = tagStems.includes(stemmedTerm);
       
-      // If term matches titles or tags but not body, set base tf to 1.0
       if (tf === 0 && (isInFileTitle || isInSectionTitle || isInTags)) {
         tf = 1.0;
       }
       
       if (tf > 0) {
-        // BM25 core term score
         const tfNumerator = tf * (k1 + 1);
         const tfDenominator = tf + k1 * (1.0 - b + b * (dl / avgdl));
         let termScore = idf[stemmedTerm] * (tfNumerator / tfDenominator);
         
-        // Multiplier boost (applied on top of BM25 score)
         let multiplier = 1.0;
         if (isInFileTitle) {
           multiplier = 3.0;
@@ -147,7 +137,6 @@ export function searchIndex(
     const group = fileGroups[pathKey];
     const chunk = group.bestChunk;
     
-    // Snippet displays matched section title + up to 500 characters of section text
     const cleanSectionTitle = chunk.sectionTitle === 'Introduction' 
       ? 'Introduction' 
       : `Section: ${chunk.sectionTitle}`;
