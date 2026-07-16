@@ -1,6 +1,6 @@
 # 14 — Scalability Strategy
 
-Decides the scaling approach this product needs — horizontal vs vertical, statelessness requirement, load balancing need. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/performance-and-scale/02-scalability.md`.
+Decides the scaling approach this product needs — horizontal vs vertical, statelessness requirement, load balancing need. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `Scalability Implementation`.
 
 ## Topics
 

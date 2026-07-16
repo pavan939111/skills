@@ -1,6 +1,6 @@
 # 12 — Configuration Management
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/foundations/01-configuration-management.md`. These files cover only DI-container config wiring and per-service environment config in a multi-service backend.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `./configuration-management-strategy.md`. These files cover only DI-container config wiring and per-service environment config in a multi-service backend.
 
 ## Topics
 

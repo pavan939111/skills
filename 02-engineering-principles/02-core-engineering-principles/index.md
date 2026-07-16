@@ -1,6 +1,6 @@
 # Core Engineering Principles
 
-General, language/framework-agnostic engineering principles. Not specific to backend or database design — these apply to any code, in any layer, in any language. One principle = one `.md` file, following the same research template as the rest of `production_principles`.
+General, language/framework-agnostic engineering principles. Not specific to backend or database design — these apply to any code, in any layer, in any language. One principle = one `.md` file, following the same research template as the rest of `the knowledge base`.
 
 ## Research template (every file follows this structure)
 

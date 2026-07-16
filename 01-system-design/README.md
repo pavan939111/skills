@@ -1,6 +1,6 @@
 # 01 — System Design
 
-The decision engine of the whole knowledge base. Given a product and its requirements, this folder decides *what architecture and technology strategy* fits — it does not teach implementation. Implementation lives in `../03-backend-development/`, `../04-database-design/`, and `../production_principles/`.
+The decision engine of the whole knowledge base. Given a product and its requirements, this folder decides *what architecture and technology strategy* fits — it does not teach implementation. Implementation lives in `../03-backend-development/`, `../04-database-design/`, and the operational layers (`../07-platform-engineering/` through `../12-governance/`).
 
 **Status legend:** ✅ done · ⏳ pending
 
@@ -15,14 +15,14 @@ Backend Architecture     (../03-backend-development/)
       ↓
 Database Design           (../04-database-design/)
       ↓
-Infrastructure / Production   (../production_principles/)
+Infrastructure / Production   (../07-platform-engineering/ to ../12-governance/)
       ↓
 Implementation
 ```
 
 ## The altitude rule (how overlap with other folders is resolved)
 
-Several topics here have same-named files elsewhere (e.g., "caching," "sharding," "CQRS," "CI/CD"). That's intentional — a senior architect thinks about caching at multiple altitudes: *should we cache here at all, and with what?* (system design) vs. *how do we implement Redis cache-aside correctly?* (production_principles/backend-development) vs. *how does this affect our read replicas?* (database-design). To keep these from becoming duplicated content, every file in this folder follows one of two strict templates, and neither template contains implementation how-to:
+Several topics here have same-named files elsewhere (e.g., "caching," "sharding," "CQRS," "CI/CD"). That's intentional — a senior architect thinks about caching at multiple altitudes: *should we cache here at all, and with what?* (system design) vs. *how do we implement Redis cache-aside correctly?* (03-backend-development/13-performance-optimization/) vs. *how does this affect our read replicas?* (database-design). To keep these from becoming duplicated content, every file in this folder follows one of two strict templates, and neither template contains implementation how-to:
 
 ### Template A — Analysis Template
 Used in `01-requirement-analysis/`, `02-capacity-planning/`, `03-architecture-selection/`, `04-component-design/`, `05-data-flow-design/`, `18-tradeoff-analysis/`, `20-system-design-templates/`, `21-readiness-audit/`. These topics are genuinely unique to system design — nothing else in the knowledge base does requirement analysis or capacity estimation.
@@ -55,15 +55,15 @@ A Decision Brief file must never contain setup instructions, code, or a "best pr
 | `06-api-strategy/` | REST vs GraphQL vs gRPC vs WebSocket/SSE, gateway need | `../03-backend-development/04-api-design/` (once built) |
 | `07-backend-strategy/` | Monolith vs microservices vs serverless, framework class | `../03-backend-development/` (once built) |
 | `08-database-strategy/` | SQL vs NoSQL, single vs polyglot, replication/sharding need | `../04-database-design/01-database-selection/`, `06-scalability/` |
-| `09-caching-strategy/` | Whether to cache, where, which store | `../production_principles/data-and-messaging/01-caching-implementation.md`, `../04-database-design/04-database-best-practices/caching-implementation.md` |
-| `10-storage-strategy/` | Object storage vs file storage vs CDN need | `../production_principles/data-and-messaging/04-file-storage-strategy-implementation.md` |
-| `11-message-queue-strategy/` | Whether async messaging is needed, which broker class | `../production_principles/data-and-messaging/02-background-jobs-messaging.md` |
+| `09-caching-strategy/` | Whether to cache, where, which store | `../04-database-design/04-database-best-practices/caching-implementation.md`, `../04-database-design/04-database-best-practices/caching-implementation.md` |
+| `10-storage-strategy/` | Object storage vs file storage vs CDN need | `../04-database-design/file-storage-strategy.md` |
+| `11-message-queue-strategy/` | Whether async messaging is needed, which broker class | `../03-backend-development/11-background-processing/` |
 | `12-search-strategy/` | Whether a dedicated search engine is needed | `../04-database-design/01-database-selection/search-engine-decision-matrix.md`, `../04-database-design/10-ai-and-modern-databases/` |
-| `13-security-strategy/` | Auth model, threat model, compliance posture | `../04-database-design/07-security/`, `../production_principles/foundations/04-security.md` |
-| `14-scalability-strategy/` | Horizontal vs vertical, stateless requirement | `../production_principles/performance-and-scale/02-scalability.md` |
-| `15-reliability-strategy/` | Which resilience patterns this product needs | `../production_principles/performance-and-scale/03-resilience-patterns.md` |
-| `16-deployment-strategy/` | Deployment model (blue-green, canary, rolling) | `../production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md`, `03-devops-configuration.md` |
-| `17-cost-optimization/` | Cost ceiling and where cost risk lives | `../production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md` |
+| `13-security-strategy/` | Auth model, threat model, compliance posture | `../04-database-design/07-security/`, `../08-security-engineering/security-fundamentals-policy.md` |
+| `14-scalability-strategy/` | Horizontal vs vertical, stateless requirement | `Scalability Implementation` |
+| `15-reliability-strategy/` | Which resilience patterns this product needs | `Resilience Implementation` |
+| `16-deployment-strategy/` | Deployment model (blue-green, canary, rolling) | `../07-platform-engineering/ci-cd-configuration.md`, `../07-platform-engineering/devops-configuration.md` |
+| `17-cost-optimization/` | Cost ceiling and where cost risk lives | `../12-governance/03-operations-and-governance/01-cost-optimization-finops-guideline.md` |
 | `19-design-patterns/` | Which architecture pattern fits this scenario | `../04-database-design/13-design-patterns/` (data-layer angle), `../03-backend-development/` pattern folder (code-layer angle, once built) |
 | `21-readiness-audit/` | Architecture-level go/no-go | `../04-database-design/12-production-checklists/` (data-layer detail) |
 

@@ -1,6 +1,6 @@
 # 15 — AI Observability
 
-Standard 12-section template (see `../README.md`). Distinct from `../../production_principles/foundations/03-observability-management-guide.md` and `../../backend-development18-observability-management/` — those cover generic service metrics/tracing; this covers what's unique to LLM calls (token counts, prompt/response traces, per-request cost).
+Standard 12-section template (see `../README.md`). Distinct from `../../10-production-operations/observability-management-guide.md` and `../../10-production-operations/02-observability-management/` — those cover generic service metrics/tracing; this covers what's unique to LLM calls (token counts, prompt/response traces, per-request cost).
 
 ## Topics
 

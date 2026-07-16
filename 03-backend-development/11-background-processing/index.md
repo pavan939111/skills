@@ -1,6 +1,6 @@
 # 14 — Background Processing
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/data-and-messaging/02-background-jobs-messaging.md`. These files cover only wiring a job queue into the service layer and triggering jobs from request handlers.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `Background Jobs & Messaging`. These files cover only wiring a job queue into the service layer and triggering jobs from request handlers.
 
 ## Topics
 

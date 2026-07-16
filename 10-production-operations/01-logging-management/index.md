@@ -1,6 +1,6 @@
 # 13 — Logging
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/foundations/02-logging-management-guide.md`. These files cover only request/response logging middleware and correlation ID propagation across API calls.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../logging-management-guide.md`. These files cover only request/response logging middleware and correlation ID propagation across API calls.
 
 ## Topics
 

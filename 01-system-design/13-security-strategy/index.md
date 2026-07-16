@@ -1,6 +1,6 @@
 # 13 — Security Strategy
 
-Decides the auth model, threat model, and compliance posture this product needs — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../04-database-design/07-security/`, `../../production_principles/foundations/04-security.md`.
+Decides the auth model, threat model, and compliance posture this product needs — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../04-database-design/07-security/`, `../../08-security-engineering/security-fundamentals-policy.md`.
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # 16 — Performance
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/data-and-messaging/01-caching-implementation.md`, `../../production_principles/performance-and-scale/01-performance-engineering.md`. These files cover only where caching/async/streaming hook into controllers and services.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../04-database-design/04-database-best-practices/caching-implementation.md`, `Performance Engineering`. These files cover only where caching/async/streaming hook into controllers and services.
 
 ## Topics
 

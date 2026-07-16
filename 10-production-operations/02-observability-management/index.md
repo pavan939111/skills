@@ -1,6 +1,6 @@
 # 18 — Observability
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/foundations/03-observability-management-guide.md`. These files cover only instrumenting services with metrics/tracing and implementing health-check endpoints.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../observability-management-guide.md`. These files cover only instrumenting services with metrics/tracing and implementing health-check endpoints.
 
 ## Topics
 

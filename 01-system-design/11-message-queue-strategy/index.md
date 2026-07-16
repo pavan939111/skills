@@ -1,6 +1,6 @@
 # 11 — Message Queue Strategy
 
-Decides whether this product needs async messaging and which broker *class* fits (not a specific product pick beyond comparison). Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/data-and-messaging/02-background-jobs-messaging.md`.
+Decides whether this product needs async messaging and which broker *class* fits (not a specific product pick beyond comparison). Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../03-backend-development/11-background-processing/`.
 
 ## Topics
 

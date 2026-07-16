@@ -1,6 +1,6 @@
 # 17 — Security
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/foundations/04-security.md`. These files cover only applying secure-coding practices at the API boundary (input validation, output encoding in handlers, header/middleware setup).
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../security-fundamentals-policy.md`. These files cover only applying secure-coding practices at the API boundary (input validation, output encoding in handlers, header/middleware setup).
 
 ## Topics
 

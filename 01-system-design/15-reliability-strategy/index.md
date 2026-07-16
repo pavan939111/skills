@@ -1,6 +1,6 @@
 # 15 — Reliability Strategy
 
-Decides which resilience patterns this product actually needs, given its failure tolerance — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/performance-and-scale/03-resilience-patterns.md`.
+Decides which resilience patterns this product actually needs, given its failure tolerance — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `Resilience Implementation`.
 
 ## Topics
 

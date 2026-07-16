@@ -1,6 +1,6 @@
 # 17 — Cost Optimization
 
-Decides where cost risk lives for this product and what ceiling to design against. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md`.
+Decides where cost risk lives for this product and what ceiling to design against. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../12-governance/03-operations-and-governance/01-cost-optimization-finops-guideline.md`.
 
 ## Topics
 

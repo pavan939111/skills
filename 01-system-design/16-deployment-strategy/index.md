@@ -1,6 +1,6 @@
 # 16 — Deployment Strategy
 
-Decides the deployment model this product needs — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md`, `03-devops-configuration.md`.
+Decides the deployment model this product needs — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../07-platform-engineering/ci-cd-configuration.md`, `../../07-platform-engineering/devops-configuration.md`.
 
 ## Topics
 

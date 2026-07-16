@@ -1,6 +1,6 @@
 # 11 — Error Handling
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/reliability-coding-practices/01-error-handling-exception-strategy-implementation.md`. These files cover only the backend-specific mechanics: global exception handler middleware, mapping exceptions to HTTP status codes and response bodies.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `Exception Strategy Implementation`. These files cover only the backend-specific mechanics: global exception handler middleware, mapping exceptions to HTTP status codes and response bodies.
 
 ## Topics
 

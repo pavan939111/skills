@@ -39,7 +39,7 @@ Implementation
 | [`10-production-operations/`](./10-production-operations/index.md) | How do we handle telemetry, observability, and logging? | 15 | 15/15 |
 | [`11-developer-experience/`](./11-developer-experience/index.md) | How do we bootstrap local workspaces and mocks? | 2 | 2/2 |
 | [`12-governance/`](./12-governance/index.md) | How do we audit compliance and engineering rules? | 21 | 21/21 |
-| [`13-architecture-decision-records/`](./13-architecture-decision-records/README.md) | Why did we make specific architectural decisions? | 0 | 0/0 |
+| [`13-architecture-decision-records/`](./13-architecture-decision-records/README.md) | Why did we make specific architectural decisions? | 5 | 5/5 |
 
 Note: The engineering layers represent independent, decoupled disciplines. Core practices like clean code reside in `02-engineering-principles/`, platform configurations in `07-platform-engineering/`, security rules in `08-security-engineering/`, testing setups in `09-testing-quality/`, and logging operations in `10-production-operations/`. `00-ai-foundations/` and `05-ai-engineering/` act as workload-specific layers for products requiring AI features.
 

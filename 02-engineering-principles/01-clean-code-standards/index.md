@@ -1,6 +1,6 @@
 # Clean Code
 
-Practices for writing code that is easy to read, understand, and change (Robert C. Martin's *Clean Code* tradition). General, language/framework-agnostic — not specific to backend or database design. One practice = one `.md` file, following the same research template as the rest of `production_principles`.
+Practices for writing code that is easy to read, understand, and change (Robert C. Martin's *Clean Code* tradition). General, language/framework-agnostic — not specific to backend or database design. One practice = one `.md` file, following the same research template as the rest of `the knowledge base`.
 
 ## Research template (every file follows this structure)
 

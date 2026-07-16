@@ -19,4 +19,4 @@ Standard 12-section template (see `../README.md`).
 
 **8 of 8 topics done.**
 
-> `caching-optimization.md` here means **semantic/prompt-response caching** (cache key = semantic similarity of the prompt, not an exact key match) — a different mechanism from `../../production_principles/data-and-messaging/01-caching-implementation.md` and `../../backend-development16-performance-optimization/caching-implementation.md`, which cover generic application caching.
+> `caching-optimization.md` here means **semantic/prompt-response caching** (cache key = semantic similarity of the prompt, not an exact key match) — a different mechanism from `../../04-database-design/04-database-best-practices/caching-implementation.md` and `../../03-backend-development/13-performance-optimization/caching-implementation.md`, which cover generic application caching.

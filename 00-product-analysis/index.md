@@ -15,7 +15,7 @@ Backend Architecture     (backend-development/)
       ↓
 Database Design           (database-design/)
       ↓
-Infrastructure / Production   (production_principles/)
+Infrastructure / Production   (07-platform-engineering/ to 12-governance/)
       ↓
 Implementation
 ```

@@ -1,6 +1,6 @@
 # 20 — DevOps Readiness
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md`, `03-devops-configuration.md`; deployment model decision: `../../01-system-design/16-deployment-strategy/`. These files cover only the Dockerfile/health-check/graceful-shutdown code for *this specific service*.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../ci-cd-configuration.md`, `../devops-configuration.md`; deployment model decision: `../../01-system-design/16-deployment-strategy/`. These files cover only the Dockerfile/health-check/graceful-shutdown code for *this specific service*.
 
 ## Topics
 

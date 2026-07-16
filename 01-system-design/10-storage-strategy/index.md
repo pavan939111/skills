@@ -1,6 +1,6 @@
 # 10 — Storage Strategy
 
-Decides whether this product needs object/file storage and a CDN, and at what scale. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/data-and-messaging/04-file-storage-strategy-implementation.md`.
+Decides whether this product needs object/file storage and a CDN, and at what scale. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../04-database-design/file-storage-strategy.md`.
 
 ## Topics
 

@@ -1,6 +1,6 @@
 # 19 — Testing
 
-**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../../production_principles/delivery-and-readiness/01-testing-production-grade-verification-guide.md`. These files cover only testing controllers/services/repositories specifically — mocking the database, testing middleware, API contract tests.
+**Template: B — Backend Application Note** (see `../README.md`). Full deep-dive: `../testing-production-grade-verification-guide.md`. These files cover only testing controllers/services/repositories specifically — mocking the database, testing middleware, API contract tests.
 
 ## Topics
 
