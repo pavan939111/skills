@@ -28,7 +28,7 @@ Every topic lives in a named folder — one topic = one `.md` file, each followi
 04-database-design/
 ├── README.md                          (this file)
 │
-├── 01-database-selection/             12 topics — which DB type fits the use case
+├── 01-database-selection/             14 topics — which DB type fits the use case
 ├── 02-data-modeling/                   9 topics — entities, relationships, domain modeling
 ├── 03-schema-design/                  11 topics — keys, constraints, indexes, warehouse schemas
 ├── 04-database-best-practices/        10 topics — naming, transactions, consistency, anti-patterns
@@ -36,14 +36,14 @@ Every topic lives in a named folder — one topic = one `.md` file, each followi
 ├── 06-scalability/                     9 topics — replication, sharding, CAP theorem
 ├── 07-security/                       11 topics — access control, encryption, auditing, compliance
 ├── 08-reliability-and-backup/          8 topics — backups, DR, failover, HA, RTO/RPO
-├── 09-data-governance/                 7 topics — retention, quality, lineage, lifecycle
+├── 09-data-governance/                 8 topics — retention, quality, lineage, lifecycle
 ├── 10-ai-and-modern-databases/         8 topics — vector search, embeddings, RAG storage
 ├── 11-migrations-and-versioning/       6 topics — safe schema evolution
 ├── 12-production-checklists/           7 topics — pre-deployment validation (checklist format)
 └── 13-design-patterns/                 9 topics — multi-tenant, event sourcing, CQRS, outbox, etc.
 ```
 
-**Total: 116 topics.**
+**Total: 119 topics.**
 
 ## Research template (folders 01–11 and 13)
 
@@ -68,7 +68,7 @@ Folder 12 (`production-checklists/`) uses a lighter format — see its own `inde
 
 | Folder | Covers | Topics | Status |
 |---|---|---|---|
-| [`01-database-selection/`](./01-database-selection/index.md) | Relational, Document, Key-Value, Graph, Wide-Column, Time-Series, Search Engine, Vector, Decision Framework, SQL vs NoSQL, Polyglot Persistence, Hybrid Architecture | 12 | 12 ✅ / 12 ⏳ |
+| [`01-database-selection/`](./01-database-selection/index.md) | Relational, Document, Key-Value, Graph, Wide-Column, Time-Series, Search Engine, Vector, Decision Framework, SQL vs NoSQL, Polyglot Persistence, Hybrid Architecture | 14 | 14 ✅ / 14 ⏳ |
 | [`02-data-modeling/`](./02-data-modeling/index.md) | Entity Identification, Relationship Modeling, Cardinality, Normalization, Denormalization, ER Diagrams, Domain Modeling, Aggregate Design, Naming Conventions | 9 | 9 ✅ / 9 ⏳ |
 | [`03-schema-design/`](./03-schema-design/index.md) | Primary/Foreign/Composite/Surrogate Keys, Constraints, Indexes, Star/Snowflake Schema, SCD, Partitioning, Sharding | 11 | 11 ✅ / 11 ⏳ |
 | [`04-database-best-practices/`](./04-database-best-practices/index.md) | Naming Standards, Schema Organization, Transaction Design, Data Consistency, Audit Columns, Soft Delete, Timestamps, Connection Pooling, Caching, Anti-Patterns | 10 | 10 ✅ / 10 ⏳ |
@@ -76,7 +76,7 @@ Folder 12 (`production-checklists/`) uses a lighter format — see its own `inde
 | [`06-scalability/`](./06-scalability/index.md) | Replication, Read Replicas, Horizontal/Vertical Scaling, Partitioning, Sharding, Distributed Databases, CAP Theorem, Eventual Consistency | 9 | 9 ✅ / 9 ⏳ |
 | [`07-security/`](./07-security/index.md) | Authentication, Authorization, Row/Column-Level Security, Encryption at Rest/in Transit, Secrets Management, Auditing, PII Protection, SQL Injection, Compliance | 11 | 11 ✅ / 11 ⏳ |
 | [`08-reliability-and-backup/`](./08-reliability-and-backup/index.md) | Backup Strategies, Restore Testing, Disaster Recovery, Failover, High Availability, RTO/RPO, Monitoring, Health Checks | 8 | 8 ✅ / 8 ⏳ |
-| [`09-data-governance/`](./09-data-governance/index.md) | Data Retention, Archiving, Data Quality, Data Lineage, Metadata, Master Data, Lifecycle Management | 7 | 7 ✅ / 7 ⏳ |
+| [`09-data-governance/`](./09-data-governance/index.md) | Data Retention, Archiving, Data Quality, Data Lineage, Metadata, Master Data, Lifecycle Management | 8 | 8 ✅ / 8 ⏳ |
 | [`10-ai-and-modern-databases/`](./10-ai-and-modern-databases/index.md) | Vector Database Design, Embedding Storage, Hybrid Search, Metadata Filtering, Chunking, Reranking, RAG Storage, Multi-Database Patterns | 8 | 8 ✅ / 8 ⏳ |
 | [`11-migrations-and-versioning/`](./11-migrations-and-versioning/index.md) | Migration Strategy, Zero-Downtime Migrations, Rollback Strategy, Schema Versioning, Data Migration, Compatibility | 6 | 6 ✅ / 6 ⏳ |
 | [`12-production-checklists/`](./12-production-checklists/index.md) | Schema/Performance/Security/Scalability/Backup/Migration Review, Production Readiness | 7 | 7 ✅ / 7 ⏳ |
@@ -86,4 +86,4 @@ Folder 12 (`production-checklists/`) uses a lighter format — see its own `inde
 
 ## Overall progress
 
-**116 of 116 topics done.**
+**119 of 119 topics done.**

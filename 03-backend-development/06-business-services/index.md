@@ -14,3 +14,5 @@ How services should be written — the application's actual behavior, independen
 | 06 | Business Rules | `business-rules-engine-implementation.md` | ⏳ pending |
 | 07 | Workflows | `workflow-orchestration-implementation.md` | ⏳ pending |
 | 08 | Orchestration | `service-orchestration-implementation.md` | ⏳ pending |
+| 09 | Internationalization | `internationalization-implementation.md` | ⏳ pending |
+| 10 | Multi-Tenancy | `multi-tenancy-implementation.md` | ⏳ pending |

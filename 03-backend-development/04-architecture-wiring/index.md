@@ -13,6 +13,8 @@ Implements the architecture style chosen in `../../01-system-design/03-architect
 | 05 | Modular Monolith | `modular-monolith-implementation.md` | ⏳ pending |
 | 06 | Microservice Implementation | `microservice-architecture-implementation.md` | ⏳ pending |
 | 07 | Dependency Management | `dependency-injection-implementation.md` | ⏳ pending |
-| 08 | Architecture Checklist | `architecture-checklist.md` | ⏳ pending |
+| 08 | Interceptor Pattern | `interceptor-pattern-implementation.md` | ⏳ pending |
+| 09 | Middleware Chain | `middleware-chain-implementation.md` | ⏳ pending |
+| 10 | Architecture Checklist | `architecture-checklist.md` | ⏳ pending |
 
 > These files show *how to implement* the style chosen in system design (folder layout, dependency direction, DI wiring) — the *choice* of which style fits the product stays in `../../01-system-design/03-architecture-selection/`.

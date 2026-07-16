@@ -33,3 +33,5 @@ Helps an AI agent determine which database (or combination of databases) is the 
 | 10 | SQL vs NoSQL | `sql-vs-nosql-decision-matrix.md` | done |
 | 11 | Polyglot Persistence | `polyglot-persistence-decision-matrix.md` | done |
 | 12 | Hybrid Database Architecture | `hybrid-database-architecture-decision-matrix.md` | done |
+| 13 | OLTP vs OLAP | `oltp-vs-olap-decision-matrix.md` | done |
+| 14 | Data Warehouse | `data-warehouse-strategy.md` | done |

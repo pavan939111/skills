@@ -31,7 +31,7 @@ Implementation
 | [`00-ai-foundations/`](./00-ai-foundations/index.md) | How do modern AI models fundamentally work? | 9 | 9/9 |
 | [`01-system-design/`](./01-system-design/README.md) | How should it be architected? | 178 | 178/178 |
 | [`02-engineering-principles/`](./02-engineering-principles/index.md) | How do we write clean, maintainable, and standard code? | 37 | 37/37 |
-| [`03-backend-development/`](./03-backend-development/README.md) | How should application APIs and services be implemented? | 114 | 114/114 |
+| [`03-backend-development/`](./03-backend-development/README.md) | How should application APIs and services be implemented? | 113 | 113/113 |
 | [`04-database-design/`](./04-database-design/README.md) | How should data be modeled, stored, and scaled? | 119 | 119/119 |
 | [`05-ai-engineering/`](./05-ai-engineering/README.md) | How should AI features/products be built, evaluated, and operated? | 205 | 205/205 |
 | `06-frontend-development/` | How do we build modern web interfaces and rendering flows? | 0 | 0/0 |

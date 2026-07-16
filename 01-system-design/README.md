@@ -60,12 +60,13 @@ A Decision Brief file must never contain setup instructions, code, or a "best pr
 | `11-message-queue-strategy/` | Whether async messaging is needed, which broker class | `../03-backend-development/11-background-processing/` |
 | `12-search-strategy/` | Whether a dedicated search engine is needed | `../04-database-design/01-database-selection/search-engine-decision-matrix.md`, `../04-database-design/10-ai-and-modern-databases/` |
 | `13-security-strategy/` | Auth model, threat model, compliance posture | `../04-database-design/07-security/`, `../08-security-engineering/security-fundamentals-policy.md` |
-| `14-scalability-strategy/` | Horizontal vs vertical, stateless requirement | `Scalability Implementation` |
-| `15-reliability-strategy/` | Which resilience patterns this product needs | `Resilience Implementation` |
+| `14-scalability-strategy/` | Horizontal vs vertical, stateless requirement | `../04-database-design/06-scalability/` |
+| `15-reliability-strategy/` | Which resilience patterns this product needs | `../03-backend-development/09-error-handling/` |
 | `16-deployment-strategy/` | Deployment model (blue-green, canary, rolling) | `../07-platform-engineering/ci-cd-configuration.md`, `../07-platform-engineering/devops-configuration.md` |
 | `17-cost-optimization/` | Cost ceiling and where cost risk lives | `../12-governance/03-operations-and-governance/01-cost-optimization-finops-guideline.md` |
 | `19-design-patterns/` | Which architecture pattern fits this scenario | `../04-database-design/13-design-patterns/` (data-layer angle), `../03-backend-development/` pattern folder (code-layer angle, once built) |
 | `21-readiness-audit/` | Architecture-level go/no-go | `../04-database-design/12-production-checklists/` (data-layer detail) |
+| `22-observability-strategy/` | Logging levels, metrics collection, tracing depth, alerting, SLOs/SLIs | `../10-production-operations/` |
 
 ## Folder map
 
@@ -95,7 +96,8 @@ A Decision Brief file must never contain setup instructions, code, or a "best pr
 ├── 18-tradeoff-analysis/               9 topics  [Template A]
 ├── 19-design-patterns/                10 topics  [Template B]
 ├── 20-system-design-templates/        10 topics  [Template A]
-└── 21-readiness-audit/            8 topics  [Template A]
+├── 21-production-readiness/            8 topics  [Template A]
+└── 22-observability-strategy/          6 topics  [Template B]
 ```
 
 **Total: 178 topics.**
@@ -154,7 +156,9 @@ Backend Implementation → Database Implementation → Deployment
 | [`18-tradeoff-analysis/`](./18-tradeoff-analysis/index.md) | SQL vs NoSQL, Monolith vs Microservices, Sync vs Async, REST vs GraphQL, Kafka vs RabbitMQ, Redis vs Memcached, Polling vs WebSocket, gRPC vs REST | A | 9/9 |
 | [`19-design-patterns/`](./19-design-patterns/index.md) | CQRS, Event Sourcing, Saga, Outbox, BFF, Strangler Fig, API Gateway, Sidecar, Aggregator, Choreography vs Orchestration | B | 10/10 |
 | [`20-system-design-templates/`](./20-system-design-templates/index.md) | E-Commerce, Social Media, Chat, Payment, Video Streaming, Ride-Sharing, Food Delivery, AI SaaS, CRM, Healthcare | A | 10/10 |
-| [`21-readiness-audit/`](./21-production-readiness/index.md) | Architecture/Scalability/Security/Database/Backend/Deployment/Monitoring Review, Production Checklist | A | 8/8 |
+| [`21-production-readiness/`](./21-production-readiness/index.md) | Architecture/Scalability/Security/Database/Backend/Deployment/Monitoring Review, Production Checklist | A | 8/8 |
+| [`22-observability-strategy/`](./22-observability-strategy/index.md) | Metrics, Logging, Tracing, SLOs/SLIs, Alerting, Tooling Selection | B | 6/6 |
+
  
  ---
  
