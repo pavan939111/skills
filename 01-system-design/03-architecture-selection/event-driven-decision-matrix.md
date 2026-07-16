@@ -16,11 +16,11 @@ Synchronous architectures (HTTP/REST or gRPC) couple services: if Service A call
 5. **Enforce Consumer Idempotency:** Ensure consumer logic handles duplicate messages safely.
 
 ## 4. Inputs Needed
-- High-volume transaction write metrics and workload profiles from [Workload Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/workload-analysis.md).
+- High-volume transaction write metrics and workload profiles from [Workload Analysis](../01-requirement-analysis/workload-analysis.md).
 - Non-functional RTO/RPO limits.
 
 ## 5. Outputs Produced
-- Feeds into [Message Queue Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/11-message-queue-strategy/index.md) and [Design Patterns](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/19-design-patterns/index.md).
+- Feeds into [Message Queue Strategy](../../13-architecture-decision-records/index.md) and [Design Patterns](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Order Processing Pipeline)
 - **Problem:** When an order is placed, the system must charge the card, update inventory, notify shipping, send an email, and update the search model. Running this synchronously causes checkout page timeouts.

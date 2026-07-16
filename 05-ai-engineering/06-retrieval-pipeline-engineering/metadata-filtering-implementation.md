@@ -1,6 +1,6 @@
 # Metadata Filtering for RAG
 
-*For details on database-level metadata indexing schemas and partitioned indexes, see [Metadata Filtering Mechanics](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/metadata-filtering-implementation.md).*
+*For details on database-level metadata indexing schemas and partitioned indexes, see [Metadata Filtering Mechanics](metadata-filtering-implementation.md).*
 
 ## 1. Definition & Core Concepts
 Metadata Filtering is the application of logical constraints (e.g. `WHERE tenant_id = 123`) to search queries to filter down candidate document pools before or during vector search execution.

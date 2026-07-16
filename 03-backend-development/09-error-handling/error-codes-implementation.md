@@ -26,4 +26,4 @@ Error Codes map internal system errors to machine-readable string constants (e.g
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Error Handling & Exception Strategy](../../production_principles/reliability-coding-practices/01-error-handling-exception-strategy-implementation.md)
+- Error Handling & Exception Strategy

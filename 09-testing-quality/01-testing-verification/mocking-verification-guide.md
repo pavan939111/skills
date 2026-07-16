@@ -23,4 +23,4 @@ def test_fetch_weather_success(monkeypatch):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Testing Production Grade](../../production_principles/delivery-and-readiness/01-testing-production-grade-verification-guide.md)
+- [Testing Production Grade](../testing-production-grade-verification-guide.md)

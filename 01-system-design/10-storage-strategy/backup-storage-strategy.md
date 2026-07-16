@@ -22,5 +22,5 @@
 - A critical disaster recovery run fails because backup files were corrupted during transition to archive classes.
 
 ### 5. Where to Go Next
-- For database backup schedules, retention periods, and restoration verification scripts, see [Backup Strategies Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/backup-strategies-strategy.md).
-- For general object storage configurations, see [Object Storage Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/04-file-storage-strategy-implementation.md).
+- For database backup schedules, retention periods, and restoration verification scripts, see [Backup Strategies Guide](../../04-database-design/08-reliability-and-backup/backup-strategies-strategy.md).
+- For general object storage configurations, see [Object Storage Implementation](../../04-database-design/file-storage-strategy.md).

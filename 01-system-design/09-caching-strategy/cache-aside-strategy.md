@@ -20,4 +20,4 @@
 - Application code becomes complex because cache invalidation steps are scattered across multiple controller write routes.
 
 ### 5. Where to Go Next
-- For implementation code shapes of lazy loading queries, cache lookups, and SQL fallbacks, see [Caching Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/01-caching-implementation.md).
+- For implementation code shapes of lazy loading queries, cache lookups, and SQL fallbacks, see [Caching Implementation Guide](../../04-database-design/04-database-best-practices/caching-implementation.md).

@@ -11,8 +11,8 @@ The Logging Review Checklist is an audit tool used to verify that log logs are s
 - [ ] Distributed log collectors receive stdout/stderr streams
 
 ## 3. Cross-References
-- [Logging reference](..13-logging-management/)
-- [Correlation ID propagation](..13-logging-management/correlation-id.md)
+- [Logging reference](../../10-production-operations/01-logging-management/)
+- [Correlation ID propagation](../../10-production-operations/01-logging-management/correlation-id-tracing-implementation.md)
 
 ## 4. Sign-off Criteria
 - Approved when search platforms parse logs with correlation ID filters.

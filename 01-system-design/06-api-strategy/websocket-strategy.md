@@ -21,4 +21,4 @@
 - Load balancers fail to distribute traffic because TCP socket sessions block node scaling groups.
 
 ### 5. Where to Go Next
-- For implementation of WebSocket managers, heartbeat connections, and socket auth, see [WebSocket Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/websocket-strategy-implementation.md).
+- For implementation of WebSocket managers, heartbeat connections, and socket auth, see WebSocket Implementation.

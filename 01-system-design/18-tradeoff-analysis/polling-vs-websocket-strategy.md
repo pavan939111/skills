@@ -14,11 +14,11 @@ Real-time client connections affect server resource consumption. HTTP polling ge
 5. **Formulate the Real-time Selection:** Choose the protocol matching direction and scale profiles.
 
 ## 4. Inputs Needed
-- Peak concurrent user sessions from [User Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/user-analysis.md).
+- Peak concurrent user sessions from [User Analysis](../01-requirement-analysis/user-analysis.md).
 - Target latency budgets.
 
 ## 5. Outputs Produced
-- Feeds directly into [API Strategy Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/websocket-strategy-implementation.md).
+- Feeds directly into API Strategy Selection.
 
 ## 6. Worked Example (Live Chat vs. Delivery Status Updates)
 - **Live Chat Application (WebSocket Choice):**

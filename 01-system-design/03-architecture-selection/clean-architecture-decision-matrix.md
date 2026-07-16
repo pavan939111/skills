@@ -14,11 +14,11 @@ A common architectural failure is coupling business logic directly to database s
 5. **Enforce the Dependency Rule:** Ensure that code in inner circles has zero references to classes or packages defined in outer circles.
 
 ## 4. Inputs Needed
-- Product user flows and business rules from [User Flows](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/user-flows-analysis.md).
+- Product user flows and business rules from [User Flows](../../00-product-analysis/user-flows-analysis.md).
 - Architectural patterns selection targets.
 
 ## 5. Outputs Produced
-- Feeds into [Component Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/index.md) and code-tier directory structures.
+- Feeds into [Component Design](../../13-architecture-decision-records/index.md) and code-tier directory structures.
 
 ## 6. Worked Example (User Registration Pipeline)
 - **Domain Entity:** `User` class (holds validation logic, has no reference to database libraries or ORMs).

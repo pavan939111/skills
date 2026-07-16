@@ -16,11 +16,11 @@ A common architectural failure is creating a single, massive "User" or "Order" c
 5. **Decouple using IDs:** Reference external aggregates using IDs only, never importing raw object classes across domain boundaries.
 
 ## 4. Inputs Needed
-- Bounded contexts definitions from [Service Boundaries](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/service-boundaries-strategy-implementation.md).
+- Bounded contexts definitions from Service Boundaries.
 - User flows and functional specs.
 
 ## 5. Outputs Produced
-- Feeds into [Module Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/module-design-strategy-implementation.md) and database schema design structures.
+- Feeds into Module Design and database schema design structures.
 
 ## 6. Worked Example (User Account Segregation)
 - **Domain Entity:** `User`.

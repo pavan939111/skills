@@ -19,11 +19,11 @@ Without this estimation, memory configuration is arbitrary, leading to slow quer
 5. **Add Operating System & Thread Overhead:** Allocate 20% to 30% safety headroom for host processes and connection threads.
 
 ## 4. Inputs Needed
-- Active data sizing from [Storage Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/storage-estimation-strategy-implementation.md) and [Vector Database Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/vector-database-design-strategy.md).
+- Active data sizing from Storage Estimation and [Vector Database Design](../../04-database-design/10-ai-and-modern-databases/vector-database-design-strategy.md).
 - Peak active user concurrency.
 
 ## 5. Outputs Produced
-- Feeds into [Caching Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/09-caching-strategy/index.md) and [Database Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md).
+- Feeds into [Caching Strategy](../../13-architecture-decision-records/index.md) and [Database Selection](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (SaaS Product Vector Search Cache)
 - **Scale:** 1,000,000 document chunks.

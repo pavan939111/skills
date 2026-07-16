@@ -22,5 +22,5 @@
 - Queries lag because the SQL database page cache is saturated with historical, rarely accessed data tables.
 
 ### 5. Where to Go Next
-- For configuring storage budget limits, data pruning schedules, and lifecycle parameters, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md).
-- For details on backup storage archiving tiers, see [Backup Storage Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/10-storage-strategy/backup-storage-strategy-implementation.md).
+- For configuring storage budget limits, data pruning schedules, and lifecycle parameters, see [Cost Optimization & FinOps Guide](../../12-governance/03-operations-and-governance/01-cost-optimization-finops-guideline.md).
+- For details on backup storage archiving tiers, see Backup Storage Strategy.

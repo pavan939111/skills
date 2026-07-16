@@ -21,4 +21,4 @@
 - Application servers exhaust storage space because user uploads are stored locally on application VM disks instead of object stores.
 
 ### 5. Where to Go Next
-- For implementing signed URLs, multipart uploads, and bucket-level configurations, see [Object & File Storage Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/04-file-storage-strategy-implementation.md).
+- For implementing signed URLs, multipart uploads, and bucket-level configurations, see [Object & File Storage Implementation](../../04-database-design/file-storage-strategy.md).

@@ -18,4 +18,4 @@ The Observability Checklist is an audit tool used to verify that metrics collect
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Observability](../../production_principles/foundations/03-observability-management-guide.md)
+- [Observability](../observability-management-guide.md)

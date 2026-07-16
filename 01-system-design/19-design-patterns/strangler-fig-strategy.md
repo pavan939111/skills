@@ -21,4 +21,4 @@
 - The project becomes a "half-strangled" monolith, leaving developers to maintain two overlapping code platforms indefinitely.
 
 ### 5. Where to Go Next
-- For service boundaries identification and dependency mapping, see [Service Decomposition Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/service-decomposition-strategy-implementation.md).
+- For service boundaries identification and dependency mapping, see Service Decomposition Design.

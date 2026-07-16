@@ -21,5 +21,5 @@
 - Multi-site Active-Active configuration is selected, but database queries experience write conflicts and split-brain sync errors.
 
 ### 5. Where to Go Next
-- For disaster recovery plans, regional failovers, and failover verification checklists, see [Disaster Recovery Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/disaster-recovery-strategy-implementation.md).
-- For calculating recovery time and point limits, see [RTO and RPO Specifications](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/rto-rpo-strategy.md).
+- For disaster recovery plans, regional failovers, and failover verification checklists, see Disaster Recovery Design.
+- For calculating recovery time and point limits, see [RTO and RPO Specifications](../../04-database-design/08-reliability-and-backup/rto-rpo-strategy.md).

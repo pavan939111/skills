@@ -1,4 +1,4 @@
-# 10 â€” Production Operations
+# 10 — Production Operations
 
 Logging setups, metrics systems, tracing spans, and observability monitors.
 

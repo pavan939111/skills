@@ -29,12 +29,12 @@ This checklist validates that database schema structures, table designs, primary
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Primary Keys](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/03-schema-design/primary-keys-schema-design.md)
-- [Foreign Keys](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/03-schema-design/foreign-keys-schema-design.md)
-- [Constraints](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/03-schema-design/constraints-analysis.md)
-- [Naming Standards](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/04-database-best-practices/naming-standards-implementation.md)
-- [Schema Organization](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/04-database-best-practices/schema-organization-implementation.md)
-- [Metadata Management](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/09-data-governance/metadata-strategy.md)
+- [Primary Keys](../03-schema-design/primary-keys-schema-design.md)
+- [Foreign Keys](../03-schema-design/foreign-keys-schema-design.md)
+- [Constraints](../../00-product-analysis/constraints-analysis.md)
+- [Naming Standards](../04-database-best-practices/naming-standards-implementation.md)
+- [Schema Organization](../04-database-best-practices/schema-organization-implementation.md)
+- [Metadata Management](../09-data-governance/metadata-strategy.md)
 
 ## 4. Sign-off Criteria
 The schema review passes when:

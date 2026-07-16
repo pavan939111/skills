@@ -1,6 +1,6 @@
 # Vector Database Selection for RAG
 
-*For details on database-level vector indexing structures and database selections, see [Vector Database Selection Mechanics](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/vector-database-decision-matrix.md).*
+*For details on database-level vector indexing structures and database selections, see [Vector Database Selection Mechanics](../../04-database-design/01-database-selection/vector-database-decision-matrix.md).*
 
 ## 1. Definition & Core Concepts
 Vector Database Selection is the decision framework used to choose the optimal vector storage engine (dedicated vector databases vs vector extensions for relational databases) based on scaling targets, permission models, and deployment setups.

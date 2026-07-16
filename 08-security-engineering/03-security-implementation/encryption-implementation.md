@@ -18,4 +18,4 @@ def encrypt_ssn(raw_ssn: str, key: bytes) -> bytes:
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Security](../../production_principles/foundations/04-security.md)
+- [Security](../security-fundamentals-policy.md)

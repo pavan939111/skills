@@ -20,5 +20,5 @@
 - Latency budgets are breached because the system runs two-stage queries and heavy reranking models synchronously.
 
 ### 5. Where to Go Next
-- For ranking mergers, score normalizations, and Reciprocal Rank Fusion (RRF) algorithms, see [Hybrid Search Scoring Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/hybrid-search-strategy-implementation.md).
-- For semantic search models, see [Reranking and LLM Optimizations](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/reranking-strategy.md).
+- For ranking mergers, score normalizations, and Reciprocal Rank Fusion (RRF) algorithms, see Hybrid Search Scoring Design.
+- For semantic search models, see [Reranking and LLM Optimizations](../../04-database-design/10-ai-and-modern-databases/reranking-strategy.md).

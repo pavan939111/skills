@@ -24,5 +24,5 @@ def get_user_profile(user_id: str):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dives:
-- [Caching](../../production_principles/data-and-messaging/01-caching-implementation.md)
-- [Performance Engineering](../../production_principles/performance-and-scale/01-performance-engineering.md)
+- [Caching](../../04-database-design/04-database-best-practices/caching-implementation.md)
+- Performance Engineering

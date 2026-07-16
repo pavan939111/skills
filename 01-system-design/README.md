@@ -1,6 +1,6 @@
 # 01 — System Design
 
-The decision engine of the whole knowledge base. Given a product and its requirements, this folder decides *what architecture and technology strategy* fits — it does not teach implementation. Implementation lives in `../backend-development/`, `../database-design/`, and `../production_principles/`.
+The decision engine of the whole knowledge base. Given a product and its requirements, this folder decides *what architecture and technology strategy* fits — it does not teach implementation. Implementation lives in `../03-backend-development/`, `../04-database-design/`, and `../production_principles/`.
 
 **Status legend:** ✅ done · ⏳ pending
 
@@ -11,9 +11,9 @@ Product Analysis        (../00-product-analysis/)
       ↓
 System Design    ← you are here
       ↓
-Backend Architecture     (../backend-development/)
+Backend Architecture     (../03-backend-development/)
       ↓
-Database Design           (../database-design/)
+Database Design           (../04-database-design/)
       ↓
 Infrastructure / Production   (../production_principles/)
       ↓
@@ -52,20 +52,20 @@ A Decision Brief file must never contain setup instructions, code, or a "best pr
 
 | System Design folder | Decides | Implementation lives in |
 |---|---|---|
-| `06-api-strategy/` | REST vs GraphQL vs gRPC vs WebSocket/SSE, gateway need | `../backend-development/04-api-design/` (once built) |
-| `07-backend-strategy/` | Monolith vs microservices vs serverless, framework class | `../backend-development/` (once built) |
-| `08-database-strategy/` | SQL vs NoSQL, single vs polyglot, replication/sharding need | `../database-design/01-database-selection/`, `06-scalability/` |
-| `09-caching-strategy/` | Whether to cache, where, which store | `../production_principles/data-and-messaging/01-caching-implementation.md`, `../database-design/04-database-best-practices/caching-implementation.md` |
+| `06-api-strategy/` | REST vs GraphQL vs gRPC vs WebSocket/SSE, gateway need | `../03-backend-development/04-api-design/` (once built) |
+| `07-backend-strategy/` | Monolith vs microservices vs serverless, framework class | `../03-backend-development/` (once built) |
+| `08-database-strategy/` | SQL vs NoSQL, single vs polyglot, replication/sharding need | `../04-database-design/01-database-selection/`, `06-scalability/` |
+| `09-caching-strategy/` | Whether to cache, where, which store | `../production_principles/data-and-messaging/01-caching-implementation.md`, `../04-database-design/04-database-best-practices/caching-implementation.md` |
 | `10-storage-strategy/` | Object storage vs file storage vs CDN need | `../production_principles/data-and-messaging/04-file-storage-strategy-implementation.md` |
 | `11-message-queue-strategy/` | Whether async messaging is needed, which broker class | `../production_principles/data-and-messaging/02-background-jobs-messaging.md` |
-| `12-search-strategy/` | Whether a dedicated search engine is needed | `../database-design/01-database-selection/search-engine-decision-matrix.md`, `../database-design/10-ai-and-modern-databases/` |
-| `13-security-strategy/` | Auth model, threat model, compliance posture | `../database-design/07-security/`, `../production_principles/foundations/04-security.md` |
+| `12-search-strategy/` | Whether a dedicated search engine is needed | `../04-database-design/01-database-selection/search-engine-decision-matrix.md`, `../04-database-design/10-ai-and-modern-databases/` |
+| `13-security-strategy/` | Auth model, threat model, compliance posture | `../04-database-design/07-security/`, `../production_principles/foundations/04-security.md` |
 | `14-scalability-strategy/` | Horizontal vs vertical, stateless requirement | `../production_principles/performance-and-scale/02-scalability.md` |
 | `15-reliability-strategy/` | Which resilience patterns this product needs | `../production_principles/performance-and-scale/03-resilience-patterns.md` |
 | `16-deployment-strategy/` | Deployment model (blue-green, canary, rolling) | `../production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md`, `03-devops-configuration.md` |
 | `17-cost-optimization/` | Cost ceiling and where cost risk lives | `../production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md` |
-| `19-design-patterns/` | Which architecture pattern fits this scenario | `../database-design/13-design-patterns/` (data-layer angle), `../backend-development/` pattern folder (code-layer angle, once built) |
-| `21-readiness-audit/` | Architecture-level go/no-go | `../database-design/12-production-checklists/` (data-layer detail) |
+| `19-design-patterns/` | Which architecture pattern fits this scenario | `../04-database-design/13-design-patterns/` (data-layer angle), `../03-backend-development/` pattern folder (code-layer angle, once built) |
+| `21-readiness-audit/` | Architecture-level go/no-go | `../04-database-design/12-production-checklists/` (data-layer detail) |
 
 ## Folder map
 
@@ -98,7 +98,7 @@ A Decision Brief file must never contain setup instructions, code, or a "best pr
 └── 21-readiness-audit/            8 topics  [Template A]
 ```
 
-**Total: 170 topics.**
+**Total: 178 topics.**
 
 ## Overall workflow
 
@@ -154,10 +154,10 @@ Backend Implementation → Database Implementation → Deployment
 | [`18-tradeoff-analysis/`](./18-tradeoff-analysis/index.md) | SQL vs NoSQL, Monolith vs Microservices, Sync vs Async, REST vs GraphQL, Kafka vs RabbitMQ, Redis vs Memcached, Polling vs WebSocket, gRPC vs REST | A | 9/9 |
 | [`19-design-patterns/`](./19-design-patterns/index.md) | CQRS, Event Sourcing, Saga, Outbox, BFF, Strangler Fig, API Gateway, Sidecar, Aggregator, Choreography vs Orchestration | B | 10/10 |
 | [`20-system-design-templates/`](./20-system-design-templates/index.md) | E-Commerce, Social Media, Chat, Payment, Video Streaming, Ride-Sharing, Food Delivery, AI SaaS, CRM, Healthcare | A | 10/10 |
-| [`21-readiness-audit/`](./01-readiness-audit/index.md) | Architecture/Scalability/Security/Database/Backend/Deployment/Monitoring Review, Production Checklist | A | 8/8 |
+| [`21-readiness-audit/`](./21-production-readiness/index.md) | Architecture/Scalability/Security/Database/Backend/Deployment/Monitoring Review, Production Checklist | A | 8/8 |
  
  ---
  
  ## Overall progress
  
- **170 of 170 topics done.**
+ **178 of 178 topics done.**

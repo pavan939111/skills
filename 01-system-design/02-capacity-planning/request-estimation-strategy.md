@@ -22,11 +22,11 @@ Without this estimation, gateways exhaust file descriptors, dropping connections
 5. **Establish Gateway Limits:** Use these numbers to size concurrent connection limits on load balancers.
 
 ## 4. Inputs Needed
-- Peak QPS estimates and read/write ratios from [Traffic Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/traffic-estimation-strategy-implementation.md).
+- Peak QPS estimates and read/write ratios from Traffic Estimation.
 - User flow sequences.
 
 ## 5. Outputs Produced
-- Feeds into [API Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md) and [Scalability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/14-scalability-strategy/index.md).
+- Feeds into [API Strategy](../../13-architecture-decision-records/index.md) and [Scalability Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (E-Commerce Storefront API)
 - **User Base:** 100,000 DAU.

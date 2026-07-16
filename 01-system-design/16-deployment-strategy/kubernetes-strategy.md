@@ -20,4 +20,4 @@
 - Cluster nodes exhaust memory because application pods do not specify resource requests and limits.
 
 ### 5. Where to Go Next
-- For configuring Kubernetes pod resources limits, network security policies, and deployment templates, see [DevOps Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/03-devops-configuration.md).
+- For configuring Kubernetes pod resources limits, network security policies, and deployment templates, see [DevOps Foundations](../../07-platform-engineering/devops-configuration.md).

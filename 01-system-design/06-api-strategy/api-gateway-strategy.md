@@ -23,5 +23,5 @@
 - Total request latency increases because the gateway network hops and filter pipelines consume too much time budget.
 
 ### 5. Where to Go Next
-- For configuring Docker containers and network routing setups for gateways, see [DevOps Readiness](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/01-devops-readiness/index.md).
-- For implementing ingress middleware logic in backend services, see [API Development](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/restful-api.md).
+- For configuring Docker containers and network routing setups for gateways, see [DevOps Readiness](../../13-architecture-decision-records/index.md).
+- For implementing ingress middleware logic in backend services, see API Development.

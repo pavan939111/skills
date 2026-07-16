@@ -18,4 +18,4 @@ The Error Handling Checklist is an audit tool used to verify that global excepti
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Error Handling & Exception Strategy](../../production_principles/reliability-coding-practices/01-error-handling-exception-strategy-implementation.md)
+- Error Handling & Exception Strategy

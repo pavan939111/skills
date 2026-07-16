@@ -14,11 +14,11 @@ In asynchronous systems, event delivery failures are common: brokers crash, netw
 5. **Configure Failure Recoveries:** Define retry timeouts and dead letter queues (DLQs) for failed events.
 
 ## 4. Inputs Needed
-- Asynchronous constraints from [Event-Driven Architecture](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/event-driven-decision-matrix-strategy-implementation.md).
+- Asynchronous constraints from Event-Driven Architecture.
 - Target peak write throughput metrics.
 
 ## 5. Outputs Produced
-- Feeds into [Message Queue Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/11-message-queue-strategy/index.md) and [Design Patterns Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/19-design-patterns/index.md).
+- Feeds into [Message Queue Strategy](../../13-architecture-decision-records/index.md) and [Design Patterns Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Order Processing Pipeline)
 - **Source:** Checkout API completes purchase database transaction.

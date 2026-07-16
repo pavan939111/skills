@@ -14,11 +14,11 @@ A Modular Monolith represents the middle ground between monolithic simplicity an
 5. **Decouple using In-Process Events:** Use event publishers to communicate state changes asynchronously inside the application thread.
 
 ## 4. Inputs Needed
-- Product user flows and functional boundaries from [Functional Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/functional-requirements-analysis.md).
+- Product user flows and functional boundaries from [Functional Requirements](../../00-product-analysis/functional-requirements-analysis.md).
 - Team capability constraints.
 
 ## 5. Outputs Produced
-- Feeds into [Component Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/index.md) and [Backend Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/07-backend-strategy/index.md).
+- Feeds into [Component Design](../../13-architecture-decision-records/index.md) and [Backend Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Order & Inventory System)
 - **Domain Division:**

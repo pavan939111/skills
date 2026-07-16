@@ -20,4 +20,4 @@
 - Cache memory is filled with cold, rarely read records because every write is automatically pushed to the cache.
 
 ### 5. Where to Go Next
-- For configuring cache adapters and sync writing policies, see [Caching Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/01-caching-implementation.md).
+- For configuring cache adapters and sync writing policies, see [Caching Architecture & Implementation](../../04-database-design/04-database-best-practices/caching-implementation.md).

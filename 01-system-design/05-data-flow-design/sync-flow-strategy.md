@@ -15,11 +15,11 @@ Synchronous calls couple systems chronologically: the client blocks waiting for 
 5. **Implement Fallback Behaviors:** Define default responses on errors (e.g. returning stale cached profiles if database is down).
 
 ## 4. Inputs Needed
-- Latency budgets and connection parameters from [Latency Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/latency-requirements-strategy-implementation.md).
+- Latency budgets and connection parameters from Latency Requirements.
 - Bounded contexts map.
 
 ## 5. Outputs Produced
-- Feeds into [API Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md) and [Reliability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/15-reliability-strategy/index.md).
+- Feeds into [API Strategy](../../13-architecture-decision-records/index.md) and [Reliability Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User Balance Verification)
 - **SLA Latency Budget:** P95 response < 100ms.

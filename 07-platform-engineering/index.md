@@ -1,4 +1,4 @@
-# 07 â€” Platform Engineering
+# 07 — Platform Engineering
 
 CI/CD deployment systems, platform configurations, and Docker readiness.
 

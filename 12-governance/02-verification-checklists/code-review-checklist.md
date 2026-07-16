@@ -11,8 +11,8 @@ The Code Review Checklist is an audit tool used by PR reviewers to verify that i
 - [ ] Test cases cover newly added methods and edge states
 
 ## 3. Cross-References
-- [Code review guidelines](..coding-principles/code-review-guidelines-principles.md)
-- [Secure coding guidelines](..17-security-implementation/secure-coding-implementation.md)
+- [Code review guidelines](../../03-backend-development/03-coding-principles/code-review-guidelines-principles.md)
+- [Secure coding guidelines](../../08-security-engineering/03-security-implementation/secure-coding-implementation.md)
 
 ## 4. Sign-off Criteria
 - Approved when reviewers complete audits, confirm test results, and approve PRs.

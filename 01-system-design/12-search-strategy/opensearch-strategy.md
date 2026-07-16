@@ -20,4 +20,4 @@
 - OpenSearch search endpoints are exposed to the public internet because of incorrect AWS IAM security policies.
 
 ### 5. Where to Go Next
-- For search indexes structure and ingestion pipelines design, see [Search Engine Database Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/search-engine-decision-matrix.md).
+- For search indexes structure and ingestion pipelines design, see [Search Engine Database Selection](../../04-database-design/01-database-selection/search-engine-decision-matrix.md).

@@ -1,6 +1,6 @@
 # 06 — RAG Engineering
 
-**Overlap note (read before writing):** this folder shares file names with `../../database-design/10-ai-and-modern-databases/`, which is already fully written. That folder covers the **data-layer angle** (how to store/index vectors, which vector DB, embedding storage schema). This folder covers the **retrieval-pipeline angle** (chunking strategy for answer quality, retrieval tuning for relevance, grounding, citation). Every file below whose name matches a file in `database-design/10-.../` must open with a one-line pointer to that file rather than re-explaining storage mechanics. Standard 12-section template otherwise (see `../README.md`).
+**Overlap note (read before writing):** this folder shares file names with `../../04-database-design/10-ai-and-modern-databases/`, which is already fully written. That folder covers the **data-layer angle** (how to store/index vectors, which vector DB, embedding storage schema). This folder covers the **retrieval-pipeline angle** (chunking strategy for answer quality, retrieval tuning for relevance, grounding, citation). Every file below whose name matches a file in `database-design/10-.../` must open with a one-line pointer to that file rather than re-explaining storage mechanics. Standard 12-section template otherwise (see `../README.md`).
 
 ## Topics
 

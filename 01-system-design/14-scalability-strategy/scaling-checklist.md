@@ -20,5 +20,5 @@
 - Autoscaling fails during spikes because scaling policies were configured without cool-down margins.
 
 ### 5. Where to Go Next
-- For database-level scaling checklists, partition triggers, and indexing verification steps, see [Database Scalability Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/12-production-checklists/scalability-review-strategy-implementation.md).
-- For VM/container-level scaling checklists and server configurations audit guides, see [Scalability Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/02-scalability.md).
+- For database-level scaling checklists, partition triggers, and indexing verification steps, see Database Scalability Review Checklist.
+- For VM/container-level scaling checklists and server configurations audit guides, see Scalability Implementation Guide.

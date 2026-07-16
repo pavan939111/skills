@@ -22,11 +22,11 @@ Evaluate the decision tree nodes in sequential order:
    - *No:* Event-Driven asynchronous patterns are viable.
 
 ## 4. Inputs Needed
-- Team sizes, budgets, and project timelines from [Business Constraints](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/business-constraints-analysis.md).
+- Team sizes, budgets, and project timelines from Business Constraints.
 - Target peak QPS and transaction profiles.
 
 ## 5. Outputs Produced
-- Feeds directly into [Architecture Comparison](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/architecture-comparison-decision-matrix-strategy-implementation.md) and final system proposals.
+- Feeds directly into Architecture Comparison and final system proposals.
 
 ## 6. Worked Example (Standard SaaS Startup MVP)
 - **Inputs:** Team = 5 developers, Timeline = 2 months, Target QPS = 200 peak.

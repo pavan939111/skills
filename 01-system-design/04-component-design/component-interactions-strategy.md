@@ -19,11 +19,11 @@ Trace request lifecycles chronologically:
 6. **Response Outgress:** Use case returns domain results. Controller maps domain records to response schemas, returning HTTP payload.
 
 ## 4. Inputs Needed
-- Folder structures and module parameters from [Module Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/module-design-strategy-implementation.md).
+- Folder structures and module parameters from Module Design.
 - User flows and validation rules.
 
 ## 5. Outputs Produced
-- Feeds into [Data Flow Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/index.md) and code-tier sequence controllers.
+- Feeds into [Data Flow Design](../../13-architecture-decision-records/index.md) and code-tier sequence controllers.
 
 ## 6. Worked Example (User Registration Request Flow)
 1. **Controller:** `UserController` receives `POST /users` (body: name, email).

@@ -16,11 +16,11 @@ Analytical queries (aggregates, reports, audit trends) require scanning millions
 5. **Select Analytical Stores (OLAP):** Route processed data to dedicated OLAP engines (e.g. Snowflake, BigQuery, ClickHouse).
 
 ## 4. Inputs Needed
-- High-volume transaction write projections and storage growth metrics from [Storage Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/storage-estimation-strategy-implementation.md).
+- High-volume transaction write projections and storage growth metrics from Storage Estimation.
 - Business analytical reporting requirements.
 
 ## 5. Outputs Produced
-- Feeds into [Database Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md) and [Search Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/12-search-strategy/index.md).
+- Feeds into [Database Strategy](../../13-architecture-decision-records/index.md) and [Search Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User Purchase Report Pipeline)
 - **Problem:** E-Commerce managers want to query hourly sales reports. Executing aggregate SQL queries on the active `orders` database locks tables, slowing customer checkout times.

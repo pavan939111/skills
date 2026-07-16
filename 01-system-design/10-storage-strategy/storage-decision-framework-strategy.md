@@ -21,5 +21,5 @@
 - File upload operations fail because application server local disks fill to 100% capacity.
 
 ### 5. Where to Go Next
-- For configuring storage client drivers, signed URLs, and file validations, see [Object & File Storage Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/04-file-storage-strategy-implementation.md).
-- For database backup schedules and retention, see [Backup Strategies Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/backup-strategies-strategy.md).
+- For configuring storage client drivers, signed URLs, and file validations, see [Object & File Storage Implementation](../../04-database-design/file-storage-strategy.md).
+- For database backup schedules and retention, see [Backup Strategies Guide](../../04-database-design/08-reliability-and-backup/backup-strategies-strategy.md).

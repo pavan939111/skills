@@ -20,4 +20,4 @@
 - Staging servers run continuously over weekends and holidays, wasting half the staging infrastructure budget.
 
 ### 5. Where to Go Next
-- For configuring cost metrics, budget alerts, and tagging schemas in production, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md).
+- For configuring cost metrics, budget alerts, and tagging schemas in production, see [Cost Optimization & FinOps Guide](../../12-governance/03-operations-and-governance/01-cost-optimization-finops-guideline.md).

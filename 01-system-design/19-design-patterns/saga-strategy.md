@@ -20,5 +20,5 @@
 - Debugging transaction lifecycles requires manual logs correlation across 5 separate services.
 
 ### 5. Where to Go Next
-- For database schema configurations, compensating transaction tables, and log stores, see [Saga Database Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/13-design-patterns/saga-pattern.md).
-- For orchestrator vs choreographer design briefs, see [Backend Orchestration Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/07-backend-strategy/orchestration-strategy-implementation.md).
+- For database schema configurations, compensating transaction tables, and log stores, see Saga Database Design.
+- For orchestrator vs choreographer design briefs, see Backend Orchestration Strategy.

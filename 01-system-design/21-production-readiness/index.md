@@ -2,7 +2,7 @@
 
 The final architecture-level review before implementation begins — did we make the right calls in folders 01–20? This is a go/no-go gate at the *decision* level, not a re-run of the detailed pre-deployment checklists. Template: **A — Analysis Template**, checklist-style.
 
-Detailed execution-level checklists live in `../../database-design/12-production-checklists/` (data layer) and the backend-development checklist folder, once built (service layer). This folder aggregates and points to those rather than duplicating them.
+Detailed execution-level checklists live in `../../04-database-design/12-production-checklists/` (data layer) and the backend-development checklist folder, once built (service layer). This folder aggregates and points to those rather than duplicating them.
 
 ## Topics
 

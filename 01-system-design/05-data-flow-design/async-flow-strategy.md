@@ -16,11 +16,11 @@ Blocking API threads while executing slow, external HTTP tasks (e.g. charging ca
 5. **Manage Concurrency Limits:** Rate-limit worker loops to prevent exhausting external API keys or databases.
 
 ## 4. Inputs Needed
-- Latency and throughput limits from [Non-Functional Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/non-functional-requirements-analysis.md).
+- Latency and throughput limits from [Non-Functional Requirements](../../00-product-analysis/non-functional-requirements-analysis.md).
 - Service boundaries and communication maps.
 
 ## 5. Outputs Produced
-- Feeds into [Message Queue Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/11-message-queue-strategy/index.md) and [Backend Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/07-backend-strategy/index.md).
+- Feeds into [Message Queue Strategy](../../13-architecture-decision-records/index.md) and [Backend Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User PDF Report Request)
 - **Request:** User clicks "Download Annual Tax Report". Processing the PDF takes 12 seconds.

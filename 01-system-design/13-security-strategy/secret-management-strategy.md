@@ -20,5 +20,5 @@
 - Application startups fail because connection secrets expired, and there was no fallback notification setup.
 
 ### 5. Where to Go Next
-- For operational security principles, secret injection, and rotation schedules, see [Security Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/foundations/04-security.md).
-- For configuring environment variables and runtime settings in backend code, see [Configuration Management Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/foundations/01-configuration-management.md).
+- For operational security principles, secret injection, and rotation schedules, see [Security Foundations](../../08-security-engineering/security-fundamentals-policy.md).
+- For configuring environment variables and runtime settings in backend code, see [Configuration Management Guide](../../03-backend-development/10-configuration-management/configuration-management-strategy.md).

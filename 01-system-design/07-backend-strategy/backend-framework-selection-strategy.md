@@ -21,4 +21,4 @@
 - Container startup times on serverless platforms are too slow (cold starts >5s) due to heavy JVM/Spring framework DI scans.
 
 ### 5. Where to Go Next
-- For selecting a specific framework brand (e.g. NestJS vs Spring Boot) matching the strategy class, see [Backend Framework Selection Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development01-project-initialization/backend-framework-selection-strategy-implementation.md).
+- For selecting a specific framework brand (e.g. NestJS vs Spring Boot) matching the strategy class, see Backend Framework Selection Guide.

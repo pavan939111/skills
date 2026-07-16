@@ -23,9 +23,9 @@ This checklist acts as a production readiness gate to review prompt architecture
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [System Prompts](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering04-prompt-template-management/system-prompts-guide.md)
-- [Prompt Optimization](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering16-performance-optimization/prompt-optimization.md)
-- [Prompt Versioning](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/prompt-versioning-strategy-implementation.md)
+- [System Prompts](../04-prompt-template-management/system-prompts-guide.md)
+- [Prompt Optimization](../16-performance-optimization/prompt-optimization.md)
+- Prompt Versioning
 
 ## 4. Sign-off Criteria
 The prompt review passes when:

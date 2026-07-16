@@ -20,5 +20,5 @@
 - Developers spend significant time configuring manual routing maps across microservice clusters.
 
 ### 5. Where to Go Next
-- For implementing microservice interfaces, endpoints wiring, and RPC connectivity models, see [Microservice Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development04-architecture-wiring/microservice-implementation.md).
-- For distributed service boundaries strategy, see [Service Decomposition](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/service-decomposition-strategy-implementation.md).
+- For implementing microservice interfaces, endpoints wiring, and RPC connectivity models, see Microservice Implementation Guide.
+- For distributed service boundaries strategy, see Service Decomposition.

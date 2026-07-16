@@ -20,5 +20,5 @@
 - Routing shifts cause connection drops because load balancers lack active connection draining configurations.
 
 ### 5. Where to Go Next
-- For configuring CD pipeline steps and rollback scripts, see [CI/CD Implementation Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md).
-- For configuring connection draining on load balancers, see [DevOps Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/03-devops-configuration.md).
+- For configuring CD pipeline steps and rollback scripts, see [CI/CD Implementation Reference](../../07-platform-engineering/ci-cd-configuration.md).
+- For configuring connection draining on load balancers, see [DevOps Foundations](../../07-platform-engineering/devops-configuration.md).

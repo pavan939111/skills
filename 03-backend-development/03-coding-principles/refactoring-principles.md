@@ -32,4 +32,4 @@ def get_user_orders_refactored(request):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Refactoring Practices](../../production_principlesclean-code-standards/11-refactoring-practices-guideline.md)
+- [Refactoring Practices](../../02-engineering-principles/01-clean-code-standards/11-refactoring-practices-guideline.md)

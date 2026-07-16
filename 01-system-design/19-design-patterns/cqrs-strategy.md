@@ -20,5 +20,5 @@
 - The synchronization worker pipeline fails repeatedly, causing read and write models to drift out of sync.
 
 ### 5. Where to Go Next
-- For database schemas, indexes, and replication mappings for read/write divisions, see [CQRS Database Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/13-design-patterns/cqrs-pattern.md).
-- For implementing separate read/write models in backend code, see [CQRS Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/cqrs-decision-matrix-strategy-implementation.md).
+- For database schemas, indexes, and replication mappings for read/write divisions, see CQRS Database Design.
+- For implementing separate read/write models in backend code, see CQRS Implementation Guide.

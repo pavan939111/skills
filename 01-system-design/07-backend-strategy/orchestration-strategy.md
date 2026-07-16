@@ -21,5 +21,5 @@
 - Changing a step in the workflow requires redeploying the orchestrator plus 3 downstream services due to strict payload couplings.
 
 ### 5. Where to Go Next
-- For implementation details of orchestrator logic, state validation, and transactional workflows, see [Business Logic Orchestration](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development06-business-services/orchestration-strategy-implementation.md).
-- For distributed workflow designs, see [Workflow Design Patterns](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/workflow-design-strategy-implementation.md).
+- For implementation details of orchestrator logic, state validation, and transactional workflows, see Business Logic Orchestration.
+- For distributed workflow designs, see Workflow Design Patterns.

@@ -21,4 +21,4 @@
 - Messages pile up in the DLQ unnoticed because there are no automated alerts for DLQ ingestion rates.
 
 ### 5. Where to Go Next
-- For configuring DLQ routing parameters, redrive policies, and retry counts, see [Message Broker Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/02-background-jobs-messaging.md).
+- For configuring DLQ routing parameters, redrive policies, and retry counts, see Message Broker Architecture & Implementation.

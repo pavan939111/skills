@@ -18,4 +18,4 @@ The Deployment Checklist is an audit tool used to verify that Dockerfiles compil
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dives:
-- [DevOps](../../production_principles/delivery-and-readiness/03-devops-configuration.md)
+- [DevOps](../devops-configuration.md)

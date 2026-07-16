@@ -1,7 +1,7 @@
 # Semantic Caching
 
 > [!NOTE]
-> This file covers **semantic/prompt-response caching** (cache key = semantic similarity of the prompt, not an exact key match) — a different mechanism from [Generic Application Caching](../../production_principles/data-and-messaging/01-caching-implementation.md) and [Backend Caching](../../backend-development16-performance-optimization/caching-implementation.md), which cover generic application caching.
+> This file covers **semantic/prompt-response caching** (cache key = semantic similarity of the prompt, not an exact key match) — a different mechanism from [Generic Application Caching](../../04-database-design/04-database-best-practices/caching-implementation.md) and [Backend Caching](../../04-database-design/04-database-best-practices/caching-implementation.md), which cover generic application caching.
 
 ## 1. Definition & Core Concepts
 Semantic Caching is the process of storing previous LLM prompts and their generated responses, and using a vector similarity search to serve cached responses to new prompts that are semantically identical or highly similar, bypassing the need for a new LLM generation.

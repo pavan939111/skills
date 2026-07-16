@@ -16,11 +16,11 @@ Text specifications alone cannot fully convey complex distributed architectures.
 5. **Mark Data Stores:** Represent database nodes, caches, and queues explicitly.
 
 ## 4. Inputs Needed
-- Service boundary mappings and protocol selections from [Communication Patterns](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/communication-patterns-strategy-implementation.md).
+- Service boundary mappings and protocol selections from Communication Patterns.
 - Security strategy mandates.
 
 ## 5. Outputs Produced
-- Feeds into [Data Flow Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/index.md) and deployment blueprints.
+- Feeds into [Data Flow Design](../../13-architecture-decision-records/index.md) and deployment blueprints.
 
 ## 6. Worked Example (Standard SaaS Architecture Diagram)
 - **Visual Model (Mermaid):**

@@ -20,4 +20,4 @@
 - Messages are lost because a subscription queue was configured after events were published (missing history).
 
 ### 5. Where to Go Next
-- For implementing pub/sub publishers and consumers in backend logic, see [Message Broker Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/02-background-jobs-messaging.md).
+- For implementing pub/sub publishers and consumers in backend logic, see Message Broker Architecture & Implementation.

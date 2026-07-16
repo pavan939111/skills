@@ -25,12 +25,12 @@ This checklist validates that database schema deployments (DDL), version trackin
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Migration Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/11-migrations-and-versioning/migration-strategy-implementation.md)
-- [Zero-Downtime Migrations](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/11-migrations-and-versioning/zero-downtime-migrations-strategy.md)
-- [Rollback Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/11-migrations-and-versioning/rollback-strategy-implementation.md)
-- [Schema Versioning](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/11-migrations-and-versioning/schema-versioning-strategy-implementation.md)
-- [Data Migration](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/11-migrations-and-versioning/data-migration-strategy.md)
-- [Compatibility](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/11-migrations-and-versioning/compatibility-strategy.md)
+- Migration Strategy
+- [Zero-Downtime Migrations](../11-migrations-and-versioning/zero-downtime-migrations-strategy.md)
+- Rollback Strategy
+- Schema Versioning
+- [Data Migration](../11-migrations-and-versioning/data-migration-strategy.md)
+- [Compatibility](../11-migrations-and-versioning/compatibility-strategy.md)
 
 ## 4. Sign-off Criteria
 The migration review passes when:

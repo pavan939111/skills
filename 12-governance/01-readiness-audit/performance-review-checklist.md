@@ -11,8 +11,8 @@ The Performance Review Checklist is an audit tool used to verify that database q
 - [ ] Connection pool parameters configured for concurrent traffic
 
 ## 3. Cross-References
-- [Performance engineering reference](..16-performance-optimization/)
-- [Caching configurations](..16-performance-optimization/caching-implementation.md)
+- [Performance engineering reference](../../03-backend-development/13-performance-optimization/)
+- [Caching configurations](../../04-database-design/04-database-best-practices/caching-implementation.md)
 
 ## 4. Sign-off Criteria
 - Approved when p99 response latencies meet targets under concurrency tests.

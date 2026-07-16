@@ -14,10 +14,10 @@ Capacity planning calculations contain many dependencies (e.g., QPS drives datab
 5. **Freeze Capacity baseline:** Approve capacity metrics, initializing technology selection.
 
 ## 4. Inputs Needed
-- All completed capacity estimation files in [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md).
+- All completed capacity estimation files in [Capacity Planning](../../13-architecture-decision-records/index.md).
 
 ## 5. Outputs Produced
-- Feeds into [Technology Strategy Decision Briefs](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md) (folders 06–17) and [Trade-off Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/18-tradeoff-analysis/index.md).
+- Feeds into [Technology Strategy Decision Briefs](../../13-architecture-decision-records/index.md) (folders 06–17) and [Trade-off Analysis](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Standard SaaS Project Gate)
 - **Status:** All previous 8 capacity planning files completed.

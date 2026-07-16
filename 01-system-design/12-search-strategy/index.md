@@ -1,6 +1,6 @@
 # 12 — Search Strategy
 
-Decides whether this product needs a dedicated search engine, separate from the primary database decision. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../database-design/01-database-selection/search-engine-decision-matrix.md`, `../../database-design/10-ai-and-modern-databases/`.
+Decides whether this product needs a dedicated search engine, separate from the primary database decision. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../04-database-design/01-database-selection/search-engine-decision-matrix.md`, `../../04-database-design/10-ai-and-modern-databases/`.
 
 ## Topics
 

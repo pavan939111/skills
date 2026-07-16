@@ -11,8 +11,8 @@ The Backend Implementation Checklist is a recurring developer check used to veri
 - [ ] Variable names match domain terms and are descriptive
 
 ## 3. Cross-References
-- [Naming conventions](..02-directory-structure/naming-conventions-implementation.md)
-- [Dependency Injection](..coding-principles/dependency-injection-principles.md)
+- [Naming conventions](../../03-backend-development/02-directory-structure/naming-conventions-implementation.md)
+- [Dependency Injection](../../03-backend-development/03-coding-principles/dependency-injection-principles.md)
 
 ## 4. Sign-off Criteria
 - Approved when the developer compiles code locally, runs linter checks, and verifies naming casing.

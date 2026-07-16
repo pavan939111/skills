@@ -1,4 +1,4 @@
-# 12 â€” Governance
+# 12 — Governance
 
 Organizational operations governance, compliance controls, and checklists.
 

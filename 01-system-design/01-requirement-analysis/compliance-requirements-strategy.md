@@ -14,11 +14,11 @@ Compliance is not a checkbox added before launch. It is a fundamental system des
 5. **Establish De-identification Rules:** Define how customer data will be anonymized, pseudonymized, or crypto-shredded when deleted.
 
 ## 4. Inputs Needed
-- Product compliance guidelines and business constraints from [Product Analysis Constraints](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/constraints-analysis.md).
+- Product compliance guidelines and business constraints from [Product Analysis Constraints](../../00-product-analysis/constraints-analysis.md).
 - Legal compliance mandates per country of operation.
 
 ## 5. Outputs Produced
-- Feeds into [Security Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/13-security-strategy/index.md) and [Database Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md).
+- Feeds into [Security Strategy](../../13-architecture-decision-records/index.md) and [Database Selection](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Healthcare Scheduling API)
 - **Compliance Target:** HIPAA (health data security) and GDPR (user privacy).

@@ -20,5 +20,5 @@
 - System throughput collapses because database queries block API routing threads.
 
 ### 5. Where to Go Next
-- For configuring, building, and deploying backend applications, see [Backend Development Reference Map](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/README.md).
-- For translating system architectures to folders structure, see [Project Structure Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development02-directory-structure/index.md).
+- For configuring, building, and deploying backend applications, see [Backend Development Reference Map](../../13-architecture-decision-records/README.md).
+- For translating system architectures to folders structure, see [Project Structure Guide](../../13-architecture-decision-records/index.md).

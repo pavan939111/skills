@@ -19,4 +19,4 @@ Code-implementation altitude only — how to actually write these patterns in se
 | 11 | Outbox | `outbox-implementation.md` | ⏳ pending |
 | 12 | Specification | `specification-implementation.md` | ⏳ pending |
 
-> `cqrs-implementation.md`, `saga-implementation.md`, and `outbox-implementation.md` here are the **code-implementation** angle (how to structure the classes/handlers). Whether to use the pattern at all → `../../01-system-design/19-design-patterns/`. How it shapes the schema/storage → `../../database-design/13-design-patterns/`. Three altitudes, one pattern, no duplication — each file is short and cross-references the other two.
+> `cqrs-implementation.md`, `saga-implementation.md`, and `outbox-implementation.md` here are the **code-implementation** angle (how to structure the classes/handlers). Whether to use the pattern at all → `../../01-system-design/19-design-patterns/`. How it shapes the schema/storage → `../../04-database-design/13-design-patterns/`. Three altitudes, one pattern, no duplication — each file is short and cross-references the other two.

@@ -21,9 +21,9 @@ This checklist is used to review the security of any prompt edits, tool configur
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Tool Security](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering12-security-implementation/tool-security-implementation.md)
-- [AI Security Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering12-security-implementation/ai-security-checklist.md)
-- [Security Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/security-review-strategy-implementation.md)
+- [Tool Security](../12-security-implementation/tool-security-implementation.md)
+- [AI Security Checklist](../12-security-implementation/ai-security-checklist.md)
+- Security Review Checklist
 
 ## 4. Sign-off Criteria
 The per-change security review passes when:

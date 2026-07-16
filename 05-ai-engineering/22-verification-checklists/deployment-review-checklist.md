@@ -20,9 +20,9 @@ This checklist is used to review deployment variables, registry changes, feature
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Model Versioning](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/model-versioning-strategy-implementation.md)
-- [Prompt Versioning](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/prompt-versioning-strategy-implementation.md)
-- [Deployment Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/deployment-review-strategy-implementation.md)
+- Model Versioning
+- Prompt Versioning
+- Deployment Review Checklist
 
 ## 4. Sign-off Criteria
 The per-change deployment review passes when:

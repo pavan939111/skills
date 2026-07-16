@@ -17,11 +17,11 @@ Defining service boundaries is the core task of decomposing a complex system. If
 5. **Establish Team Ownership boundaries:** Align service boundaries with team structures to reduce communication overhead.
 
 ## 4. Inputs Needed
-- Product user flows and functional capabilities from [Functional Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/functional-requirements-analysis.md).
+- Product user flows and functional capabilities from [Functional Requirements](../../00-product-analysis/functional-requirements-analysis.md).
 - Chosen architecture style (from architecture selection).
 
 ## 5. Outputs Produced
-- Feeds into [Domain Boundaries](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/domain-boundaries-strategy-implementation.md) and [Component Interactions](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/component-interactions-strategy-implementation.md).
+- Feeds into Domain Boundaries and Component Interactions.
 
 ## 6. Worked Example (E-Commerce Decomposition)
 - **Bounded Contexts:**

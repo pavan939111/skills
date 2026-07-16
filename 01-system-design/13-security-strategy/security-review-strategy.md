@@ -22,5 +22,5 @@
 - Code leaks secret keys in production logs due to un-audited logging routes.
 
 ### 5. Where to Go Next
-- For the comprehensive data-layer security checklist, see [Database Security Review](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/12-production-checklists/security-review-strategy-implementation.md).
-- For coding security practices and environment parameters audits, see [Security Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/foundations/04-security.md).
+- For the comprehensive data-layer security checklist, see Database Security Review.
+- For coding security practices and environment parameters audits, see [Security Foundations](../../08-security-engineering/security-fundamentals-policy.md).

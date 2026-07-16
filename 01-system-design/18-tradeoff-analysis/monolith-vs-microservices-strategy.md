@@ -14,11 +14,11 @@ A premature transition to microservices creates massive operational debt: networ
 5. **Enforce Bounded Data Contexts:** Map how databases will be partitioned per service.
 
 ## 4. Inputs Needed
-- Product timelines, team resources, and budgets from [Business Constraints](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/business-constraints-analysis.md).
+- Product timelines, team resources, and budgets from Business Constraints.
 - Target peak QPS and capacities.
 
 ## 5. Outputs Produced
-- Feeds directly into [Architecture Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/index.md).
+- Feeds directly into [Architecture Selection](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Standard SaaS Project)
 - **Monolith:** High developer velocity, low infrastructure costs, fast in-memory execution, but shared deployment queue.

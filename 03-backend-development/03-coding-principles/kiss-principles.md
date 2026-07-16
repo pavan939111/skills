@@ -1,7 +1,7 @@
 # KISS (Keep It Simple, Stupid) in Backend Development
 
 > [!NOTE]
-> [That file covers the general KISS principle; this file covers backend-specific application.](../../02-engineering-principles/02-core-engineering-principles/03-kiss.md)
+> That file covers the general KISS principle; this file covers backend-specific application.
 
 ## 1. Backend Application Context
 KISS focuses on writing simple, readable API routes and business logic. It avoids unnecessary abstractions, complex framework layers, and convoluted query joins:
@@ -28,4 +28,4 @@ def read_item(item_id: int):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [KISS Principle](../../production_principles/02-core-engineering-principles/03-kiss-principles.md)
+- [KISS Principle](../../02-engineering-principles/02-core-engineering-principles/03-kiss-principles.md)

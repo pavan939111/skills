@@ -20,4 +20,4 @@
 - Serverless billing exceeds standard VM hosting costs because functions receive continuous high-volume traffic.
 
 ### 5. Where to Go Next
-- For operational cloud cost tracking, budget alerts, and tagging schemas, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md).
+- For operational cloud cost tracking, budget alerts, and tagging schemas, see [Cost Optimization & FinOps Guide](../../12-governance/03-operations-and-governance/01-cost-optimization-finops-guideline.md).

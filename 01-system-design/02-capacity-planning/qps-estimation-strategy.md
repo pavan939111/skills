@@ -19,11 +19,11 @@ Without this estimation, database clusters are mis-configured, leading to connec
 5. **Map to Hardware Limits:** Compare peak write QPS against database disk write IOPS boundaries (e.g. standard AWS GP3 storage supports 3,000 IOPS baseline).
 
 ## 4. Inputs Needed
-- Peak RPS estimates from [Request Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/request-estimation-strategy-implementation.md).
+- Peak RPS estimates from Request Estimation.
 - Operational workloads and read/write ratios.
 
 ## 5. Outputs Produced
-- Feeds directly into [Database Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md) and [Scalability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/14-scalability-strategy/index.md).
+- Feeds directly into [Database Strategy](../../13-architecture-decision-records/index.md) and [Scalability Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Financial Wallet Ledger)
 - **Scale:** 5,000,000 DAU.

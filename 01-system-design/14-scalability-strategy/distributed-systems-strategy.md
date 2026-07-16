@@ -20,5 +20,5 @@
 - System write throughput collapses because two-phase commits hold locks on tables across multiple distributed databases.
 
 ### 5. Where to Go Next
-- For distributed databases scaling, partitioning, and CAP boundaries, see [Distributed Databases Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/distributed-databases-strategy.md).
-- For general scalability principles, see [Scalability Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/02-scalability.md).
+- For distributed databases scaling, partitioning, and CAP boundaries, see [Distributed Databases Guide](../../04-database-design/06-scalability/distributed-databases-strategy.md).
+- For general scalability principles, see Scalability Implementation Guide.

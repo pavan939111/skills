@@ -1,6 +1,6 @@
 # Hybrid Search for RAG
 
-*For details on database-level keyword indexing and vector search integrations, see [Hybrid Search Mechanics](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/hybrid-search-strategy-implementation.md).*
+*For details on database-level keyword indexing and vector search integrations, see Hybrid Search Mechanics.*
 
 ## 1. Definition & Core Concepts
 Hybrid Search is the combination of keyword-based lexical search (BM25) and semantic vector search (embeddings) to retrieve documents, using fusion algorithms to merge and rank results.

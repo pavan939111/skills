@@ -14,11 +14,11 @@ Product managers write functional requirements in human terms (e.g. "Users can i
 5. **Declare System Events:** Define the events published to message brokers upon completion.
 
 ## 4. Inputs Needed
-- Product-level User Personas and Flows from [Product Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/index.md).
+- Product-level User Personas and Flows from [Product Analysis](../../13-architecture-decision-records/index.md).
 - Business goals and MoSCoW priority lists.
 
 ## 5. Outputs Produced
-- Feeds directly into [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md) (QPS and storage sizing) and [Component Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/index.md).
+- Feeds directly into [Capacity Planning](../../13-architecture-decision-records/index.md) (QPS and storage sizing) and [Component Design](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User Teammate Invitation)
 - **Product Requirement:** "A team owner can invite a new manager to their dashboard via email."

@@ -1,6 +1,6 @@
 # 06 — API Strategy
 
-Decides which API style(s) fit this product — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../backend-development/04-api-design/` (once built).
+Decides which API style(s) fit this product — comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../03-backend-development/04-api-design/` (once built).
 
 ## Topics
 

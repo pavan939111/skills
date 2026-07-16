@@ -28,10 +28,10 @@ This checklist acts as the final master sign-off gate for deploying AI features 
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Model Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/model-review-checklist.md)
-- [Prompt Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/prompt-review-checklist.md)
-- [Security Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/security-review-strategy-implementation.md)
-- [Deployment Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/deployment-review-strategy-implementation.md)
+- [Model Review Checklist](model-review-checklist.md)
+- [Prompt Review Checklist](../22-verification-checklists/prompt-review-checklist.md)
+- Security Review Checklist
+- Deployment Review Checklist
 
 ## 4. Sign-off Criteria
 The master production sign-off passes when:

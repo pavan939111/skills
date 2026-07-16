@@ -22,10 +22,10 @@ This checklist acts as a production readiness gate to review blue-green deployme
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Model and Prompt Deployment](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/deployment-implementation.md)
-- [Canary Releases](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/canary-strategy-implementation.md)
-- [Shadow Testing](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/shadow-testing-implementation.md)
-- [Rollback Strategies](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/rollback-implementation.md)
+- [Model and Prompt Deployment](../../07-platform-engineering/01-devops-readiness/deployment-implementation.md)
+- Canary Releases
+- [Shadow Testing](../17-operations-management/shadow-testing-implementation.md)
+- [Rollback Strategies](../17-operations-management/rollback-implementation.md)
 
 ## 4. Sign-off Criteria
 The deployment review passes when:

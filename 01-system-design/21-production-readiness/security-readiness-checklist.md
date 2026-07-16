@@ -20,7 +20,7 @@ Identifying security vulnerability design flaws (e.g. missing input validation, 
 - Security strategy selections.
 
 ## 5. Outputs Produced
-- Feeds into [Database Security Review](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/12-production-checklists/security-review-strategy-implementation.md).
+- Feeds into Database Security Review.
 
 ## 6. Worked Checklist Example
 - [x] Environment secrets are injected via vault managers (no plaintext files).

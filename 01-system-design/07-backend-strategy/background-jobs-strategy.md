@@ -21,5 +21,5 @@
 - Database locks spike because too many worker processes repeatedly poll database queue tables.
 
 ### 5. Where to Go Next
-- For implementing job publishers and queue decorators in backend service code, see [Job Queues Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/11-background-processing/job-queues-implementation.md).
-- For deep-dives into background job architecture, see [Background Jobs and Messaging](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/02-background-jobs-messaging.md).
+- For implementing job publishers and queue decorators in backend service code, see [Job Queues Implementation](../../03-backend-development/11-background-processing/job-queues-implementation.md).
+- For deep-dives into background job architecture, see Background Jobs and Messaging.

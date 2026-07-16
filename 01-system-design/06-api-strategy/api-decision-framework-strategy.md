@@ -22,4 +22,4 @@
 - Client applications lag because they must parse heavy REST JSON responses containing unused nested fields.
 
 ### 5. Where to Go Next
-- For implementation guidelines across all API styles (REST, GraphQL, gRPC, WebSockets), see [API Development Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/index.md).
+- For implementation guidelines across all API styles (REST, GraphQL, gRPC, WebSockets), see [API Development Reference](../../13-architecture-decision-records/index.md).

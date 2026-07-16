@@ -18,11 +18,11 @@ Without a growth plan, scaling bottlenecks trigger emergency system rewrites dur
 5. **Plan Data Lifecycle Automation:** Design partition dropping and cold-archiving routines early to keep active storage sizes steady.
 
 ## 4. Inputs Needed
-- Storage and traffic projections from [Storage Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/storage-estimation-strategy-implementation.md) and [Traffic Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/traffic-estimation-strategy-implementation.md).
+- Storage and traffic projections from Storage Estimation and Traffic Estimation.
 - Business scaling targets.
 
 ## 5. Outputs Produced
-- Feeds into [Scalability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/14-scalability-strategy/index.md) and [Cost Optimization Strategies](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/17-cost-optimization/index.md).
+- Feeds into [Scalability Strategy](../../13-architecture-decision-records/index.md) and [Cost Optimization Strategies](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Financial Ledger Startup)
 - **Start State (Year 1):** 100,000 users, 100GB database storage, peak 100 QPS.

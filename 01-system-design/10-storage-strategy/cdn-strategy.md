@@ -21,4 +21,4 @@
 - Users see outdated media images because the CDN cache invalidation headers are set incorrectly.
 
 ### 5. Where to Go Next
-- For configuring HTTP caching headers (`Cache-Control`, `ETag`) and CDN integrations, see [CDN & Cache-Control Configurations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/04-file-storage-strategy-implementation.md).
+- For configuring HTTP caching headers (`Cache-Control`, `ETag`) and CDN integrations, see [CDN & Cache-Control Configurations](../../04-database-design/file-storage-strategy.md).

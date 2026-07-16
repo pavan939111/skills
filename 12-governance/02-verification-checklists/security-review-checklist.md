@@ -11,8 +11,8 @@ The Security Review Checklist is an audit tool used to check that endpoints enfo
 - [ ] Rate limit limits configured on public authentication endpoints
 
 ## 3. Cross-References
-- [Security reference](..17-security-implementation/)
-- [Authentication reference](../01-authentication/)
+- [Security reference](../../08-security-engineering/03-security-implementation/)
+- [Authentication reference](../../08-security-engineering/01-authentication/)
 
 ## 4. Sign-off Criteria
 - Approved when security verification tests pass and database user permissions use least-privilege configurations.

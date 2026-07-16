@@ -18,4 +18,4 @@ The Performance Checklist is an audit tool used to verify that caches, async loo
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dives:
-- [Performance Engineering](../../production_principles/performance-and-scale/01-performance-engineering.md)
+- Performance Engineering

@@ -22,4 +22,4 @@ Code reviews verify that incoming pull requests conform to style guides, securit
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Code Review Practices](../../production_principles/development-workflow-practices/02-code-review-practices.md)
+- Code Review Practices

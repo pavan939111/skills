@@ -24,4 +24,4 @@ def move_to_dead_letter_queue(job, error):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Background Jobs and Messaging](../../production_principles/data-and-messaging/02-background-jobs-messaging.md)
+- Background Jobs and Messaging

@@ -20,4 +20,4 @@
 - Users cannot complete purchases because a secondary analytics logging service went offline, blocking the primary thread.
 
 ### 5. Where to Go Next
-- For configuring feature flags, dynamic route degradation, and load-shedding parameters, see [Resilience Patterns & Implementations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/03-resilience-patterns.md).
+- For configuring feature flags, dynamic route degradation, and load-shedding parameters, see Resilience Patterns & Implementations.

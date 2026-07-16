@@ -21,5 +21,5 @@
 - Index lookup latencies increase because B-Tree indexes grow too large to fit in server RAM.
 
 ### 5. Where to Go Next
-- For database-level partitioning syntax, schema designs, and pruning configurations, see [Database Table Partitioning Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/partitioning-strategy-implementation.md).
-- For data retention and archiving lifecycles, see [Data Retention Policies](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/09-data-governance/data-retention-strategy.md).
+- For database-level partitioning syntax, schema designs, and pruning configurations, see Database Table Partitioning Guide.
+- For data retention and archiving lifecycles, see [Data Retention Policies](../../04-database-design/09-data-governance/data-retention-strategy.md).

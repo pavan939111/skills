@@ -21,4 +21,4 @@
 - API version changes break downstream consumers due to proto field mismatches.
 
 ### 5. Where to Go Next
-- For implementation of proto files, gRPC clients, and service stubs generation, see [gRPC Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/grpc-strategy-implementation.md).
+- For implementation of proto files, gRPC clients, and service stubs generation, see gRPC Implementation.

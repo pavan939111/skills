@@ -19,4 +19,4 @@
 - Security resources are wasted resolving low-risk vulnerabilities while leaving major spoofing pathways open.
 
 ### 5. Where to Go Next
-- For threat mitigation patterns, network boundaries setups, and secure coding practices, see [Security Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/foundations/04-security.md).
+- For threat mitigation patterns, network boundaries setups, and secure coding practices, see [Security Foundations](../../08-security-engineering/security-fundamentals-policy.md).

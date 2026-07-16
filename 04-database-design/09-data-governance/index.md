@@ -22,6 +22,7 @@ Enterprise-grade discipline around the data itself over its lifetime: retention,
 | # | Topic | File | Status |
 |---|-------|------|--------|
 | 01 | Data Retention | `data-retention-strategy.md` | done |
+| 07 | Data Masking & Anonymization | `data-masking-anonymization.md` | done |
 | 02 | Archiving | `archiving-strategy.md` | done |
 | 03 | Data Quality | `data-quality-strategy.md` | done |
 | 04 | Data Lineage | `data-lineage-strategy.md` | done |

@@ -21,4 +21,4 @@
 - Gateway memory is exhausted attempting to parse complex client query strings.
 
 ### 5. Where to Go Next
-- For implementation of GraphQL schemas, queries, mutations, and database loaders, see [GraphQL Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/graphql-strategy-implementation.md).
+- For implementation of GraphQL schemas, queries, mutations, and database loaders, see GraphQL Implementation.

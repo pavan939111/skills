@@ -20,5 +20,5 @@
 - Gateway threads exhaust because the aggregator executes downstream calls sequentially, blocking on slow network responses.
 
 ### 5. Where to Go Next
-- For sequence flows and request alignments, see [Sequence Diagrams Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/sequence-diagrams-strategy-implementation.md).
-- For component dependency guidelines, see [Component Interactions Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/component-interactions-strategy-implementation.md).
+- For sequence flows and request alignments, see Sequence Diagrams Reference.
+- For component dependency guidelines, see Component Interactions Design.

@@ -1,6 +1,6 @@
 # Embedding Strategy for RAG
 
-*For details on database-level vector indexing and database schemas, see [Embedding Storage Mechanics](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/embedding-storage-strategy.md).*
+*For details on database-level vector indexing and database schemas, see [Embedding Storage Mechanics](../../04-database-design/10-ai-and-modern-databases/embedding-storage-strategy.md).*
 
 ## 1. Definition & Core Concepts
 Embedding Strategy is the process of generating semantic vector representations of text chunks and user queries using matching models to ensure search query vectors map accurately to relevant document vectors.

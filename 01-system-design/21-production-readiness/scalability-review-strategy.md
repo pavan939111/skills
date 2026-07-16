@@ -13,11 +13,11 @@ Validating scaling strategies before writing code prevents database lock saturat
 4. **Run Checklist Audit:** Compare designs to performance requirements.
 
 ## 4. Inputs Needed
-- Latency and throughput requirements from [Requirements Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/index.md).
+- Latency and throughput requirements from [Requirements Analysis](../../13-architecture-decision-records/index.md).
 - Chosen scaling designs.
 
 ## 5. Outputs Produced
-- Feeds into [Database Scalability Review](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/12-production-checklists/scalability-review-strategy-implementation.md).
+- Feeds into Database Scalability Review.
 
 ## 6. Worked Checklist Example
 - [x] Application containers run stateless behind a Round-Robin load balancer.

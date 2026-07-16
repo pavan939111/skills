@@ -14,11 +14,11 @@ Decomposing a system too early or into too many small services (microservice pre
 5. **Decouple via Event Bridges:** Swap in-memory class imports with network API calls or asynchronous event publish loops.
 
 ## 4. Inputs Needed
-- Service boundaries maps and domain definitions from [Service Boundaries](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/service-boundaries-strategy-implementation.md).
+- Service boundaries maps and domain definitions from Service Boundaries.
 - Target peak QPS and transaction scopes.
 
 ## 5. Outputs Produced
-- Feeds into [Component Interactions](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/component-interactions-strategy-implementation.md) and deployment topologies.
+- Feeds into Component Interactions and deployment topologies.
 
 ## 6. Worked Example (Extracting Recommendation Engine)
 - **Monolith State:** Single server running Node.js, managing User Profiles, Checkout, and a basic Product Recommendation loop (joins user histories to product tables).

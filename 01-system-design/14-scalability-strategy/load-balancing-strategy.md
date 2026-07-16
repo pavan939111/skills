@@ -20,4 +20,4 @@
 - The load balancer fails to distribute traffic during auto-scaling events due to sticky session configuration bindings.
 
 ### 5. Where to Go Next
-- For configuring load balancers, health checks routing, and SSL termination policies, see [Scalability Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/02-scalability.md).
+- For configuring load balancers, health checks routing, and SSL termination policies, see Scalability Implementation Guide.

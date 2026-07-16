@@ -38,4 +38,4 @@ class UserService:
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [SOLID Principles](../../production_principles/02-core-engineering-principles/01-solid-principles.md)
+- [SOLID Principles](../../02-engineering-principles/02-core-engineering-principles/01-solid-principles.md)

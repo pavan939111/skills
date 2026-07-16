@@ -21,4 +21,4 @@
 - Users are shown misleading "zero balance" screens because the system fell back to empty mock values instead of stale cache data.
 
 ### 5. Where to Go Next
-- For implementing fallback classes, mocking hooks, and stale cache lookups, see [Resilience Patterns & Implementations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/03-resilience-patterns.md).
+- For implementing fallback classes, mocking hooks, and stale cache lookups, see Resilience Patterns & Implementations.

@@ -1,6 +1,6 @@
 # Chunking Strategy for RAG
 
-*For details on database-level storage limits and chunk schema mappings, see [Database Chunking Mechanics](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/chunking-strategy.md).*
+*For details on database-level storage limits and chunk schema mappings, see [Database Chunking Mechanics](../../04-database-design/10-ai-and-modern-databases/chunking-strategy.md).*
 
 ## 1. Definition & Core Concepts
 Chunking is the process of splitting input documents into smaller, semantically coherent text segments (chunks) before generating embeddings and writing to vector databases.

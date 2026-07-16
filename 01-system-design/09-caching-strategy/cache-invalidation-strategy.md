@@ -20,4 +20,4 @@
 - Cache nodes run out of memory because keys are created without TTL parameters, bypassing LRU cleanups.
 
 ### 5. Where to Go Next
-- For implementing cache-aside invalidation blocks, evictions hooks, and dynamic TTL calculations, see [Caching Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/01-caching-implementation.md).
+- For implementing cache-aside invalidation blocks, evictions hooks, and dynamic TTL calculations, see [Caching Implementation Guide](../../04-database-design/04-database-best-practices/caching-implementation.md).

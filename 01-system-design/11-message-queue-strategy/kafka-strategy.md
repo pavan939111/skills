@@ -21,4 +21,4 @@
 - Disk storage on Kafka brokers is exhausted because log retention periods are set to infinite without size caps.
 
 ### 5. Where to Go Next
-- For configuring partition keys, consumer groups, log retention rules, and offset commits, see [Message Broker Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/02-background-jobs-messaging.md).
+- For configuring partition keys, consumer groups, log retention rules, and offset commits, see Message Broker Architecture & Implementation.

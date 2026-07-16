@@ -21,5 +21,5 @@
 - Query performance drops because the primary transactional database is saturated with analytical scans.
 
 ### 5. Where to Go Next
-- For the comprehensive data layer selection, modeling, and operational scaling guidelines, see [Database Design Master Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/README.md).
-- For picking specific database engines (e.g. Postgres vs DynamoDB), see [Database Selection Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/index.md).
+- For the comprehensive data layer selection, modeling, and operational scaling guidelines, see [Database Design Master Reference](../../13-architecture-decision-records/README.md).
+- For picking specific database engines (e.g. Postgres vs DynamoDB), see [Database Selection Reference](../../13-architecture-decision-records/index.md).

@@ -17,11 +17,11 @@ While CQRS isolates read-write resource contention and allows independent scalin
 5. **Formulate the Decision:** Verify if isolating resource contention is worth the sync complexity.
 
 ## 4. Inputs Needed
-- Peak QPS, database write metrics, and read/write ratios from [Workload Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/workload-analysis.md).
+- Peak QPS, database write metrics, and read/write ratios from [Workload Analysis](../01-requirement-analysis/workload-analysis.md).
 - Non-functional performance budgets.
 
 ## 5. Outputs Produced
-- Feeds into [Database Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md) and [Design Patterns Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/19-design-patterns/index.md).
+- Feeds into [Database Strategy](../../13-architecture-decision-records/index.md) and [Design Patterns Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Financial Ledger & Search Dashboard)
 - **Problem:** Users generate high write volume of wallet transactions (must be ACID). Simultaneously, merchants run heavy analytical query dashboards to filter transaction history, locking database rows.

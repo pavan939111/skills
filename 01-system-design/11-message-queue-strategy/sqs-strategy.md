@@ -21,4 +21,4 @@
 - Message processing delays occur because the visibility timeout limit is set shorter than the actual task execution time, causing SQS to dispatch tasks to a second worker before the first completes.
 
 ### 5. Where to Go Next
-- For configuring queue parameters, dead letter thresholds, and visibility timeouts, see [Message Broker Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/02-background-jobs-messaging.md).
+- For configuring queue parameters, dead letter thresholds, and visibility timeouts, see Message Broker Architecture & Implementation.

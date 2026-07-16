@@ -16,11 +16,11 @@ A business workflow often spans multiple microservices. In distributed architect
 5. **Enforce Step Idempotency:** Ensure all services handle duplicate workflow step triggers safely.
 
 ## 4. Inputs Needed
-- Bounded contexts definitions from [Service Boundaries](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/service-boundaries-strategy-implementation.md).
+- Bounded contexts definitions from Service Boundaries.
 - User flows and functional specs.
 
 ## 5. Outputs Produced
-- Feeds into [Design Patterns Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/19-design-patterns/index.md) and [Message Queue Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/11-message-queue-strategy/index.md).
+- Feeds into [Design Patterns Strategy](../../13-architecture-decision-records/index.md) and [Message Queue Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User Account Upgrade Workflow)
 - **Workflow Goal:** Upgrade user to premium status.

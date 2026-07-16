@@ -25,4 +25,4 @@ def execute_with_retry(func, max_retries=3, base_backoff=1.0):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Error Handling & Exception Strategy](../../production_principles/reliability-coding-practices/01-error-handling-exception-strategy-implementation.md)
+- Error Handling & Exception Strategy

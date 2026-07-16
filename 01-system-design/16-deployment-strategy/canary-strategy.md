@@ -20,5 +20,5 @@
 - Users experience session failures because they are routed between canary and standard nodes without session bindings.
 
 ### 5. Where to Go Next
-- For configuring weighted traffic routing on gateways and monitors rules, see [CI/CD Implementation Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md).
-- For tracing error metrics, see [Observability Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/foundations/03-observability-management-guide.md).
+- For configuring weighted traffic routing on gateways and monitors rules, see [CI/CD Implementation Reference](../../07-platform-engineering/ci-cd-configuration.md).
+- For tracing error metrics, see [Observability Reference](../../10-production-operations/observability-management-guide.md).

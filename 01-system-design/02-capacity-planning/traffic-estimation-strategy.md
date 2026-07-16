@@ -18,11 +18,11 @@ Traffic estimation provides the raw numbers (QPS, DAU ratios) that dictate node 
 5. **Separate Read and Write QPS:** Align ratios with workload analyses.
 
 ## 4. Inputs Needed
-- Active user scale and read-to-write ratios from [User Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/user-analysis.md).
+- Active user scale and read-to-write ratios from [User Analysis](../01-requirement-analysis/user-analysis.md).
 - Target peak traffic parameters.
 
 ## 5. Outputs Produced
-- Feeds directly into [Storage Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/storage-estimation-strategy-implementation.md), [Bandwidth Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/bandwidth-estimation-strategy-implementation.md), and [QPS Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/qps-estimation-strategy-implementation.md).
+- Feeds directly into Storage Estimation, Bandwidth Estimation, and QPS Estimation.
 
 ## 6. Worked Example (Standard SaaS Product Catalog)
 - **User Scale:** 1,000,000 DAU.

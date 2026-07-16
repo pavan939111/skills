@@ -20,5 +20,5 @@
 - System threads hang because API routers retry slow queries repeatedly without checking timeout thresholds.
 
 ### 5. Where to Go Next
-- For configuring retry middleware, exponential intervals calculations, and jitter rules in code, see [Resilience Patterns & Implementations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/03-resilience-patterns.md).
-- For background task retries, see [Background Processing Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/07-backend-strategy/background-jobs-strategy-implementation.md).
+- For configuring retry middleware, exponential intervals calculations, and jitter rules in code, see Resilience Patterns & Implementations.
+- For background task retries, see Background Processing Strategy.

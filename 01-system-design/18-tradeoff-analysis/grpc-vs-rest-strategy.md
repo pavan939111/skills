@@ -13,11 +13,11 @@ In distributed architectures (microservices), internal service communication hap
 4. **Compare Client Tooling capabilities:** REST is universally supported; gRPC requires client stub compilation.
 
 ## 4. Inputs Needed
-- Latency budgets from [Latency Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/latency-requirements-strategy-implementation.md).
+- Latency budgets from Latency Requirements.
 - Service boundaries and communication maps.
 
 ## 5. Outputs Produced
-- Feeds directly into [API Strategy Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/grpc-strategy-implementation.md).
+- Feeds directly into API Strategy Selection.
 
 ## 6. Worked Example (User Order to Inventory Check)
 - **Order Service calling Inventory Service (gRPC Choice):**

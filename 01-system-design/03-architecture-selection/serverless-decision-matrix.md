@@ -18,11 +18,11 @@ Evaluating these constraints early prevents deploying latency-sensitive or long-
 5. **Manage Database Connections:** Avoid direct connections from thousands of transient Lambda nodes to relational databases. Use database proxies (PgBouncer or RDS Proxy) to prevent connection slot exhaustion.
 
 ## 4. Inputs Needed
-- Peak QPS and database connection profiles from [Traffic Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/traffic-estimation-strategy-implementation.md).
+- Peak QPS and database connection profiles from Traffic Estimation.
 - Non-functional performance budgets.
 
 ## 5. Outputs Produced
-- Feeds into [Deployment Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/16-deployment-strategy/index.md) and [Cost Optimization Strategies](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/17-cost-optimization/index.md).
+- Feeds into [Deployment Strategy](../../13-architecture-decision-records/index.md) and [Cost Optimization Strategies](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (SaaS Thumbnail Generator)
 - **Workload:** Users upload raw images. A task generates thumbnails, extracts metadata, and updates catalogs. Traffic is highly irregular (spikes when users import catalogs; zero traffic at night).

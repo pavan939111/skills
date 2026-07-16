@@ -21,5 +21,5 @@
 - Database write queues clog because backend services acquire long-duration distributed locks on idempotency keys.
 
 ### 5. Where to Go Next
-- For implementation of idempotency header parsing and key validation in controllers, see [API Development](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/restful-api.md).
-- For database-level duplicate transaction prevention patterns, see [Outbox Pattern and Transaction Safety](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/13-design-patterns/outbox-pattern.md).
+- For implementation of idempotency header parsing and key validation in controllers, see API Development.
+- For database-level duplicate transaction prevention patterns, see [Outbox Pattern and Transaction Safety](../../04-database-design/13-design-patterns/outbox-pattern.md).

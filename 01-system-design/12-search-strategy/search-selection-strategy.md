@@ -21,5 +21,5 @@
 - The search quality degrades because the database cannot query lexical and semantic vectors concurrently.
 
 ### 5. Where to Go Next
-- For configuring dedicated full-text search indexes, see [Search Engine Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/search-engine-decision-matrix.md).
-- For AI-specific vector databases and chunk schemas, see [Vector Database Design Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/vector-database-design-strategy.md).
+- For configuring dedicated full-text search indexes, see [Search Engine Selection](../../04-database-design/01-database-selection/search-engine-decision-matrix.md).
+- For AI-specific vector databases and chunk schemas, see [Vector Database Design Reference](../../04-database-design/10-ai-and-modern-databases/vector-database-design-strategy.md).

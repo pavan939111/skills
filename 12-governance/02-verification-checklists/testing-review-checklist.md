@@ -11,8 +11,8 @@ The Testing Checklist is an audit tool used to check that new services contain m
 - [ ] Test coverage metrics meet organizational baselines
 
 ## 3. Cross-References
-- [Testing reference](..19-testing-verification/)
-- [Unit testing](..19-testing-verification/unit-testing-verification-guide.md)
+- [Testing reference](../../09-testing-quality/01-testing-verification/)
+- [Unit testing](../../09-testing-quality/01-testing-verification/unit-testing-verification-guide.md)
 
 ## 4. Sign-off Criteria
 - Approved when test coverage meets targets and CI pipeline tests execute successfully.

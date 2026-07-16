@@ -20,5 +20,5 @@
 - Server scaling is blocked because network load balancers are configured with sticky session rules, routing traffic unevenly.
 
 ### 5. Where to Go Next
-- For implementing stateless controllers, token checks, and out-of-process caches, see [Scalability Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/02-scalability.md).
-- For details on state storage architectures, see [State Management Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/state-management-strategy-implementation.md).
+- For implementing stateless controllers, token checks, and out-of-process caches, see Scalability Implementation Guide.
+- For details on state storage architectures, see State Management Design.

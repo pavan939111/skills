@@ -25,12 +25,12 @@ This checklist validates that database replication topologies, read replicas rou
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Replication](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/replication-strategy.md)
-- [Read Replicas](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/read-replicas-strategy.md)
-- [Partitioning](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/partitioning-strategy-implementation.md)
-- [Sharding](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/sharding-schema-design.md)
-- [Distributed Databases](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/distributed-databases-strategy.md)
-- [Read-Write Splitting](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/05-query-and-performance/read-write-splitting-optimization.md)
+- [Replication](../06-scalability/replication-strategy.md)
+- [Read Replicas](../06-scalability/read-replicas-strategy.md)
+- Partitioning
+- [Sharding](../03-schema-design/sharding-schema-design.md)
+- [Distributed Databases](../06-scalability/distributed-databases-strategy.md)
+- [Read-Write Splitting](../05-query-and-performance/read-write-splitting-optimization.md)
 
 ## 4. Sign-off Criteria
 The scalability review passes when:

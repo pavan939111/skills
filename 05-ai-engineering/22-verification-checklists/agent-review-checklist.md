@@ -22,10 +22,10 @@ This checklist is used to review additions or updates to agent models, planning 
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Agent Architecture](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering07-autonomous-agent-engineering/agent-architecture-implementation.md)
-- [Tool Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering07-autonomous-agent-engineering/tool-selection-implementation.md)
-- [Agent Monitoring](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering15-observability-management/agent-monitoring-strategy.md)
-- [Tool-Use Pattern](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering19-pattern-implementation/tool-use-pattern.md)
+- [Agent Architecture](../07-autonomous-agent-engineering/agent-architecture-implementation.md)
+- [Tool Selection](../07-autonomous-agent-engineering/tool-selection-implementation.md)
+- [Agent Monitoring](../15-observability-management/agent-monitoring-strategy.md)
+- [Tool-Use Pattern](../19-pattern-implementation/tool-use-pattern.md)
 
 ## 4. Sign-off Criteria
 The per-change agent review passes when:

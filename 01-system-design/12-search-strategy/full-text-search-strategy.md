@@ -21,4 +21,4 @@
 - Users report poor search matches because native database search cannot handle fuzzy spelling variants or synonyms.
 
 ### 5. Where to Go Next
-- For configuring database-native full-text search and setting up dedicated search indexes, see [Search Engine Database Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/search-engine-decision-matrix.md).
+- For configuring database-native full-text search and setting up dedicated search indexes, see [Search Engine Database Selection](../../04-database-design/01-database-selection/search-engine-decision-matrix.md).

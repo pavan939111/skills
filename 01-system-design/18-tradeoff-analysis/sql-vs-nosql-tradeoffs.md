@@ -17,11 +17,11 @@ Pick the wrong database paradigm and you lock yourself into either a schema that
 5. **Compare Operational Complexity:** Evaluate hosting and backup costs.
 
 ## 4. Inputs Needed
-- Data schemas and read/write QPS from [Workload Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/workload-analysis.md).
+- Data schemas and read/write QPS from [Workload Analysis](../01-requirement-analysis/workload-analysis.md).
 - Compliance and availability parameters.
 
 ## 5. Outputs Produced
-- Feeds directly into [Database Strategy Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/database-selection-strategy-implementation.md).
+- Feeds directly into Database Strategy Selection.
 
 ## 6. Worked Example (User Shopping Cart vs. Financial Balance)
 - **Financial Balance (SQL Choice):**

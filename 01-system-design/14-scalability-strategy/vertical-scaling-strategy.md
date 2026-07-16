@@ -20,5 +20,5 @@
 - Hardware scaling is exhausted because the system has been scaled up to the largest VM type available on the cloud provider.
 
 ### 5. Where to Go Next
-- For database-specific vertical scaling, memory buffer allocations, and SSD IOPS tuning guides, see [Vertical Database Scaling](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/vertical-scaling-strategy-implementation.md).
-- For general VM scaling parameters, see [Scalability Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/02-scalability.md).
+- For database-specific vertical scaling, memory buffer allocations, and SSD IOPS tuning guides, see Vertical Database Scaling.
+- For general VM scaling parameters, see Scalability Implementation Guide.

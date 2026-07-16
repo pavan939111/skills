@@ -21,5 +21,5 @@
 - The Elasticsearch cluster experiences out-of-memory (OOM) crashes due to unoptimized heap configurations or heavy heap aggregations.
 
 ### 5. Where to Go Next
-- For configuring dedicated search engines and mapping inverted indexes, see [Search Engine Database Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/search-engine-decision-matrix.md).
-- For details on relational vs search engine tradeoffs, see [SQL vs Search Engine Comparison](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/index.md).
+- For configuring dedicated search engines and mapping inverted indexes, see [Search Engine Database Selection](../../04-database-design/01-database-selection/search-engine-decision-matrix.md).
+- For details on relational vs search engine tradeoffs, see [SQL vs Search Engine Comparison](../../13-architecture-decision-records/index.md).

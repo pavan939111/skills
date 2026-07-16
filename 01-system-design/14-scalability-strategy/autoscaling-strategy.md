@@ -20,4 +20,4 @@
 - Memory utilization triggers scale-out actions, but containers fail to scale down because JVM processes refuse to release memory back to the OS.
 
 ### 5. Where to Go Next
-- For configuring cool-down periods, scaling policy triggers, and cloud metrics monitors, see [Scalability Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/02-scalability.md).
+- For configuring cool-down periods, scaling policy triggers, and cloud metrics monitors, see Scalability Implementation Guide.

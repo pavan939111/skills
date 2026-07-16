@@ -23,4 +23,4 @@ def get_user_profile(user_id: str):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Error Handling & Exception Strategy](../../production_principles/reliability-coding-practices/01-error-handling-exception-strategy-implementation.md)
+- Error Handling & Exception Strategy

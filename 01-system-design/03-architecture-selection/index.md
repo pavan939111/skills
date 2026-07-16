@@ -19,4 +19,4 @@ Chooses the overall architecture style for the system, based on requirements and
 | 11 | Architecture Decision Tree | `architecture-decision-tree-decision-matrix.md` | done |
 | 12 | Architecture Comparison | `architecture-comparison-decision-matrix.md` | done |
 
-> Note: `cqrs-decision-matrix.md` and `event-sourcing-decision-matrix.md` here decide *whether the overall system should be architected this way*. Implementation detail lives in `../19-design-patterns/` (architecture-level pattern brief) and `../../database-design/13-design-patterns/` (data-layer detail).
+> Note: `cqrs-decision-matrix.md` and `event-sourcing-decision-matrix.md` here decide *whether the overall system should be architected this way*. Implementation detail lives in `../19-design-patterns/` (architecture-level pattern brief) and `../../04-database-design/13-design-patterns/` (data-layer detail).

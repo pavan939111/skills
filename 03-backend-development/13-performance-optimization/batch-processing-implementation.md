@@ -21,4 +21,4 @@ def insert_orders_in_batches(orders, batch_size=500):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dives:
-- [Performance Engineering](../../production_principles/performance-and-scale/01-performance-engineering.md)
+- Performance Engineering

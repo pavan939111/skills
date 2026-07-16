@@ -21,9 +21,9 @@ This checklist is used to review evaluation outcomes and metrics after modifying
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Faithfulness Evaluation](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering13-response-evaluation/faithfulness-evaluation.md)
-- [Evaluation Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering13-response-evaluation/evaluation-checklist.md)
-- [Evaluation Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/evaluation-review-checklist.md)
+- [Faithfulness Evaluation](../13-response-evaluation/faithfulness-evaluation.md)
+- [Evaluation Checklist](../13-response-evaluation/evaluation-checklist.md)
+- [Evaluation Review Checklist](evaluation-review-checklist.md)
 
 ## 4. Sign-off Criteria
 The per-change evaluation review passes when:

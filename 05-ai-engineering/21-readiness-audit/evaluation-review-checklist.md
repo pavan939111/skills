@@ -22,10 +22,10 @@ This checklist acts as a production readiness gate to review offline evaluation 
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Groundedness Evaluation](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering13-response-evaluation/groundedness-evaluation.md)
-- [Golden Dataset](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering13-response-evaluation/golden-dataset-evaluation.md)
-- [Continuous Evaluation](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/continuous-evaluation-implementation.md)
-- [Evaluator Agents](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering19-pattern-implementation/evaluator-agent-implementation.md)
+- [Groundedness Evaluation](../13-response-evaluation/groundedness-evaluation.md)
+- [Golden Dataset](../13-response-evaluation/golden-dataset-evaluation.md)
+- [Continuous Evaluation](../17-operations-management/continuous-evaluation-implementation.md)
+- [Evaluator Agents](../19-pattern-implementation/evaluator-agent-implementation.md)
 
 ## 4. Sign-off Criteria
 The evaluation review passes when:

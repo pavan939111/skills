@@ -17,11 +17,11 @@ Before finalizing technology strategy, the architect must present stakeholders w
 3. **Analyze Trade-offs:** Identify which style best matches active project constraints.
 
 ## 4. Inputs Needed
-- Project budgets and timelines from [Business Constraints](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/business-constraints-analysis.md).
+- Project budgets and timelines from Business Constraints.
 - Sizing requirements from Capacity Planning.
 
 ## 5. Outputs Produced
-- Feeds into [Architecture Decision Tree](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/architecture-decision-tree-decision-matrix-strategy-implementation.md) and final design proposals.
+- Feeds into Architecture Decision Tree and final design proposals.
 
 ## 6. Worked Example (SaaS Startup Comparison Matrix)
 - **Monolith:** Low cost, fast delivery, low complexity, low scaling ceiling, high transactional safety.

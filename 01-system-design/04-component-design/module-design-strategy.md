@@ -17,11 +17,11 @@ Even if service boundaries are correct, the internal code structure of a module 
 5. **Decouple using dependency injection:** Wire component dependencies dynamically.
 
 ## 4. Inputs Needed
-- Architectural selections from [Modular Monolith](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/modular-monolith-decision-matrix-strategy-implementation.md) or [Clean Architecture](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/clean-architecture-decision-matrix-strategy-implementation.md).
+- Architectural selections from Modular Monolith or Clean Architecture.
 - Domain models definitions.
 
 ## 5. Outputs Produced
-- Feeds into [Dependency Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/dependency-design-strategy-implementation.md) and code repositories.
+- Feeds into Dependency Design and code repositories.
 
 ## 6. Worked Example (Standard Payment Module)
 - **Directory Layout:**

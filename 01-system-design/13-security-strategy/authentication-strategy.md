@@ -21,5 +21,5 @@
 - Stolen JWT tokens cannot be revoked before their expiration time, creating a security exposure.
 
 ### 5. Where to Go Next
-- For database-level client connection audits and access control, see [Data Layer Authentication](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/authentication-strategy-implementation.md).
-- For implementing JWT token parsing and validation middleware in backend code, see [Backend Authentication Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/01-authentication/index.md).
+- For database-level client connection audits and access control, see Data Layer Authentication.
+- For implementing JWT token parsing and validation middleware in backend code, see [Backend Authentication Implementation](../../13-architecture-decision-records/index.md).

@@ -11,8 +11,8 @@ The Backend Review Checklist is a quality gate audit tool used to verify that th
 - [ ] Decoupled services contain zero direct HTTP framework imports
 
 ## 3. Cross-References
-- [Folder structure reference](..02-directory-structure/)
-- [SOLID compliance checklist](..coding-principles/solid-principles.md)
+- [Folder structure reference](../../03-backend-development/02-directory-structure/)
+- [SOLID compliance checklist](../../03-backend-development/03-coding-principles/solid-principles.md)
 
 ## 4. Sign-off Criteria
 - Approved when all code files compile, linter checks pass, and dependency trees are audited.

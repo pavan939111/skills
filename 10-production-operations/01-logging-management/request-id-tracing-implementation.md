@@ -23,4 +23,4 @@ async def request_id_middleware(request: Request, call_next):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Logging](../../production_principles/foundations/02-logging-management-guide.md)
+- [Logging](logging-checklist.md)

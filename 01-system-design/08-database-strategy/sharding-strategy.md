@@ -20,5 +20,5 @@
 - The shard key has low cardinality (e.g. `country_code`), leading to a "hot shard" that exhausts disk space while other shards remain empty.
 
 ### 5. Where to Go Next
-- For sharding mechanics, hashing algorithms, and cluster rebalancing protocols, see [Sharding Design & Sizing](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/sharding-schema-design.md).
-- For database scaling tradeoffs, see [Horizontal Database Scaling](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/horizontal-scaling-strategy-implementation.md).
+- For sharding mechanics, hashing algorithms, and cluster rebalancing protocols, see [Sharding Design & Sizing](../../04-database-design/03-schema-design/sharding-schema-design.md).
+- For database scaling tradeoffs, see Horizontal Database Scaling.

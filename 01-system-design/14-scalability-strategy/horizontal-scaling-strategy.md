@@ -21,5 +21,5 @@
 - Virtual machine hosting costs spike exponentially because the team continues to scale up database instance sizing instead of introducing read replicas.
 
 ### 5. Where to Go Next
-- For configuring autoscaling groups, load balancer targets, and horizontal node metrics, see [Scalability Implementation Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/02-scalability.md).
-- For database horizontal partition designs, see [Horizontal Database Scaling](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/horizontal-scaling-strategy-implementation.md).
+- For configuring autoscaling groups, load balancer targets, and horizontal node metrics, see Scalability Implementation Guide.
+- For database horizontal partition designs, see Horizontal Database Scaling.

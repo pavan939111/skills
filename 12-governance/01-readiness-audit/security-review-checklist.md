@@ -11,8 +11,8 @@ The Security Review Checklist is an audit tool used to verify that APIs block SQ
 - [ ] Rate limit policies active on public authentication routes
 
 ## 3. Cross-References
-- [Security reference](..17-security-implementation/)
-- [SQL injection prevention](..17-security-implementation/sql-injection-strategy.md)
+- [Security reference](../../08-security-engineering/03-security-implementation/)
+- [SQL injection prevention](../../04-database-design/07-security/sql-injection-strategy.md)
 
 ## 4. Sign-off Criteria
 - Approved when security verification tests pass and database user keys use least-privilege configurations.

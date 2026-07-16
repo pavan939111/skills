@@ -11,8 +11,8 @@ The Monitoring Review Checklist is an audit tool used to verify that Prometheus 
 - [ ] Grafana dashboards display active database connection counts
 
 ## 3. Cross-References
-- [Observability reference](..18-observability-management/)
-- [Metrics reference](..18-observability-management/metrics-implementation.md)
+- [Observability reference](../../10-production-operations/02-observability-management/)
+- [Metrics reference](../../10-production-operations/02-observability-management/metrics-implementation.md)
 
 ## 4. Sign-off Criteria
 - Approved when telemetry data exports successfully to monitoring platforms.

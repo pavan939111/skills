@@ -14,11 +14,11 @@ Selecting the wrong broker class introduces severe performance and maintenance c
 5. **Compare Operational Costs:** Evaluate hosting overhead.
 
 ## 4. Inputs Needed
-- Peak write throughput and data retention needs from [Workload Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/workload-analysis.md).
+- Peak write throughput and data retention needs from [Workload Analysis](../01-requirement-analysis/workload-analysis.md).
 - System availability requirements.
 
 ## 5. Outputs Produced
-- Feeds directly into [Message Queue Strategy Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/11-message-queue-strategy/queue-selection-strategy-implementation.md).
+- Feeds directly into Message Queue Strategy Selection.
 
 ## 6. Worked Example (User Event Tracker vs. Order Delivery Notifications)
 - **User Clickstream Tracker (Kafka Choice):**

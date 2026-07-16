@@ -19,11 +19,11 @@ Without a latency budget, components are built independently, resulting in slow 
 5. **Enforce Database Latency Budgets:** Set statement timeouts (e.g. abort database queries taking >100ms) to protect resource pools.
 
 ## 4. Inputs Needed
-- Product-level performance expectations from [Product NFRs](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/non-functional-requirements-analysis.md).
+- Product-level performance expectations from [Product NFRs](../../00-product-analysis/non-functional-requirements-analysis.md).
 - User geographical distributions.
 
 ## 5. Outputs Produced
-- Feeds into [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md) and [Caching Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/09-caching-strategy/index.md).
+- Feeds into [Capacity Planning](../../13-architecture-decision-records/index.md) and [Caching Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Global E-Commerce Search)
 - **Total Latency SLO:** P95 response < 150ms.

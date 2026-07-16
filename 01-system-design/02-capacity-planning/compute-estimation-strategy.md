@@ -20,11 +20,11 @@ Without this estimation, servers run out of CPU cycles under traffic spikes.
 5. **Establish Container Distribution:** Divide required cores across multiple containers/VMs to ensure high availability.
 
 ## 4. Inputs Needed
-- Peak QPS and read/write transaction profiles from [Traffic Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/traffic-estimation-strategy-implementation.md).
+- Peak QPS and read/write transaction profiles from Traffic Estimation.
 - Target latency budgets.
 
 ## 5. Outputs Produced
-- Feeds into [Backend Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/07-backend-strategy/index.md) and [Scalability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/14-scalability-strategy/index.md).
+- Feeds into [Backend Strategy](../../13-architecture-decision-records/index.md) and [Scalability Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User Authentication API Service)
 - **Peak Traffic:** 2,000 QPS.

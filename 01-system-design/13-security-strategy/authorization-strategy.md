@@ -20,5 +20,5 @@
 - A "role explosion" occurs where the team creates 50 different user roles to satisfy fine-grained tenant requirements.
 
 ### 5. Where to Go Next
-- For database-level roles, privileges, and row-level security setups, see [Data Layer Authorization](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/authorization-strategy-implementation.md).
-- For implementing permission checks and policy engine middleware in backend code, see [Backend Authorization Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/02-authorization/index.md).
+- For database-level roles, privileges, and row-level security setups, see Data Layer Authorization.
+- For implementing permission checks and policy engine middleware in backend code, see [Backend Authorization Implementation](../../13-architecture-decision-records/index.md).

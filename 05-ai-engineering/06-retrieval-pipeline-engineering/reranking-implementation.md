@@ -1,6 +1,6 @@
 # Reranking Strategy for RAG
 
-*For details on database-level reranker index setups and score mappings, see [Reranking Mechanics](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/reranking-strategy.md).*
+*For details on database-level reranker index setups and score mappings, see [Reranking Mechanics](../../04-database-design/10-ai-and-modern-databases/reranking-strategy.md).*
 
 ## 1. Definition & Core Concepts
 Reranking is the second-stage process of taking candidate documents retrieved from vector or hybrid searches and scoring them using a cross-encoder model to reorder them by exact relevance.

@@ -20,4 +20,4 @@
 - Credentials leak because CI runners deploy code using high-privilege keys.
 
 ### 5. Where to Go Next
-- For configuring linting, vulnerability scans, build jobs, and deployment pipelines, see [CI/CD Implementation Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md).
+- For configuring linting, vulnerability scans, build jobs, and deployment pipelines, see [CI/CD Implementation Reference](../../07-platform-engineering/ci-cd-configuration.md).

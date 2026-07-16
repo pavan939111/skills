@@ -2,7 +2,7 @@
 
 Architecture-level patterns — when a product's shape matches a known pattern, reach for it instead of improvising. Template: **B — Decision Brief** (see `../README.md`): each file explains when to choose the pattern at the architecture level and links out for implementation.
 
-Implementation detail → `../../database-design/13-design-patterns/` (data-layer angle: how the pattern affects schema/storage) and `../../backend-development/` pattern folder, once built (code-layer angle: how to implement it in service code).
+Implementation detail → `../../04-database-design/13-design-patterns/` (data-layer angle: how the pattern affects schema/storage) and `../../03-backend-development/` pattern folder, once built (code-layer angle: how to implement it in service code).
 
 ## Topics
 

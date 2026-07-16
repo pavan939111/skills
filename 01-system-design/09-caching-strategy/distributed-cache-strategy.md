@@ -20,4 +20,4 @@
 - Partition key changes break hash ring distributions, forcing a full cluster rebuild.
 
 ### 5. Where to Go Next
-- For configuring Redis Cluster slot assignments and master-standby topologies, see [Caching Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/01-caching-implementation.md).
+- For configuring Redis Cluster slot assignments and master-standby topologies, see [Caching Architecture & Implementation](../../04-database-design/04-database-best-practices/caching-implementation.md).

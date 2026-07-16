@@ -20,4 +20,4 @@
 - Container startup dependencies fail because the application attempts to bind to network interfaces before the proxy sidecar finishes booting.
 
 ### 5. Where to Go Next
-- For configuring Kubernetes pod container resources, sidecars definitions, and startup timings, see [DevOps Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/03-devops-configuration.md).
+- For configuring Kubernetes pod container resources, sidecars definitions, and startup timings, see [DevOps Foundations](../../07-platform-engineering/devops-configuration.md).

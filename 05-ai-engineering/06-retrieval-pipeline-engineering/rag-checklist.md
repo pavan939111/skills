@@ -1,6 +1,6 @@
 # RAG Engineering Checklist
 
-*For details on database-level vector indexing and database deployment readiness checklists, see [Database Production Checklists](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/12-production-checklists/production-readiness-strategy.md).*
+*For details on database-level vector indexing and database deployment readiness checklists, see [Database Production Checklists](../../04-database-design/12-production-checklists/production-readiness-strategy.md).*
 
 ## 1. Definition & Core Concepts
 The RAG Engineering Checklist is the validation framework used to confirm that chunking rules, retrieval models, hybrid searches, rerankers, citations, and grounding strategies are properly configured before deploying RAG systems to production.

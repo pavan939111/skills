@@ -17,11 +17,11 @@ Selecting the wrong communication pattern is a major cause of latency and availa
 5. **Formulate the Communication Architecture:** Document the routing protocol for each service boundary.
 
 ## 4. Inputs Needed
-- Latency budgets from [Latency Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/latency-requirements-strategy-implementation.md).
+- Latency budgets from Latency Requirements.
 - Service boundaries maps.
 
 ## 5. Outputs Produced
-- Feeds into [API Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md) and [Message Queue Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/11-message-queue-strategy/index.md).
+- Feeds into [API Strategy](../../13-architecture-decision-records/index.md) and [Message Queue Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Notification & Delivery System)
 - **Client to API Gateway:** HTTP/REST (JSON payload) for checkout writes and order reads.

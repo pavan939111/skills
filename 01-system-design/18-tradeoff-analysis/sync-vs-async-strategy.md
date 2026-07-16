@@ -15,11 +15,11 @@ Synchronous calls (e.g., REST, gRPC) couple systems chronologically: if Service 
 4. **Compare Operational Complexity:** Evaluate broker infrastructure costs.
 
 ## 4. Inputs Needed
-- Latency budgets and SLA uptime targets from [Latency Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/latency-requirements-strategy-implementation.md).
+- Latency budgets and SLA uptime targets from Latency Requirements.
 - Workflow profiles.
 
 ## 5. Outputs Produced
-- Feeds into [Communication Patterns](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/communication-patterns-strategy-implementation.md) and [Message Queue Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/11-message-queue-strategy/index.md).
+- Feeds into Communication Patterns and [Message Queue Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Order Checkout Pipeline)
 - **Synchronous Path (Required):**

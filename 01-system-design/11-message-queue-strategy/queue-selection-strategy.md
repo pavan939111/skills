@@ -21,4 +21,4 @@
 - Message processing lags because the queue engine lacks the scaling headroom required by the business traffic.
 
 ### 5. Where to Go Next
-- For the master resource on setting up, configuring, and writing background messaging logic in production, see [Message Broker Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/02-background-jobs-messaging.md).
+- For the master resource on setting up, configuring, and writing background messaging logic in production, see Message Broker Architecture & Implementation.

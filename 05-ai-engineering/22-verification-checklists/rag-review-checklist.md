@@ -20,9 +20,9 @@ This checklist is used to review updates to RAG configurations, chunking paramet
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Embedding Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering06-retrieval-pipeline-engineering/embedding-strategy-implementation.md)
-- [Retrieval Optimization](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering06-retrieval-pipeline-engineering/retrieval-optimization.md)
-- [RAG](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering19-pattern-implementation/rag-implementation.md)
+- Embedding Strategy
+- [Retrieval Optimization](../06-retrieval-pipeline-engineering/retrieval-optimization.md)
+- [RAG](../19-pattern-implementation/rag-implementation.md)
 
 ## 4. Sign-off Criteria
 The per-change RAG review passes when:

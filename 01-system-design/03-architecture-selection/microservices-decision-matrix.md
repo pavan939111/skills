@@ -14,11 +14,11 @@ Decomposing a system into microservices is a major architectural transition. It 
 5. **Formulate the Decision:** Verify if the scaling benefits outweigh the network latency and distributed transaction complexities.
 
 ## 4. Inputs Needed
-- Peak QPS, capacity sizing, and team organization profiles from [Workload Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/workload-analysis.md).
+- Peak QPS, capacity sizing, and team organization profiles from [Workload Analysis](../01-requirement-analysis/workload-analysis.md).
 - Non-functional performance budgets.
 
 ## 5. Outputs Produced
-- Feeds into [Component Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/index.md) and [Technology Strategy Decision Briefs](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md).
+- Feeds into [Component Design](../../13-architecture-decision-records/index.md) and [Technology Strategy Decision Briefs](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (High-Scale Ride Sharing Platform)
 - **Problem:** Ride matching requires intensive, real-time geography processing (high compute load); payment processing requires transactional reliability; user profiles require simple cached lookups.

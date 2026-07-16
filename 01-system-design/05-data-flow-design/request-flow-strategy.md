@@ -17,11 +17,11 @@ Without mapping the request flow, developers make assumptions about network rout
 5. **Trace Egress Response path:** Document how response data flows back to the client, utilizing compression.
 
 ## 4. Inputs Needed
-- Latency and throughput requirements from [Latency Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/latency-requirements-strategy-implementation.md).
+- Latency and throughput requirements from Latency Requirements.
 - System architecture diagrams.
 
 ## 5. Outputs Produced
-- Feeds into [Event Flow](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/event-flow-strategy-implementation.md) and [API Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md).
+- Feeds into Event Flow and [API Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Standard REST Catalog Request)
 - **Request:** `GET /products/123`

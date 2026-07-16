@@ -11,8 +11,8 @@ The Deployment Review Checklist is an audit tool used to verify that Docker conf
 - [ ] Environment variable changes documented in .env.example
 
 ## 3. Cross-References
-- [DevOps reference](../01-devops-readiness/)
-- [Database migrations](..07-data-access/database-migrations.md)
+- [DevOps reference](../../07-platform-engineering/01-devops-readiness/)
+- [Database migrations](../../03-backend-development/07-data-access-layer/database-migration-guide.md)
 
 ## 4. Sign-off Criteria
 - Approved when staging builds succeed, container permissions are checked, and migrations compile.

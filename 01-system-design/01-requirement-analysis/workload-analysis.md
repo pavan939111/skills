@@ -17,11 +17,11 @@ A database optimized for steady, low-volume transactional updates (e.g. standard
 4. **Define Data Lifecycle Types:** Categorize tables by growth rates (e.g., static configurations, steady user growth, infinite log accumulation).
 
 ## 4. Inputs Needed
-- Product user flows and success metrics from [Product Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/index.md).
+- Product user flows and success metrics from [Product Analysis](../../13-architecture-decision-records/index.md).
 - User scale projections.
 
 ## 5. Outputs Produced
-- Feeds into [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md) (QPS numbers) and [Database Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md).
+- Feeds into [Capacity Planning](../../13-architecture-decision-records/index.md) (QPS numbers) and [Database Selection](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Ticket Booking Application)
 - **Workload Profile:** Transactional ticket purchases.

@@ -15,7 +15,7 @@ Three overlaps exist with folders already built, resolved the same way as everyw
 | This folder | Overlaps with | How they differ |
 |---|---|---|
 | `01-product-analysis-strategy/ai-feasibility-analysis.md`, `success-metrics-analysis.md` | `../00-product-analysis/ai-feasibility-analysis.md`, `success-metrics-analysis.md` | `00-product-analysis/` asks "should this product use AI at all" at the business level. This folder goes deeper *once the answer is yes*: deterministic-vs-AI at the feature level, single vs. multi-model, agent vs. workflow. |
-| `06-retrieval-pipeline-engineering/` (chunking, hybrid-search, metadata-filtering, reranking) | `../database-design/10-ai-and-modern-databases/` (same file names, already fully written) | `database-design/` covers the **data-layer** angle — how to store and index vectors, which vector DB, schema for embeddings. This folder covers the **retrieval-pipeline** angle — chunking strategy for answer quality, retrieval tuning for relevance, grounding, citation. Every file here must open with a one-line pointer to its `database-design/10-.../` counterpart rather than re-explaining storage mechanics. |
+| `06-retrieval-pipeline-engineering/` (chunking, hybrid-search, metadata-filtering, reranking) | `../04-database-design/10-ai-and-modern-databases/` (same file names, already fully written) | `database-design/` covers the **data-layer** angle — how to store and index vectors, which vector DB, schema for embeddings. This folder covers the **retrieval-pipeline** angle — chunking strategy for answer quality, retrieval tuning for relevance, grounding, citation. Every file here must open with a one-line pointer to its `database-design/10-.../` counterpart rather than re-explaining storage mechanics. |
 | `16-performance-optimization/caching-implementation.md` | `../production_principles/data-and-messaging/01-caching-implementation.md`, `../backend-development16-performance-optimization/caching-implementation.md` | Those cover generic application caching. This file covers **semantic/prompt-response caching** specific to LLM calls (cache key = semantic similarity, not exact match) — a genuinely different mechanism, not a rehash. |
 
 `12-security-implementation/pii-protection-strategy.md` and `secret-protection-implementation.md` similarly note their generic counterparts (`database-design/07-security/pii-protection-strategy.md`, `production_principles/foundations/01-configuration-management.md`) but stay full-depth since prompt-level PII leakage and secret protection in tool calls are mechanically different problems from database-level or config-level protection.
@@ -56,7 +56,7 @@ Every folder uses the standard 12-section research template (Definition, Why It 
 └── 22-verification-checklists/                   7 topics  [checklist]
 ```
 
-**Total: 200 topics.**
+**Total: 205 topics.**
 
 ## Workflow
 
@@ -107,16 +107,16 @@ Production Readiness
 | [`13-response-evaluation/`](./13-response-evaluation/index.md) | Groundedness, Faithfulness, Hallucination, Answer Quality, Tool/RAG Evaluation, Benchmark Design, Golden Dataset, Automated Evaluation | 10/10 |
 | [`14-testing-verification/`](./14-testing-verification/index.md) | Prompt/Workflow/Regression/Adversarial/Tool/Memory/Integration Testing | 8/8 |
 | [`15-observability-management/`](./15-observability-management/index.md) | Prompt Logging, Trace Analysis, Token/Cost/Latency Monitoring, Workflow Tracing, Agent Monitoring | 8/8 |
-| [`16-performance-optimization/`](./13-performance-optimization/index.md) | Prompt Optimization, Caching, Batching, Streaming, Parallel Execution, Token Optimization, Latency Reduction | 8/8 |
+| [`16-performance-optimization/`](./16-performance-optimization/index.md) | Prompt Optimization, Caching, Batching, Streaming, Parallel Execution, Token Optimization, Latency Reduction | 8/8 |
 | [`17-operations-management/`](./17-operations-management/index.md) | Model/Prompt Versioning, Deployment, Canary, Shadow Testing, Continuous Evaluation, Rollback | 8/8 |
 | [`18-compliance-governance/`](./18-compliance-governance/index.md) | Responsible AI, Compliance, Explainability, Audit, Bias, Transparency, Human Oversight | 8/8 |
 | [`19-pattern-implementation/`](./19-pattern-implementation/index.md) | RAG, Agentic RAG, Planner-Executor, Reflection, ReAct, Code/Research/Memory/Evaluator/Router/Supervisor Agent, Tool-Use, Workflow, Hybrid Patterns | 14/14 |
 | [`20-product-blueprints/`](./20-product-blueprints/index.md) | AI Chatbot, Coding Assistant, Research Agent, Customer Support, CRM, Medical Assistant, Document Analysis, Finance, Workflow Automation, AI SaaS | 10/10 |
-| [`21-readiness-audit/`](./01-readiness-audit/index.md) | Model/Prompt/Evaluation/Security/Performance/Observability/Deployment Review, Production Checklist | 8/8 [checklist] |
+| [`21-readiness-audit/`](./21-readiness-audit/index.md) | Model/Prompt/Evaluation/Security/Performance/Observability/Deployment Review, Production Checklist | 8/8 [checklist] |
 | [`22-verification-checklists/`](./22-verification-checklists/index.md) | Prompt/RAG/Agent/Evaluation/Security/Deployment Review, Production-Ready | 7/7 [checklist] |
 
 ---
 
 ## Overall progress
 
-**200 of 200 topics done.**
+**205 of 205 topics done.**

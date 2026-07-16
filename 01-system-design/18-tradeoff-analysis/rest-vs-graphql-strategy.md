@@ -14,11 +14,11 @@ API boundary design affects both client bandwidth utilization and server perform
 5. **Formulate the API Boundary Selection:** Choose the style matching client and database performance profiles.
 
 ## 4. Inputs Needed
-- Latency budgets and database scaling limits from [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md).
+- Latency budgets and database scaling limits from [Capacity Planning](../../13-architecture-decision-records/index.md).
 - User flow characteristics.
 
 ## 5. Outputs Produced
-- Feeds directly into [API Strategy Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md).
+- Feeds directly into [API Strategy Selection](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (SaaS Dashboard vs. Simple Mobile Feed)
 - **SaaS Analytics Dashboard (GraphQL Choice):**

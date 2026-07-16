@@ -23,4 +23,4 @@
 - Developers write custom business application logic inside gateway configuration scripts, making debugging complex.
 
 ### 5. Where to Go Next
-- For configuring routing rules, load balancing, and rate limiting policies, see [API Gateway Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/api-gateway-strategy-implementation.md).
+- For configuring routing rules, load balancing, and rate limiting policies, see API Gateway Strategy.

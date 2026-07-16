@@ -21,5 +21,5 @@
 - Search queries return incorrect results because metadata filters are applied post-query rather than dynamically during index traversal.
 
 ### 5. Where to Go Next
-- For vector index structures, dimension configurations, and chunking strategies, see [Vector Database Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/vector-database-design-strategy.md).
-- For vector index memory calculations, see [Embedding Storage Guidelines](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/embedding-storage-strategy.md).
+- For vector index structures, dimension configurations, and chunking strategies, see [Vector Database Design](../../04-database-design/10-ai-and-modern-databases/vector-database-design-strategy.md).
+- For vector index memory calculations, see [Embedding Storage Guidelines](../../04-database-design/10-ai-and-modern-databases/embedding-storage-strategy.md).

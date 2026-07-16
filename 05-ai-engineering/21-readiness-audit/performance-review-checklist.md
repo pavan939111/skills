@@ -22,10 +22,10 @@ This checklist acts as a production readiness gate to review response streaming 
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Prompt Optimization](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering16-performance-optimization/prompt-optimization.md)
-- [Semantic Caching](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering16-performance-optimization/caching-implementation.md)
-- [Streaming Responses](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering16-performance-optimization/streaming-implementation.md)
-- [Parallel Execution](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering16-performance-optimization/parallel-execution-optimization.md)
+- [Prompt Optimization](../16-performance-optimization/prompt-optimization.md)
+- [Semantic Caching](../../04-database-design/04-database-best-practices/caching-implementation.md)
+- [Streaming Responses](../../03-backend-development/13-performance-optimization/streaming-implementation.md)
+- [Parallel Execution](../16-performance-optimization/parallel-execution-optimization.md)
 
 ## 4. Sign-off Criteria
 The performance review passes when:

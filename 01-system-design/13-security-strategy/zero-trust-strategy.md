@@ -20,4 +20,4 @@
 - Internal services communicate via plaintext HTTP, leaving logs vulnerable to internal network sniffing.
 
 ### 5. Where to Go Next
-- For configuring secure network boundaries, firewall rules, and VPC isolation parameters, see [Security Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/foundations/04-security.md).
+- For configuring secure network boundaries, firewall rules, and VPC isolation parameters, see [Security Foundations](../../08-security-engineering/security-fundamentals-policy.md).

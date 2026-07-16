@@ -14,11 +14,11 @@ Systems behave differently depending on who uses them. A system built for 10 mil
 5. **Translate to System Configurations:** Use the analysis to set database connection pool targets, write rate-limiting, and regional node counts.
 
 ## 4. Inputs Needed
-- Product-level User Personas and Access Patterns from [User Personas](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/user-personas-analysis.md).
+- Product-level User Personas and Access Patterns from [User Personas](../../00-product-analysis/user-personas-analysis.md).
 - Target audience geography definitions.
 
 ## 5. Outputs Produced
-- Feeds into [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md) (request volumes) and [Database Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md).
+- Feeds into [Capacity Planning](../../13-architecture-decision-records/index.md) (request volumes) and [Database Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Global Social Media Feed App)
 - **User Demographics:** 10M DAU, distributed 50% in North America, 30% in Europe, 20% in Asia.

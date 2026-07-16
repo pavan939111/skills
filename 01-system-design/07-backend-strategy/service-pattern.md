@@ -21,5 +21,5 @@
 - Business rules are duplicated across multiple controllers because they lack a central domain model container.
 
 ### 5. Where to Go Next
-- For implementation guidelines on service patterns and DDD coding setups, see [Service Layer Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development06-business-services/service-layer-implementation.md).
-- For use case patterns design in code, see [Use Cases Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development06-business-services/use-cases-implementation.md).
+- For implementation guidelines on service patterns and DDD coding setups, see [Service Layer Implementation](../../03-backend-development/06-business-services/service-layer-implementation.md).
+- For use case patterns design in code, see [Use Cases Implementation](../../03-backend-development/06-business-services/use-cases-implementation.md).

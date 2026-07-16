@@ -21,11 +21,11 @@ Defining the availability target prevents under-engineering (causing SLA breache
 5. **Establish Maintenance SLA Boundaries:** Determine if maintenance must be executed online (zero-downtime migrations) or if offline windows are permitted.
 
 ## 4. Inputs Needed
-- Product availability expectations and RTO/RPO limits from [Product Analysis NFRs](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/non-functional-requirements-analysis.md).
+- Product availability expectations and RTO/RPO limits from [Product Analysis NFRs](../../00-product-analysis/non-functional-requirements-analysis.md).
 - Infrastructure budget limits.
 
 ## 5. Outputs Produced
-- Feeds into [Reliability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/15-reliability-strategy/index.md) and [Deployment Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/16-deployment-strategy/index.md).
+- Feeds into [Reliability Strategy](../../13-architecture-decision-records/index.md) and [Deployment Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Financial Ledger System)
 - **Uptime SLA:** 99.99% (maximum 52.6 minutes of downtime per year).

@@ -1,6 +1,6 @@
 # 07 — Backend Strategy
 
-High-level backend decisions only — framework *class* (not a specific framework pick), service pattern, and how background/scheduled work fits the architecture. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../backend-development/` (once built).
+High-level backend decisions only — framework *class* (not a specific framework pick), service pattern, and how background/scheduled work fits the architecture. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../03-backend-development/` (once built).
 
 ## Topics
 

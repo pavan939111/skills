@@ -21,5 +21,5 @@
 - Data drift occurs between the primary SQL database and the Elasticsearch search index because of synchronizing event failures.
 
 ### 5. Where to Go Next
-- For implementation patterns and schema designs for polyglot databases, see [Polyglot Persistence Pattern Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/13-design-patterns/polyglot-persistence-pattern.md).
-- For hybrid search patterns, see [Hybrid Search Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/10-ai-and-modern-databases/hybrid-search-strategy-implementation.md).
+- For implementation patterns and schema designs for polyglot databases, see [Polyglot Persistence Pattern Guide](../../04-database-design/13-design-patterns/polyglot-persistence-pattern.md).
+- For hybrid search patterns, see Hybrid Search Design.

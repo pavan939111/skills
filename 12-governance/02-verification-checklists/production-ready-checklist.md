@@ -12,8 +12,8 @@ The Production-Ready Checklist is the final recurring PR gate checklist used to 
 - [ ] Deployment review checklist complete
 
 ## 3. Cross-References
-- [All backend checklists](..23-verification-checklists/)
-- [Production readiness catalog](..21-readiness-audit/)
+- [All backend checklists](./)
+- [Production readiness catalog](../01-readiness-audit/)
 
 ## 4. Sign-off Criteria
 - Approved when all nested sub-checklists pass, CI tests are green, and staging releases are verified.

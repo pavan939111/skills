@@ -1,6 +1,6 @@
 # 09 — Caching Strategy
 
-Decides whether this product needs caching, where in the request path, and which caching pattern class fits. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/data-and-messaging/01-caching-implementation.md`, `../../database-design/04-database-best-practices/caching-implementation.md`.
+Decides whether this product needs caching, where in the request path, and which caching pattern class fits. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../production_principles/data-and-messaging/01-caching-implementation.md`, `../../04-database-design/04-database-best-practices/caching-implementation.md`.
 
 ## Topics
 

@@ -20,4 +20,4 @@
 - High latency is introduced because the BFF layer executes multiple synchronous RPC hops without using async request aggregation.
 
 ### 5. Where to Go Next
-- For configuring routing rules and gateway structures, see [API Gateway Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/api-gateway-strategy-implementation.md).
+- For configuring routing rules and gateway structures, see API Gateway Strategy.

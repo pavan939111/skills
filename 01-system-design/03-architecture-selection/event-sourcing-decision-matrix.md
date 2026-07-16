@@ -14,11 +14,11 @@ Adopting Event Sourcing is a fundamental system design commitment. It changes th
 5. **Decouple using Read Projections:** Ensure read queries are routed to pre-computed read tables (CQRS), never replaying events synchronously on main read paths.
 
 ## 4. Inputs Needed
-- Product compliance rules, audit needs, and transactional user flows from [Functional Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/functional-requirements-analysis.md).
+- Product compliance rules, audit needs, and transactional user flows from [Functional Requirements](../../00-product-analysis/functional-requirements-analysis.md).
 - Target storage capacity budgets.
 
 ## 5. Outputs Produced
-- Feeds into [Database Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md) and [Design Patterns Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/19-design-patterns/index.md).
+- Feeds into [Database Strategy](../../13-architecture-decision-records/index.md) and [Design Patterns Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Financial Ledger System)
 - **Problem:** A banking system must track wallet transactions. It is insufficient to update a user's balance column; auditors must see every debit and credit action, verifying that the current balance matches the sum of all historical events.

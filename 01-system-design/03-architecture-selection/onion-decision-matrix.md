@@ -14,11 +14,11 @@ Onion Architecture is a specialized variation of Clean and Hexagonal Architectur
 5. **Implement Outer Infrastructure Layers:** Place the concrete databases, controllers, web frameworks, and file storage systems in the outermost layer.
 
 ## 4. Inputs Needed
-- Product domain definitions and workflows from [User Flows](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/user-flows-analysis.md).
+- Product domain definitions and workflows from [User Flows](../../00-product-analysis/user-flows-analysis.md).
 - System-level non-functional constraints.
 
 ## 5. Outputs Produced
-- Feeds into code-tier repository structures and [Component Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/index.md).
+- Feeds into code-tier repository structures and [Component Design](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (SaaS Pricing Engine)
 - **Domain Model (Center):** `SubscriptionPlan` entity (calculates discount rules based on user age, has no DB dependencies).

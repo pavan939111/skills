@@ -21,5 +21,5 @@
 - NoSQL queries become extremely slow because applications must perform manual joins in code due to lack of native SQL support.
 
 ### 5. Where to Go Next
-- For database selection guides, see [Database Selection Reference](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/index.md).
-- For relational schema design best practices, see [Relational Databases Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/02-relational-design/index.md).
+- For database selection guides, see [Database Selection Reference](../../13-architecture-decision-records/index.md).
+- For relational schema design best practices, see [Relational Databases Guide](../../13-architecture-decision-records/index.md).

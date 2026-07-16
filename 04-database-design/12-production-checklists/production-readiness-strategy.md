@@ -31,10 +31,10 @@ This checklist consolidates core reliability, performance, security, scaling, ba
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic folders:
-- [04 Database Best Practices](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/04-database-best-practices/index.md)
-- [06 Scalability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/index.md)
-- [07 Security & Access Control](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/index.md)
-- [08 Reliability & Backup](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/index.md)
+- [04 Database Best Practices](../../13-architecture-decision-records/index.md)
+- [06 Scalability Strategy](../../13-architecture-decision-records/index.md)
+- [07 Security & Access Control](../../13-architecture-decision-records/index.md)
+- [08 Reliability & Backup](../../13-architecture-decision-records/index.md)
 
 ## 4. Sign-off Criteria
 The database production readiness review passes when:

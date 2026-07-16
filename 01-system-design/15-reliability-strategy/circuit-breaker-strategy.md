@@ -19,4 +19,4 @@
 - The circuit breaker fails to close (reset) after the downstream service recovers because the test window is configured too short.
 
 ### 5. Where to Go Next
-- For implementing circuit breaker state engines (Resilience4j/Hystrix) and configuring failure thresholds, see [Resilience Patterns & Implementations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/03-resilience-patterns.md).
+- For implementing circuit breaker state engines (Resilience4j/Hystrix) and configuring failure thresholds, see Resilience Patterns & Implementations.

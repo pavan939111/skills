@@ -23,5 +23,5 @@
 - Redis memory costs spike because the team stores massive, permanent customer record tables in RAM instead of disk storage.
 
 ### 5. Where to Go Next
-- For database selection guidelines and engine comparisons, see [Database Selection Reference Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/index.md).
-- For vector-specific databases selections, see [Vector Database selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/01-database-selection/vector-database-decision-matrix.md) (once built).
+- For database selection guidelines and engine comparisons, see [Database Selection Reference Guide](../../13-architecture-decision-records/index.md).
+- For vector-specific databases selections, see [Vector Database selection](../../04-database-design/01-database-selection/vector-database-decision-matrix.md) (once built).

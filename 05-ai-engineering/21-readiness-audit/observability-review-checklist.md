@@ -22,10 +22,10 @@ This checklist acts as a production readiness gate to review prompt logging mech
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Prompt Logging](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering15-observability-management/prompt-logging-monitoring-strategy.md)
-- [Trace Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering15-observability-management/trace-analysis.md)
-- [Token Monitoring](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering15-observability-management/token-monitoring-strategy.md)
-- [Observability Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering15-observability-management/observability-checklist.md)
+- Prompt Logging
+- [Trace Analysis](../15-observability-management/trace-analysis.md)
+- [Token Monitoring](../15-observability-management/token-monitoring-strategy.md)
+- [Observability Checklist](../../10-production-operations/02-observability-management/observability-checklist.md)
 
 ## 4. Sign-off Criteria
 The observability review passes when:

@@ -14,11 +14,11 @@ A technically perfect system design is useless if it cannot be built within the 
 5. **Establish Design Limits:** Use these constraints to choose between hosted SaaS databases vs self-hosted instances, and determine MVP bounds.
 
 ## 4. Inputs Needed
-- Product-level business goals and constraints from [Constraints Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/constraints-analysis.md).
+- Product-level business goals and constraints from [Constraints Analysis](../../00-product-analysis/constraints-analysis.md).
 - Team organization specs and budget guidelines.
 
 ## 5. Outputs Produced
-- Feeds into [Architecture Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/index.md) and [Cost Optimization Strategies](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/17-cost-optimization/index.md).
+- Feeds into [Architecture Selection](../../13-architecture-decision-records/index.md) and [Cost Optimization Strategies](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (SaaS Startup MVP)
 - **Financial Constraint:** Maximum $150/month infrastructure hosting budget.

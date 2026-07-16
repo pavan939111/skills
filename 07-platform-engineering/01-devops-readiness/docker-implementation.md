@@ -28,5 +28,5 @@ CMD ["node", "dist/main.js"]
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dives:
-- [CI/CD](../../production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md)
-- [DevOps](../../production_principles/delivery-and-readiness/03-devops-configuration.md)
+- [CI/CD](../ci-cd-configuration.md)
+- [DevOps](../devops-configuration.md)

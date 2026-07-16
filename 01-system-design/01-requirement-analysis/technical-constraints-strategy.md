@@ -14,11 +14,11 @@ A system design cannot be implemented if it conflicts with the client's pre-exis
 5. **Establish Technical Integration Rules:** Map how modern components will communicate with legacy systems (e.g. using adapter patterns or event streaming gateways).
 
 ## 4. Inputs Needed
-- Product constraints and project scope from [Product Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/index.md).
+- Product constraints and project scope from [Product Analysis](../../13-architecture-decision-records/index.md).
 - Current server infrastructure inventories.
 
 ## 5. Outputs Produced
-- Feeds into [Architecture Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/index.md) and [Component Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/index.md).
+- Feeds into [Architecture Selection](../../13-architecture-decision-records/index.md) and [Component Design](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Enterprise Inventory Upgrade)
 - **Infrastructure Constraint:** Deployments must target AWS, restricted to EC2 virtual machines (no managed Kubernetes or serverless).

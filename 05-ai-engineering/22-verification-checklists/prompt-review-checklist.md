@@ -18,9 +18,9 @@ This checklist is used to review individual prompt template changes before they 
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [System Prompts](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering04-prompt-template-management/system-prompts-guide.md)
-- [Prompt Versioning](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/prompt-versioning-strategy-implementation.md)
-- [Prompt Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/prompt-review-checklist.md)
+- [System Prompts](../04-prompt-template-management/system-prompts-guide.md)
+- Prompt Versioning
+- [Prompt Review Checklist](prompt-review-checklist.md)
 
 ## 4. Sign-off Criteria
 The per-change prompt review passes when:

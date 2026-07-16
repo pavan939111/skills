@@ -29,13 +29,13 @@ This checklist validates that database queries, indexes, connection pools, and c
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Indexing Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/05-query-and-performance/indexing-strategy-implementation.md)
-- [Query Optimization](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/05-query-and-performance/query-optimization.md)
-- [Execution Plans](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/05-query-and-performance/execution-plans-optimization.md)
-- [N+1 Queries](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/05-query-and-performance/n-plus-one-optimization.md)
-- [Pagination](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/05-query-and-performance/pagination-implementation.md)
-- [Connection Pooling](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/04-database-best-practices/connection-pooling-implementation.md)
-- [Caching](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/04-database-best-practices/caching-implementation.md)
+- Indexing Strategy
+- [Query Optimization](../05-query-and-performance/query-optimization.md)
+- [Execution Plans](../05-query-and-performance/execution-plans-optimization.md)
+- [N+1 Queries](../05-query-and-performance/n-plus-one-optimization.md)
+- [Pagination](../../03-backend-development/05-api-development/pagination-implementation.md)
+- [Connection Pooling](../04-database-best-practices/connection-pooling-implementation.md)
+- [Caching](../04-database-best-practices/caching-implementation.md)
 
 ## 4. Sign-off Criteria
 The performance review passes when:

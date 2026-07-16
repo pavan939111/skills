@@ -18,11 +18,11 @@ Without these specs, systems hit scaling limits under traffic, requiring expensi
 5. **Establish Scaling Triggers:** Define CPU/memory thresholds (e.g. CPU > 70% for 5 minutes) that trigger automated scale-out operations.
 
 ## 4. Inputs Needed
-- Product scalability expectations and success metrics from [Product Analysis Success Metrics](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/success-metrics-analysis.md).
+- Product scalability expectations and success metrics from [Product Analysis Success Metrics](../../00-product-analysis/success-metrics-analysis.md).
 - Operational workload profiles and QPS estimates.
 
 ## 5. Outputs Produced
-- Feeds into [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md) and [Scalability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/14-scalability-strategy/index.md).
+- Feeds into [Capacity Planning](../../13-architecture-decision-records/index.md) and [Scalability Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (B2B SaaS Analytics Dashboard)
 - **Scale Requirements:**

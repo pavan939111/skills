@@ -1,4 +1,4 @@
-# 09 â€” Testing & Quality
+# 09 — Testing & Quality
 
 Testing strategies, unit and integration checks, and quality gates.
 

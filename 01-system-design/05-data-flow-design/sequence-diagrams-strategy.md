@@ -17,11 +17,11 @@ In distributed systems, operations run concurrently, making race conditions and 
 5. **Mark Database Mutations:** Explicitly show when and where SQL writes, cache checks, and transaction commits occur.
 
 ## 4. Inputs Needed
-- Component interaction flows from [Component Interactions](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/component-interactions-strategy-implementation.md).
+- Component interaction flows from Component Interactions.
 - Selected communication protocols.
 
 ## 5. Outputs Produced
-- Feeds into [Workflow Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/workflow-design-strategy-implementation.md) and backend controller integrations.
+- Feeds into Workflow Design and backend controller integrations.
 
 ## 6. Worked Example (User Signup Notification Sequence)
 - **Sequence steps:**

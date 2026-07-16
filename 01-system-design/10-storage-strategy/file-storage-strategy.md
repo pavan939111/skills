@@ -21,4 +21,4 @@
 - Data corruption occurs because two application nodes attempt to write to the same file path simultaneously without file locking coordination.
 
 ### 5. Where to Go Next
-- For configuring file directories, file formats, and upload safety controls, see [Object & File Storage Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/04-file-storage-strategy-implementation.md).
+- For configuring file directories, file formats, and upload safety controls, see [Object & File Storage Implementation](../../04-database-design/file-storage-strategy.md).

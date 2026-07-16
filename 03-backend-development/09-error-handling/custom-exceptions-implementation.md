@@ -4,7 +4,8 @@
 Custom Exceptions allow the backend codebase to define domain-specific error conditions (e.g. InsufficientFundsException, InventoryLockException) that inherit from base exceptions, enabling services to communicate precise reasons for failures.
 
 ## 2. Backend-Specific Pitfalls
-- **Using generic exceptions:** Throwing generic errors (aise Exception("failed")) instead of subclassed exceptions, forcing controllers to parse string messages to decide HTTP status codes.
+- **Using generic exceptions:** Throwing generic errors (
+aise Exception("failed")) instead of subclassed exceptions, forcing controllers to parse string messages to decide HTTP status codes.
 
 ## 3. Code-Shape Example
 `python
@@ -23,4 +24,4 @@ class InsufficientFundsException(DomainException):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Error Handling & Exception Strategy](../../production_principles/reliability-coding-practices/01-error-handling-exception-strategy-implementation.md)
+- Error Handling & Exception Strategy

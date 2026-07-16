@@ -14,11 +14,11 @@ Selecting a monolithic architecture is a deliberate choice to prioritize rapid f
 5. **Formulate the Decision:** Justify the choice of monolith based on low infrastructure budgets and short delivery timelines.
 
 ## 4. Inputs Needed
-- Product timelines, team resource limits, and business constraints from [Business Constraints](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/business-constraints-analysis.md).
+- Product timelines, team resource limits, and business constraints from Business Constraints.
 - Peak QPS projections.
 
 ## 5. Outputs Produced
-- Feeds into [Backend Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/07-backend-strategy/index.md) and [Deployment Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/16-deployment-strategy/index.md).
+- Feeds into [Backend Strategy](../../13-architecture-decision-records/index.md) and [Deployment Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Standard SaaS MVP Storefront)
 - **Context:** A new e-commerce application targeting launch in 2 months with a team of 4 JavaScript developers.

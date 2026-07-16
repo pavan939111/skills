@@ -29,4 +29,4 @@ def process_refund_controller(request):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Clean Code](../../production_principlesclean-code-standards/) (whole folder deep-dives)
+- Clean Code (whole folder deep-dives)

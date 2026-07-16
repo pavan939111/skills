@@ -20,4 +20,4 @@
 - A VM node crashes, causing service downtime because the team lacked automated cluster monitoring alerts.
 
 ### 5. Where to Go Next
-- For infrastructure sizing metrics, network traffic limits, and cost tagging policies, see [Cost Optimization & FinOps Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/03-operations-and-governance/01-cost-optimization-finops-guideline.md).
+- For infrastructure sizing metrics, network traffic limits, and cost tagging policies, see [Cost Optimization & FinOps Guide](../../12-governance/03-operations-and-governance/01-cost-optimization-finops-guideline.md).

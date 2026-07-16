@@ -14,11 +14,11 @@ If code dependencies are poorly designed, changes in one module propagate across
 5. **Standardize Shared DTOs:** Create simple, immutable Data Transfer Objects (DTOs) to pass data across boundaries, avoiding passing database entities.
 
 ## 4. Inputs Needed
-- Module layouts from [Module Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/module-design-strategy-implementation.md).
+- Module layouts from Module Design.
 - Chosen architecture style.
 
 ## 5. Outputs Produced
-- Feeds into [Communication Patterns](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/communication-patterns-strategy-implementation.md) and code configurations.
+- Feeds into Communication Patterns and code configurations.
 
 ## 6. Worked Example (User Billing Integration)
 - **Problem:** `UserService` must notify `BillingService` when a user register. Hardcoding a direct dependency: `BillingService billing = new BillingService();` inside `UserService` couples them.

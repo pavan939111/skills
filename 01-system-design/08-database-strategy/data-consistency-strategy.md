@@ -21,5 +21,5 @@
 - Database write throughput drops to zero during minor network glitches because nodes cannot coordinate distributed locks.
 
 ### 5. Where to Go Next
-- For CAP theorem analysis and trade-offs, see [CAP Theorem Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/cap-theorem-strategy.md).
-- For implementing conflict resolution and managing sync lag, see [Eventual Consistency Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/06-scalability/eventual-consistency-strategy.md).
+- For CAP theorem analysis and trade-offs, see [CAP Theorem Strategy](../../04-database-design/06-scalability/cap-theorem-strategy.md).
+- For implementing conflict resolution and managing sync lag, see [Eventual Consistency Design](../../04-database-design/06-scalability/eventual-consistency-strategy.md).

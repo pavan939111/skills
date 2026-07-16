@@ -22,4 +22,4 @@ trace.set_tracer_provider(provider)
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Observability](../../production_principles/foundations/03-observability-management-guide.md)
+- [Observability](../observability-management-guide.md)

@@ -21,11 +21,11 @@ Without this estimation, network cards block traffic during peaks.
 5. **Differentiate Ingress and Egress:** Focus on egress, as it is typically much larger for user-facing applications.
 
 ## 4. Inputs Needed
-- Peak QPS estimates from [Traffic Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/traffic-estimation-strategy-implementation.md).
+- Peak QPS estimates from Traffic Estimation.
 - Average client asset sizes.
 
 ## 5. Outputs Produced
-- Feeds into [API Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md) and [Storage Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/10-storage-strategy/index.md).
+- Feeds into [API Strategy](../../13-architecture-decision-records/index.md) and [Storage Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Photo Sharing Application Feed)
 - **Peak Traffic:** 1,000 QPS.

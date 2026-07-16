@@ -20,5 +20,5 @@
 - Upgrades stall because the new version crashes on boot, and the rolling config is not set to abort automatically.
 
 ### 5. Where to Go Next
-- For configuring readiness and liveness probes in deployment descriptors, see [DevOps Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/03-devops-configuration.md).
-- For backward-compatible database schema designs, see [Schema Compatibility Guidelines](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/11-migrations-and-versioning/compatibility-strategy.md).
+- For configuring readiness and liveness probes in deployment descriptors, see [DevOps Foundations](../../07-platform-engineering/devops-configuration.md).
+- For backward-compatible database schema designs, see [Schema Compatibility Guidelines](../../04-database-design/11-migrations-and-versioning/compatibility-strategy.md).

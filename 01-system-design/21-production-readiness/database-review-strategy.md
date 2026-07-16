@@ -17,7 +17,7 @@ Bad database configurations lead to index fragmentation, slow queries, locked ta
 - Target RTO/RPO limits.
 
 ## 5. Outputs Produced
-- Feeds directly into [Database Production Readiness Review](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/12-production-checklists/production-readiness-strategy.md).
+- Feeds directly into [Database Production Readiness Review](../../04-database-design/12-production-checklists/production-readiness-strategy.md).
 
 ## 6. Worked Checklist Example
 - [x] Primary query search keys are covered by B-Tree indexes.

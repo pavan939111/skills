@@ -20,5 +20,5 @@
 - System changes require updating multiple choreographer microservices, violating domain isolation.
 
 ### 5. Where to Go Next
-- For orchestrator engines, state machine configurations, and service wrappers, see [Backend Orchestration Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/07-backend-strategy/orchestration-strategy-implementation.md).
-- For database saga transaction tables, see [Saga Database Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/13-design-patterns/saga-pattern.md).
+- For orchestrator engines, state machine configurations, and service wrappers, see Backend Orchestration Strategy.
+- For database saga transaction tables, see Saga Database Design.

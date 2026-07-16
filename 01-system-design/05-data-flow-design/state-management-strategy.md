@@ -17,11 +17,11 @@ If backend application servers store user session state in local memory (statefu
 5. **Establish Cache Eviction Rules:** Set TTL (Time To Live) parameters and LRU (Least Recently Used) cache policies.
 
 ## 4. Inputs Needed
-- Peak concurrency and compute projections from [Compute Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/compute-estimation-strategy-implementation.md).
+- Peak concurrency and compute projections from Compute Estimation.
 - User scale parameters.
 
 ## 5. Outputs Produced
-- Feeds into [Caching Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/09-caching-strategy/index.md) and [Scalability Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/14-scalability-strategy/index.md).
+- Feeds into [Caching Strategy](../../13-architecture-decision-records/index.md) and [Scalability Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User Session Architecture)
 - **Problem:** A web application requires user login sessions. If sessions are stored in memory, web servers cannot auto-scale without logging users out.

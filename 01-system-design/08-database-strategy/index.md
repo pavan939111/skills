@@ -1,6 +1,6 @@
 # 08 — Database Strategy
 
-Decides storage direction — SQL vs NoSQL, one database or several, whether replication/sharding will eventually be needed. Comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../database-design/01-database-selection/`, `../../database-design/06-scalability/`.
+Decides storage direction — SQL vs NoSQL, one database or several, whether replication/sharding will eventually be needed. Comparison and decision only. Template: **B — Decision Brief** (see `../README.md`). Implementation detail → `../../04-database-design/01-database-selection/`, `../../04-database-design/06-scalability/`.
 
 ## Topics
 
@@ -15,4 +15,4 @@ Decides storage direction — SQL vs NoSQL, one database or several, whether rep
 | 07 | Data Consistency | `data-consistency-strategy.md` | done |
 | 08 | Database Decision Framework | `database-decision-framework-strategy.md` | done |
 
-> This folder decides *whether* replication/sharding/a given database family is needed for this product. The *how* — actual sharding mechanics, index design, schema — lives entirely in `../../database-design/`.
+> This folder decides *whether* replication/sharding/a given database family is needed for this product. The *how* — actual sharding mechanics, index design, schema — lives entirely in `../../04-database-design/`.

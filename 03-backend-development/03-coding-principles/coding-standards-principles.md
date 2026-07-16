@@ -30,4 +30,4 @@ Coding Standards define the language rules, folder rules, type systems, and nami
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Engineering Governance](../../production_principles/03-operations-and-governance/07-engineering-governance-guideline.md)
+- [Engineering Governance](../../12-governance/03-operations-and-governance/07-engineering-governance-guideline.md)

@@ -22,10 +22,10 @@ This checklist acts as a production readiness gate to review prompt injection de
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Prompt Injection](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering12-security-implementation/prompt-injection-implementation.md)
-- [PII Protection](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering12-security-implementation/pii-protection-strategy.md)
-- [Adversarial Testing (Red Teaming)](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering14-testing-verification/adversarial-testing-verification-guide.md)
-- [Responsible AI](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering18-compliance-governance/responsible-ai-guideline.md)
+- [Prompt Injection](../12-security-implementation/prompt-injection-implementation.md)
+- [PII Protection](../../04-database-design/07-security/pii-protection-strategy.md)
+- [Adversarial Testing (Red Teaming)](../14-testing-verification/adversarial-testing-verification-guide.md)
+- [Responsible AI](../18-compliance-governance/responsible-ai-guideline.md)
 
 ## 4. Sign-off Criteria
 The security review passes when:

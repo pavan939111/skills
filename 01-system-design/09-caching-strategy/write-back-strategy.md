@@ -20,4 +20,4 @@
 - The write queue behind the cache stalls, creating a massive backlog that exhausts cache memory.
 
 ### 5. Where to Go Next
-- For configuring write queues, flushing rules, and cache buffer pools, see [Caching Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/01-caching-implementation.md).
+- For configuring write queues, flushing rules, and cache buffer pools, see [Caching Architecture & Implementation](../../04-database-design/04-database-best-practices/caching-implementation.md).

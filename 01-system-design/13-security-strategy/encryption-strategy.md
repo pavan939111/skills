@@ -21,6 +21,6 @@
 - Field-level search queries become impossible because encrypted columns cannot be indexed using standard database B-Trees.
 
 ### 5. Where to Go Next
-- For database disk-level and tablespace encryption setup, see [Encryption at Rest](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/encryption-at-rest-strategy-implementation.md).
-- For network transport security (TLS v1.3) configuration, see [Encryption in Transit](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/encryption-in-transit-strategy.md).
-- For app-level envelope encryption patterns, see [Application & Column Encryption](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/column-encryption-strategy-implementation.md).
+- For database disk-level and tablespace encryption setup, see Encryption at Rest.
+- For network transport security (TLS v1.3) configuration, see [Encryption in Transit](../../04-database-design/07-security/encryption-in-transit-strategy.md).
+- For app-level envelope encryption patterns, see Application & Column Encryption.

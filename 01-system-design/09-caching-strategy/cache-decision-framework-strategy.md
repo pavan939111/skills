@@ -21,5 +21,5 @@
 - Caching implementation overhead delays feature deliveries due to overly complex synchronization schemes.
 
 ### 5. Where to Go Next
-- For the master resource on setting up, configuring, and writing caching logic in production, see [Caching Architecture & Practice](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/01-caching-implementation.md).
-- For database-level caching optimizations, see [Database Caching Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/04-database-best-practices/caching-implementation.md) (once built).
+- For the master resource on setting up, configuring, and writing caching logic in production, see [Caching Architecture & Practice](../../04-database-design/04-database-best-practices/caching-implementation.md).
+- For database-level caching optimizations, see [Database Caching Design](../../04-database-design/04-database-best-practices/caching-implementation.md) (once built).

@@ -20,5 +20,5 @@
 - European customer records are synced to US replicas, violating EU data protection boundaries.
 
 ### 5. Where to Go Next
-- For threat modeling, compliance audits, and access logging, see [Security Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/foundations/04-security.md).
-- For compliance requirement scoping guidelines, see [Compliance Requirements Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/compliance-requirements-strategy-implementation.md).
+- For threat modeling, compliance audits, and access logging, see [Security Foundations](../../08-security-engineering/security-fundamentals-policy.md).
+- For compliance requirement scoping guidelines, see Compliance Requirements Analysis.

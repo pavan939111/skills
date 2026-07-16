@@ -12,8 +12,8 @@ The Production Readiness Checklist is the final gate review compiled before ship
 - [ ] Monitoring review checklist complete
 
 ## 3. Cross-References
-- [All readiness reviews](..21-readiness-audit/)
-- [Standard DevOps checks](../01-devops-readiness/)
+- [All readiness reviews](./)
+- [Standard DevOps checks](../../07-platform-engineering/01-devops-readiness/)
 
 ## 4. Sign-off Criteria
 - Approved when all nested sub-checklists pass, test coverages meet targets, and staging deployments are verified.

@@ -13,7 +13,7 @@ Without monitoring infrastructure, identifying issues requires manual inspection
 4. **Execute Monitoring Checklist:** Log status.
 
 ## 4. Inputs Needed
-- SLA requirements from [Uptime SLA Target](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/sla-availability-targets.md).
+- SLA requirements from Uptime SLA Target.
 - Chosen observability parameters.
 
 ## 5. Outputs Produced

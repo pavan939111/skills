@@ -21,5 +21,5 @@
 - Users experience database read errors because application read replicas experience significant replication lag (>10 seconds).
 
 ### 5. Where to Go Next
-- For database failover, promotions, and replica orchestrations, see [Failover Strategy Guide](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/failover-strategy.md).
-- For setting up replication cluster configurations, see [High Availability Database design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/high-availability-strategy.md).
+- For database failover, promotions, and replica orchestrations, see [Failover Strategy Guide](../../04-database-design/08-reliability-and-backup/failover-strategy.md).
+- For setting up replication cluster configurations, see [High Availability Database design](../../04-database-design/08-reliability-and-backup/high-availability-strategy.md).

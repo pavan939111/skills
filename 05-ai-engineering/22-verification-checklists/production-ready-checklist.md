@@ -19,10 +19,10 @@ This checklist acts as the final checklist developers run before deploying any p
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Per-Change Prompt Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering22-verification-checklists/prompt-review-checklist.md)
-- [Per-Change Security Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering22-verification-checklists/security-review-strategy-implementation.md)
-- [Per-Change Deployment Review Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering22-verification-checklists/deployment-review-strategy-implementation.md)
-- [Production Checklist](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering21-readiness-audit/production-checklist.md)
+- [Per-Change Prompt Review Checklist](prompt-review-checklist.md)
+- Per-Change Security Review Checklist
+- Per-Change Deployment Review Checklist
+- [Production Checklist](../../12-governance/01-readiness-audit/production-checklist.md)
 
 ## 4. Sign-off Criteria
 The production-ready review passes when:

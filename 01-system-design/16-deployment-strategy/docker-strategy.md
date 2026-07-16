@@ -20,5 +20,5 @@
 - System startups fail because containers execute processes with root privileges, violating security policies.
 
 ### 5. Where to Go Next
-- For configuring secure multi-stage Dockerfiles, base images, and running non-root users, see [DevOps Foundations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/delivery-and-readiness/03-devops-configuration.md).
-- For per-service container specifications, see [Backend DevOps Readiness](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/01-devops-readiness/index.md).
+- For configuring secure multi-stage Dockerfiles, base images, and running non-root users, see [DevOps Foundations](../../07-platform-engineering/devops-configuration.md).
+- For per-service container specifications, see [Backend DevOps Readiness](../../13-architecture-decision-records/index.md).

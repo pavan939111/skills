@@ -29,15 +29,15 @@ This checklist validates that database access paths, encryption settings, creden
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Authentication](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/authentication-strategy-implementation.md)
-- [Authorization](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/authorization-strategy-implementation.md)
-- [Row-Level Security](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/row-level-security-strategy.md)
-- [Encryption at Rest](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/encryption-at-rest-strategy-implementation.md)
-- [Encryption in Transit](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/encryption-in-transit-strategy.md)
-- [Secrets Management](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/secrets-management-implementation.md)
-- [Auditing](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/auditing-strategy.md)
-- [PII Protection](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/pii-protection-strategy.md)
-- [SQL Injection](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/07-security/sql-injection-strategy.md)
+- Authentication
+- Authorization
+- [Row-Level Security](../07-security/row-level-security-strategy.md)
+- Encryption at Rest
+- [Encryption in Transit](../07-security/encryption-in-transit-strategy.md)
+- [Secrets Management](../../03-backend-development/10-configuration-management/secrets-management-implementation.md)
+- [Auditing](../07-security/auditing-strategy.md)
+- [PII Protection](../07-security/pii-protection-strategy.md)
+- [SQL Injection](../07-security/sql-injection-strategy.md)
 
 ## 4. Sign-off Criteria
 The security review passes when:

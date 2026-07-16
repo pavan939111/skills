@@ -18,7 +18,7 @@ When selecting technology or architecture, engineers often rely on subjective op
 6. **Select the Highest Score:** Propose the candidate with the highest aggregate score.
 
 ## 4. Inputs Needed
-- Project budgets and milestones from [Business Constraints](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/business-constraints-analysis.md).
+- Project budgets and milestones from Business Constraints.
 - Performance budgets.
 
 ## 5. Outputs Produced

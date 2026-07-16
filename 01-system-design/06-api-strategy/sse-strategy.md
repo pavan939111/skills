@@ -21,4 +21,4 @@
 - Reverse proxies (Nginx/Cloudflare) buffer response streams, blocking real-time chunks delivery.
 
 ### 5. Where to Go Next
-- For implementation of real-time stream handlers and push channels, see [Real-time Push and WebSockets](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/websocket-strategy-implementation.md).
+- For implementation of real-time stream handlers and push channels, see Real-time Push and WebSockets.

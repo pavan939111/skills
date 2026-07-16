@@ -15,11 +15,11 @@ Business teams declare goals like "The app must be fast." An architect cannot de
 5. **Establish Security Baselines:** Translate compliance rules (GDPR, PCI) to database RLS, column encryption, and auditing logs.
 
 ## 4. Inputs Needed
-- Product-level Non-Functional Requirements from [Product Analysis NFRs](file:///c:/Users/mahip/OneDrive/Desktop/skills/00-product-analysis/non-functional-requirements-analysis.md).
+- Product-level Non-Functional Requirements from [Product Analysis NFRs](../../00-product-analysis/non-functional-requirements-analysis.md).
 - Business budget limits and legacy integration constraints.
 
 ## 5. Outputs Produced
-- Feeds into [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md) and [Technology Strategy Briefs](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/06-api-strategy/index.md) (folders 06–17).
+- Feeds into [Capacity Planning](../../13-architecture-decision-records/index.md) and [Technology Strategy Briefs](../../13-architecture-decision-records/index.md) (folders 06–17).
 
 ## 6. Worked Example (Payment Processing API)
 - **Business Target:** "Checkout API must process payments securely and recover fast on crashes."

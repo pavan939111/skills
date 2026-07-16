@@ -17,5 +17,5 @@ Step 5: Run cleanup migrations (drop old columns)
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dives:
-- [CI/CD](../../production_principles/delivery-and-readiness/02-ci-cd-strategy-implementation.md)
+- [CI/CD](../ci-cd-configuration.md)
 - [System Design Deployment Strategy](../../01-system-design/16-deployment-strategy/)

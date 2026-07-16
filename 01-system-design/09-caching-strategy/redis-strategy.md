@@ -21,5 +21,5 @@
 - Web nodes fail to fetch keys because Redis runs single-threaded, stalling under long-running Lua script queries.
 
 ### 5. Where to Go Next
-- For configuring Redis clusters, write policies, connection pools, and cache tuning parameters, see [Caching Architecture Deep Dive](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/01-caching-implementation.md).
-- For database-level caching optimizations, see [Database Caching Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/04-database-best-practices/caching-implementation.md) (once built).
+- For configuring Redis clusters, write policies, connection pools, and cache tuning parameters, see [Caching Architecture Deep Dive](../../04-database-design/04-database-best-practices/caching-implementation.md).
+- For database-level caching optimizations, see [Database Caching Design](../../04-database-design/04-database-best-practices/caching-implementation.md) (once built).

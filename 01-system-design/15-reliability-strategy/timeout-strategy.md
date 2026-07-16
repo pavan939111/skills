@@ -21,5 +21,5 @@
 - Relational databases experience lock queues because database queries run indefinitely without timeouts.
 
 ### 5. Where to Go Next
-- For configuring timeouts in HTTP clients, gRPC pools, and database connection settings, see [Resilience Patterns & Implementations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/03-resilience-patterns.md).
-- For request-path latency deconstructions, see [Synchronous Flow Sizing](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/sync-flow-strategy-implementation.md).
+- For configuring timeouts in HTTP clients, gRPC pools, and database connection settings, see Resilience Patterns & Implementations.
+- For request-path latency deconstructions, see Synchronous Flow Sizing.

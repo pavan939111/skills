@@ -20,4 +20,4 @@
 - Public CDNs serve stale `v1` cached JSON outputs because client apps changed header versions without changing request URLs.
 
 ### 5. Where to Go Next
-- For implementation of URI routing versioning and framework middlewares configurations, see [API Versioning Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/api-versioning-strategy-implementation.md).
+- For implementation of URI routing versioning and framework middlewares configurations, see API Versioning Implementation.

@@ -15,11 +15,11 @@ Hexagonal Architecture (Ports and Adapters) is a physical layout implementation 
   - *Driven Adapters (Egress):* Postgres repository classes or SendGrid email client classes that implement the driven ports.
 
 ## 4. Inputs Needed
-- Product flows and functional requirements from [Functional Requirements](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/functional-requirements-analysis.md).
+- Product flows and functional requirements from [Functional Requirements](../../00-product-analysis/functional-requirements-analysis.md).
 - Third-party legacy APIs and database integration rules.
 
 ## 5. Outputs Produced
-- Feeds into code-tier folder layouts and [Component Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/04-component-design/index.md).
+- Feeds into code-tier folder layouts and [Component Design](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Order Payment Integration)
 - **Application Core:** `PaymentProcessorService` (manages validation, charges logic).

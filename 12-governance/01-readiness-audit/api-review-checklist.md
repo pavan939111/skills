@@ -11,8 +11,8 @@ The API Review Checklist is an audit tool used to verify that public-facing endp
 - [ ] OpenAPI documentation specs compiled and served
 
 ## 3. Cross-References
-- [API development reference](../05-api-development/)
-- [DTO schemas](../05-api-development/dtos.md)
+- [API development reference](../../03-backend-development/05-api-development/)
+- DTO schemas
 
 ## 4. Sign-off Criteria
 - Approved when all endpoints return standardized error formats, enforce page limits, and match Swagger files.

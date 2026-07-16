@@ -20,5 +20,5 @@
 - Disaster recovery runs are never simulated, leaving corrupted backups undetected.
 
 ### 5. Where to Go Next
-- For database-specific reliability checks, backups reviews, and recovery checklists, see [Database Production Readiness Review](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/12-production-checklists/production-readiness-strategy.md).
-- For VM/container-level configurations audits and server checklists, see [Resilience Patterns & Implementations](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/performance-and-scale/03-resilience-patterns.md).
+- For database-specific reliability checks, backups reviews, and recovery checklists, see [Database Production Readiness Review](../../04-database-design/12-production-checklists/production-readiness-strategy.md).
+- For VM/container-level configurations audits and server checklists, see Resilience Patterns & Implementations.

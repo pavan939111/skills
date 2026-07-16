@@ -22,10 +22,10 @@ This checklist acts as a production readiness gate to review and sign off on mod
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Model Selection Framework](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering02-model-selection-strategy/selection-framework.md)
-- [Fallback Models](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering02-model-selection-strategy/fallback-models-strategy.md)
-- [Model Versioning](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/model-versioning-strategy-implementation.md)
-- [Model and Prompt Deployment](file:///c:/Users/mahip/OneDrive/Desktop/skills/05-ai-engineering17-operations-management/deployment-implementation.md)
+- Model Selection Framework
+- [Fallback Models](../02-model-selection-strategy/fallback-models-strategy.md)
+- Model Versioning
+- [Model and Prompt Deployment](../../07-platform-engineering/01-devops-readiness/deployment-implementation.md)
 
 ## 4. Sign-off Criteria
 The model review passes when:

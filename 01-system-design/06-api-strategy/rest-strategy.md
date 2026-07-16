@@ -21,4 +21,4 @@
 - Client applications execute $>10$ separate API calls per screen to fetch related child resources, causing network congestion.
 
 ### 5. Where to Go Next
-- For implementation of REST API routes, controllers, and routing configurations, see [RESTful API Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/backend-development/05-api-development/restful-api.md).
+- For implementation of REST API routes, controllers, and routing configurations, see RESTful API Implementation.

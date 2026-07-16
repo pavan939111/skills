@@ -20,5 +20,5 @@
 - The outbox table grows continuously, saturating disk space because the background CDC processor stopped reading events.
 
 ### 5. Where to Go Next
-- For setting up outbox tables, publisher polling schemas, and CDC engine adapters (Debezium), see [Transactional Outbox Database Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/13-design-patterns/transactional-outbox-pattern.md).
-- For tracing event chronologies, see [Event Flow Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/05-data-flow-design/event-flow-strategy-implementation.md).
+- For setting up outbox tables, publisher polling schemas, and CDC engine adapters (Debezium), see Transactional Outbox Database Design.
+- For tracing event chronologies, see Event Flow Design.

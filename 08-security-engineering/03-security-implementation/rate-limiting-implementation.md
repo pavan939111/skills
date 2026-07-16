@@ -19,4 +19,4 @@ def check_rate_limit(client_ip: str, limit=100, window=60) -> bool:
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Security](../../production_principles/foundations/04-security.md)
+- [Security](../security-fundamentals-policy.md)

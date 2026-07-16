@@ -20,5 +20,5 @@
 - Modifying business rules requires rebuilding the entire historical event stream, introducing data migrators risk.
 
 ### 5. Where to Go Next
-- For database-level event store schemas, indexing, and snapshot optimization, see [Event Sourcing Database Design](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/13-design-patterns/event-sourcing-pattern.md).
-- For implementing aggregates and event loop handlers in application code, see [Event Sourcing Architecture Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/03-architecture-selection/event-sourcing-decision-matrix-strategy-implementation.md).
+- For database-level event store schemas, indexing, and snapshot optimization, see Event Sourcing Database Design.
+- For implementing aggregates and event loop handlers in application code, see Event Sourcing Architecture Selection.

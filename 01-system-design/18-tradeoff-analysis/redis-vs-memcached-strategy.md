@@ -13,11 +13,11 @@ Selecting the correct caching engine controls memory usage efficiency and scalin
 4. **Compare Clustering Complexity:** Evaluate memory and replication overhead.
 
 ## 4. Inputs Needed
-- Memory estimations and target cache hit ratios from [Memory Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/memory-estimation-strategy-implementation.md).
+- Memory estimations and target cache hit ratios from Memory Estimation.
 - Chosen routing strategies.
 
 ## 5. Outputs Produced
-- Feeds directly into [Caching Strategy Selection](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/09-caching-strategy/redis-strategy-implementation.md).
+- Feeds directly into Caching Strategy Selection.
 
 ## 6. Worked Example (User Session Cache vs. Simple Product Metadata Cache)
 - **User Session Cache (Redis Choice):**

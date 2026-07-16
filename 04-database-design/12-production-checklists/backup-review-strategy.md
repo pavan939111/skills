@@ -25,11 +25,11 @@ This checklist validates that database backup frequencies, continuous WAL archiv
 
 ## 3. Cross-references
 This checklist compiles rules from the following detailed topic files:
-- [Backup Strategies](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/backup-strategies-strategy.md)
-- [Restore Testing](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/restore-testing-strategy.md)
-- [Disaster Recovery](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/disaster-recovery-strategy-implementation.md)
-- [Failover](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/failover-strategy.md)
-- [RTO / RPO](file:///c:/Users/mahip/OneDrive/Desktop/skills/database-design/08-reliability-and-backup/rto-rpo-strategy.md)
+- [Backup Strategies](../08-reliability-and-backup/backup-strategies-strategy.md)
+- [Restore Testing](../08-reliability-and-backup/restore-testing-strategy.md)
+- Disaster Recovery
+- [Failover](../08-reliability-and-backup/failover-strategy.md)
+- [RTO / RPO](../08-reliability-and-backup/rto-rpo-strategy.md)
 
 ## 4. Sign-off Criteria
 The backup review passes when:

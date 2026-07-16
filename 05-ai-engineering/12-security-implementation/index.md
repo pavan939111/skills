@@ -15,4 +15,4 @@ Beyond traditional cybersecurity — attack surfaces unique to LLMs and agents. 
 | 07 | Permission Models | `permission-models-implementation.md` | done |
 | 08 | AI Security Checklist | `ai-security-checklist.md` | done |
 
-> `pii-protection-implementation.md` covers PII leaking *through model output or prompts* — mechanically different from `../../database-design/07-security/pii-protection-strategy.md` (data-at-rest) or `../../production_principles/foundations/01-configuration-management.md` (secrets in config). `secret-protection-implementation.md` here covers secrets accidentally exposed to a model via context or tool calls, not general secrets management.
+> `pii-protection-implementation.md` covers PII leaking *through model output or prompts* — mechanically different from `../../04-database-design/07-security/pii-protection-strategy.md` (data-at-rest) or `../../production_principles/foundations/01-configuration-management.md` (secrets in config). `secret-protection-implementation.md` here covers secrets accidentally exposed to a model via context or tool calls, not general secrets management.

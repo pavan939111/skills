@@ -19,4 +19,4 @@ def update_log_level(new_level: str):
 
 ## 4. Read First
 Before applying this backend application note, review the full deep-dive:
-- [Configuration Management](../../production_principles/foundations/01-configuration-management.md)
+- [Configuration Management](configuration-management-strategy.md)

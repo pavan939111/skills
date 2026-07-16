@@ -14,10 +14,10 @@ Before designing database schemas, network topologies, and microservice boundari
 5. **Freeze Requirements Scope:** Sign off on requirements, setting the baseline for capacity estimation.
 
 ## 4. Inputs Needed
-- All completed requirements files in [Requirement Analysis](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/01-requirement-analysis/index.md).
+- All completed requirements files in [Requirement Analysis](../../13-architecture-decision-records/index.md).
 
 ## 5. Outputs Produced
-- Feeds into [Capacity Planning](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/index.md).
+- Feeds into [Capacity Planning](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (Standard SaaS Project Gate)
 - **Status:** All previous 10 requirement analysis files completed.

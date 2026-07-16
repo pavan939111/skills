@@ -19,11 +19,11 @@ Without this estimation, disk provisioning is arbitrary, risking storage starvat
 5. **Add Safety Buffer:** Add 30% overhead for database-internal page fragmentation and temp tables.
 
 ## 4. Inputs Needed
-- Estimated write QPS from [Traffic Estimation](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/02-capacity-planning/traffic-estimation-strategy-implementation.md).
+- Estimated write QPS from Traffic Estimation.
 - Table schemas and database extensions (pgvector checks).
 
 ## 5. Outputs Produced
-- Feeds into [Database Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/08-database-strategy/index.md) and [Storage Strategy](file:///c:/Users/mahip/OneDrive/Desktop/skills/01-system-design/10-storage-strategy/index.md).
+- Feeds into [Database Strategy](../../13-architecture-decision-records/index.md) and [Storage Strategy](../../13-architecture-decision-records/index.md).
 
 ## 6. Worked Example (User Message Logging System)
 - **Schema Row:** `message_log` (id: BigInt [8B], sender_id: UUID [16B], content: Text [average 150B], created_at: Timestamp [8B]) = 182 bytes/row.

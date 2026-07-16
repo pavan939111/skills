@@ -21,4 +21,4 @@
 - Worker processes block because the exchange routing rules are too complex, slowing down message dispatching.
 
 ### 5. Where to Go Next
-- For configuring AMQP exchanges, routing keys, worker configurations, and retry schedules, see [Message Broker Architecture & Implementation](file:///c:/Users/mahip/OneDrive/Desktop/skills/production_principles/data-and-messaging/02-background-jobs-messaging.md).
+- For configuring AMQP exchanges, routing keys, worker configurations, and retry schedules, see Message Broker Architecture & Implementation.
